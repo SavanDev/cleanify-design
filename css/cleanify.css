@@ -1,0 +1,47 @@
+header {
+  background-color: #222020;
+  color: white;
+  padding: 1em;
+}
+
+.nav-title, .nav-menu {
+  display: inline;
+  font-variant-caps: all-petite-caps;
+}
+
+.nav-title {
+  background-color: #0062ff;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.nav-title:hover {
+  background-color: #ba0000;
+}
+
+.nav-menu > li {
+  display: inline;
+  list-style: none;
+  padding-right: 1em;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.nav-menu a:hover {
+  color: #0062ff;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+article {
+  padding: 1em;
+}
+
+/*# sourceMappingURL=cleanify.css.map */

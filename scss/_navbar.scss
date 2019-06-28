@@ -1,0 +1,38 @@
+header {
+    background-color: $dark;
+    color: white;
+    padding: 1em;
+}
+
+.nav-title, .nav-menu {
+    display: inline;
+    font-variant-caps: all-petite-caps;
+}
+
+.nav-title {
+    background-color: $primary-color;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.nav-menu > li {
+    display: inline;
+    list-style: none;
+    padding-right: 1em;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+
+    &:hover {
+        color: $primary-color;
+    }
+}

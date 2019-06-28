@@ -1,0 +1,22 @@
+{
+  "name": "cleanify-design",
+  "version": "0.0.1",
+  "description": "HTML & CSS personal framework.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "sass ./scss/cleanify.scss:./css/cleanify.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavanDev/cleanify-design.git"
+  },
+  "author": "SavanDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SavanDev/cleanify-design/issues"
+  },
+  "homepage": "https://github.com/SavanDev/cleanify-design#readme",
+  "dependencies": {
+    "sass": "^1.22.1"
+  }
+}
