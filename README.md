@@ -1,2 +1,2 @@
-# cleanify-design
+# Cleanify Design
 HTML &amp; CSS personal framework.

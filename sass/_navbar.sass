@@ -1,0 +1,36 @@
+header
+    color: $light-color
+    padding: 1.5em
+
+.navbar-title, .navbar-menu
+    display: inline
+    font-variant-caps: all-petite-caps
+
+.navbar-title
+    background-color: $primary-color
+    padding: 1em
+    color: white
+    text-decoration: none
+    border-radius: 3em
+    transition: 0.2s
+
+    &:hover
+        background-color: $secondary-color
+
+.navbar-menu
+    > li
+        display: inline-block
+        list-style: none
+        padding-right: 1em
+
+    a
+        color: $dark-color
+        text-decoration: none
+        transition: 0.2s
+
+        &:hover
+            color: $primary-color
+
+.navbar-right-menu
+    @extend .navbar-menu
+    float: right
