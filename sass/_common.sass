@@ -1,19 +1,13 @@
+*
+    transition: 0.2s
+    
 body
     margin: 0
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     background-color: $light-color
-    transition: 0.2s
 
-.dark-container
-    background-color: $dark-color
-    color: $light-color
-
-    article
-        background-color: $darken-color
-        border-style: none
-
-    .navbar-menu *
-        color: $light-color
+section
+    padding: 0 1em
 
 article
     background-color: white
@@ -26,3 +20,32 @@ article
 
 footer
     text-align: center
+
+a
+    color: $dark-color
+    text-decoration: none
+    
+    &:hover
+        color: $primary-color
+
+hr
+    width: 95%
+    color: $light-color
+
+/* Dark mode */
+.dark-container
+    background-color: $dark-color
+    color: $light-color
+
+    article
+        background-color: $darken-color
+        border-style: none
+
+    .navbar-menu *
+        color: $light-color
+
+    .banner
+        background-color: $dark-color
+
+    a
+        color: $light-color
