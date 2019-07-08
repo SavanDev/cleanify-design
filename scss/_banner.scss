@@ -1,0 +1,32 @@
+@media screen and (max-width: 600px) {
+    .banner {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.banner {
+    background-color: color(background);
+    border-style: none;
+    padding: auto 5em;
+    height: 300px;
+
+    img {
+        float: left;
+        max-width: 256px;
+        max-height: 256px;
+        margin-right: 1.5em;
+    }
+
+    h1 {
+        margin: 50px auto 0.3em auto;
+        font-weight: 700;
+        font-size: 5em;
+        font-variant-caps: all-petite-caps;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 2em;
+    }
+}

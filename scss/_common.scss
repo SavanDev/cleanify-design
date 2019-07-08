@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap');
+
+* {
+    transition: 0.2s;
+}
+
+body {
+    font-family: 'Oxygen', 'Lucida Sans', Verdana, Geneva, sans-serif;
+    background-color: color(background);
+    color: color(text);
+
+    section {
+        padding: 0 1em;
+    }
+
+    article {
+        background-color: color(bubble);
+        border-radius: $border-size;
+        border: 1px solid #ddd;
+        margin-bottom: 1.5em;
+        padding: 1.5em;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    a {
+        color: color(text);
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    hr {
+        width: 95%;
+        color: $light-color;
+        margin: 1em auto;
+    }
+
+    h1, h2, h3, h4 {
+        font-weight: 400;
+    }
+
+    h1 { font-size: 3.5em; }
+
+    h2 { font-size: 3em; }
+
+    h3 { font-size: 2.5em; }
+
+    h4 { font-size: 2em; }
+
+    p {
+        font-size: 1.2em;
+        margin: 0.5em auto;
+        font-weight: 300;
+    }
+}

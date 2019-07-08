@@ -1,0 +1,24 @@
+$primary-color: #0062ff;
+$secondary-color: #ba0000;
+$dark-color: #222020;
+$light-color: #f5f5f5;
+$gray-color: #555;
+
+$border-size: 3em;
+
+$colors: (
+    background: $light-color,
+    text: $dark-color,
+    bubble: white
+);
+
+// for dark mode!
+:root {
+    @each $name, $color in $colors {
+      --color-#{$name}: #{$color};
+    }
+}
+
+@function color($color-name) {
+    @return var(--color-#{$color-name});
+}
