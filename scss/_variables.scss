@@ -3,13 +3,16 @@ $secondary-color: #ba0000;
 $dark-color: #222020;
 $light-color: #f5f5f5;
 $gray-color: #555;
+$lightgray-color: #D6D6D6;
 
 $border-size: 3em;
 
 $colors: (
     background: $light-color,
     text: $dark-color,
-    bubble: white
+    container: white,
+    back-text: $lightgray-color,
+    button: $lightgray-color
 );
 
 // for dark mode!

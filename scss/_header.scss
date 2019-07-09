@@ -1,21 +1,21 @@
 @media screen and (max-width: 600px) {
-    .banner {
+    .header {
         visibility: hidden;
         display: none;
     }
 }
 
-.banner {
+.header {
     background-color: color(background);
     border-style: none;
     padding: auto 5em;
     height: 300px;
+    text-align: center;
 
     img {
         float: left;
         max-width: 256px;
         max-height: 256px;
-        margin-right: 1.5em;
     }
 
     h1 {
@@ -26,6 +26,11 @@
     }
 
     h2 {
+        background-color: color(back-text);
+        display: inline-block;
+        width: auto;
+        padding: 0.5em;
+        border-radius: $border-size;
         font-weight: 300;
         font-size: 2em;
     }

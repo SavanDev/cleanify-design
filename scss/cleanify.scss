@@ -2,4 +2,7 @@
 @import "variables";
 @import "common";
 @import "navbar";
-@import "banner";
+@import "header";
+
+// External
+@import "bootstrap/bootstrap-grid";
