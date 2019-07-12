@@ -7,21 +7,31 @@ $lightgray-color: #D6D6D6;
 
 $border-size: 3em;
 
-$colors: (
-    background: $light-color,
-    text: $dark-color,
-    container: white,
-    back-text: $lightgray-color,
-    button: $lightgray-color
-);
+@import "colors"; // Color variants
 
-// for dark mode!
-:root {
-    @each $name, $color in $colors {
-      --color-#{$name}: #{$color};
-    }
-}
+// Grid system (Bootstrap functions)
 
-@function color($color-name) {
-    @return var(--color-#{$color-name});
-}
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+$container-padding-x: $grid-gutter-width / 2 !default;

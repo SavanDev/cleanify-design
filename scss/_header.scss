@@ -6,7 +6,7 @@
 }
 
 .header {
-    background-color: color(background);
+    background-color: $background-color;
     border-style: none;
     padding: auto 5em;
     height: 300px;
@@ -26,7 +26,7 @@
     }
 
     h2 {
-        background-color: color(back-text);
+        background-color: $background-text-color;
         display: inline-block;
         width: auto;
         padding: 0.5em;

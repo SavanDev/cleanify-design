@@ -1,0 +1,13 @@
+$background-color: $light-color;
+$text-color: $dark-color;
+$container-color: white;
+$background-text-color: $lightgray-color;
+$button-color: $lightgray-color;
+
+@if $dark-mode {
+    $background-color: $dark-color;
+    $text-color: $light-color;
+    $container-color: $gray-color;
+    $background-text-color: $gray-color;
+    $button-color: $gray-color;
+}

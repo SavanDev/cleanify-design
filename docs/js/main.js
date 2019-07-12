@@ -1,27 +1,13 @@
-let style = getComputedStyle(document.body);
+var lightModeCSS = "./css/cleanify.css";
+var darkModeCSS = "./css/cleanify-dark.css";
 
-var tempBack = style.getPropertyValue('--color-background');
-var tempText = style.getPropertyValue('--color-text');
-var tempCont = style.getPropertyValue('--color-container');
-var tempBackText = style.getPropertyValue('--color-back-text');
-var tempButton = style.getPropertyValue('--color-button');
-var darkMode = false;
+let darkMode;
 
 const darkmode = () => {
-    let root = document.documentElement;
-
     if (darkMode) {
-        root.style.setProperty('--color-background', tempBack);
-        root.style.setProperty('--color-text', tempText);
-        root.style.setProperty('--color-container', tempCont);
-        root.style.setProperty('--color-back-text', tempBackText);
-        root.style.setProperty('--color-button', tempButton);
+        document.getElementById('cleanifyCss').setAttribute('href', lightModeCSS);
     } else {
-        root.style.setProperty('--color-background', "#222020");
-        root.style.setProperty('--color-text', "#f5f5f5");
-        root.style.setProperty('--color-container', "#555");
-        root.style.setProperty('--color-back-text', "#555");
-        root.style.setProperty('--color-button', "#555");
+        document.getElementById('cleanifyCss').setAttribute('href', darkModeCSS);
     }
 
     darkMode = !darkMode;
