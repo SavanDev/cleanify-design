@@ -1,37 +1,45 @@
-@media screen and (max-width: 1000px) {
-    .header {
-        visibility: hidden;
-        display: none;
-    }
-}
-
 .header {
     background-color: $background-color;
     border-style: none;
-    padding: auto 5em;
-    height: 300px;
     text-align: center;
 
     img {
-        float: left;
         max-width: 256px;
         max-height: 256px;
     }
 
     h1 {
-        margin: 50px auto 0.3em auto;
+        margin: 0.5rem auto;
         font-weight: 700;
-        font-size: 5em;
-        font-variant-caps: all-petite-caps;
+        @include font-size(4rem);
+        text-transform: uppercase;
     }
 
     h2 {
         background-color: $background-text-color;
         display: inline-block;
         width: auto;
-        padding: 0.5em;
+        padding: 0.75rem;
         border-radius: $border-size;
         font-weight: 300;
-        font-size: 2em;
+        @include font-size(2rem);
+    }
+
+    @media screen and (min-width: 1000px) {
+        padding: 4rem 3rem;
+
+        img {
+            float: left;
+        }
+
+        h1 {
+            margin: 50px auto 1rem auto;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }

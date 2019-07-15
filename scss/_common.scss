@@ -24,10 +24,14 @@ section {
             padding: auto $grid-gutter-width / 2;
             flex-basis: 0;
             flex-grow: 1;
-            margin: auto .5em;
+            margin-bottom: 1.5rem;
 
             h1, h2, h3, h4 {
                 text-align: center;
+            }
+
+            &:not(:last-child) {
+                margin-right: 1.5rem;
             }
         }
     }
@@ -41,18 +45,19 @@ article {
     background-color: $container-color;
     border-radius: $border-size;
     border: 1px solid #ddd;
-    margin-bottom: 1.5em;
-    padding: 1.5em;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
 }
 
 footer {
     text-align: center;
-    margin: 1.5em
+    margin: 1.5rem
 }
 
 a {
     color: $text-color;
     text-decoration: none;
+    outline: none;
 
     &:hover {
         color: $primary-color;
@@ -62,23 +67,28 @@ a {
 hr {
     width: 95%;
     color: $light-color;
-    margin: 1em auto;
+    margin: 1rem auto;
 }
 
 h1, h2, h3, h4 {
     font-weight: 400;
 }
 
-h1 { font-size: 3.5em; }
+h1 { @include font-size(3.5rem); }
 
-h2 { font-size: 3em; }
+h2 { @include font-size(3rem); }
 
-h3 { font-size: 2.5em; }
+h3 { @include font-size(2.5rem); }
 
-h4 { font-size: 2em; }
+h4 { @include font-size(2rem); }
 
 p {
-    font-size: 1.2em;
-    margin: 0.5em auto;
+    @include font-size(1.2rem);
+    margin: 0.5rem auto;
     font-weight: 300;
+}
+
+.material-icons {
+    display: inline-flex;
+    vertical-align: middle;
 }

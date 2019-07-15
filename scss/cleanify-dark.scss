@@ -1,13 +1,3 @@
 $dark-mode: true;
 
-@import "reset";
-
-// Bootstrap functions & mixins
-@import "functions";
-@import "mixins/breakpoints";
-@import "mixins/grid";
-
-@import "variables";
-@import "common";
-@import "navbar";
-@import "header";
+@import "main";

@@ -1,2 +1,6 @@
 # Sass cache
 .sass-cache
+
+# Yarn files
+yarn.lock
+node_modules

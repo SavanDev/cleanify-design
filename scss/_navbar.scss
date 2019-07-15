@@ -1,15 +1,15 @@
 header {
-    color: $light-color;
-    padding: 1.5em;
+    padding: 1.5rem;
+    margin: .5rem;
+    font-variant-caps: all-petite-caps;
 
     .navbar-title, .navbar-menu {
         display: inline;
-        font-variant-caps: all-petite-caps;
     }
 
     .navbar-title {
         background-color: $primary-color;
-        padding: 1em;
+        padding: 1rem;
         color: $light-color !important;
         border-radius: $border-size;
 
@@ -19,17 +19,40 @@ header {
     }
 
     .navbar-menu {
-        padding-left: 1.5em;
+        padding-left: 1.5rem;
 
         > li {
             display: inline-block;
             color: $dark-color;
-            padding-right: 1em;
+            padding-right: 1rem;
         }
     }
 
     .navbar-right-menu {
         @extend .navbar-menu;
         float: right;
+    }
+
+    @media screen and (max-width: 1000px) {
+        margin: .25rem;
+
+        .navbar-title, .navbar-menu {
+            display: block;
+            text-align: center;
+        }
+
+        .navbar-menu {
+            padding: 0;
+            margin-top: .5rem;
+
+            > li {
+                display: block;
+                padding: .3rem;
+            }
+        }
+
+        .navbar-right-menu {
+            float: none;
+        }
     }
 }

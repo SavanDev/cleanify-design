@@ -1,0 +1,27 @@
+form {
+    input {
+        width: 100%;
+        border-radius: $border-size;
+        border: 1px #ddd solid;
+        padding: .5rem 1rem;
+        margin: .25rem auto;
+
+        &[type=color] {
+            border: none;
+            padding: 0;
+        }
+
+        &[type=checkbox], &[type=radio] {
+            width: auto;
+        }
+
+        &[type=button], &[type=submit] {
+            background-color: $button-color;
+
+            &:hover {
+                color: $light-color;
+                background-color: $primary-color;
+            }
+        }
+    }
+}
