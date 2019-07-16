@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="cleanifyCss"rel="stylesheet" href="./css/cleanify.css">
-    <link rel="stylesheet" href="./css/docs.css">
+    <link id="cleanifyCss" rel="stylesheet" href="./css/cleanify.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Cleanify Design</title>
@@ -18,25 +17,26 @@
             <li><a href="#">Download</a></li>
             <li><a href="#">Documentation</a></li>
             <li><a href="#about">About</a></li>
-            <ul class="navbar-right-menu">
-                <li>
-                    <a id="darkSwitch" href="#" onclick="darkmode()">
-                        <i class="material-icons">&#xE1AE;</i>
-                    </a>
-                </li>
-            </ul>
+        </ul>
+        <ul class="navbar-right-menu">
+            <li>v0.5</li>
+            <li>
+                <a id="darkToggle" href="#">
+                    <i class="material-icons">&#xE1AE;</i>
+                </a>
+            </li>
         </ul>
     </header>
     <section>
         <article class="header">
-            <img src="./img/logo.svg" alt="Logo" width="256">
+            <img src="./img/logo.svg" alt="Logo">
             <h1>Cleanify Design</h1>
-            <h2>HTML & CSS personal framework</h2>
+            <h2>HTML, CSS & JS personal framework</h2>
         </article>
         <article id="about">
             <h3>About Cleanify</h3>
             <hr>
-            <p>HTML & CSS framework made from scratch based on
+            <p>HTML, CSS & JS framework made from scratch based on
                 <a href="http://samsunginter.net/OneUI-CSS/" target="_blank">One UI</a> (Samsung) and
                 <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
             <p>Emerged from the need to mix both styles in a only framework for web design.</p>
@@ -59,7 +59,7 @@
     <footer>
         <small>SavanDev - 2019 | <a href="https://github.com/SavanDev/cleanify-design">GitHub</a></small>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/cleanify.min.js"></script>
 </body>
 
 </html>

@@ -4,3 +4,7 @@
 # Yarn files
 yarn.lock
 node_modules
+yarn-error.log
+
+# Distribution files
+dist

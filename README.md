@@ -1,7 +1,19 @@
-<center>
+<div align=center>
 <img src="./docs/img/logo.svg" width="256px" />
 
 # Cleanify Design
-</center>
+</div>
 
-HTML &amp; CSS personal framework.
+HTML, CSS & JS personal framework.
+
+# Get started
+
+Compile CSS & JS
+```
+yarn run dist-css
+```
+
+Watch changes
+```
+yarn start
+```

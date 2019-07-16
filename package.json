@@ -6,10 +6,24 @@
   "author": "SavanDev <Dylan2018.2019@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "docs-css": "sass scss:docs/css"
+    "start": "grunt",
+    "docs-css": "sass scss:docs/css",
+    "dist-css": "grunt dist-css"
   },
   "dependencies": {
     "rfs": "^8.0.4",
-    "sass": "^1.22.4"
+    "sass": "^1.22.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "grunt": "^1.0.4",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0"
   }
 }

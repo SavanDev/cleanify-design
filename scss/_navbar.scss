@@ -23,7 +23,7 @@ header {
 
         > li {
             display: inline-block;
-            color: $dark-color;
+            color: $text-color;
             padding-right: 1rem;
         }
     }
@@ -53,6 +53,10 @@ header {
 
         .navbar-right-menu {
             float: none;
+        }
+
+        #darkToggle::after {
+            content: "Dark Mode";
         }
     }
 }
