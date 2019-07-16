@@ -12,27 +12,13 @@ body {
 
 section {
     @include make-container();
-    @include make-container-max-widths();
 
     // Grid system
     &[class="grid"] {
         @include make-row();
 
         > article {
-            position: relative;
-            width: 100%;
-            padding: auto $grid-gutter-width / 2;
-            flex-basis: 0;
-            flex-grow: 1;
-            margin-bottom: 1.5rem;
-
-            h1, h2, h3, h4 {
-                text-align: center;
-            }
-
-            &:not(:last-child) {
-                margin-right: 1.5rem;
-            }
+            @include make-col();
         }
     }
 

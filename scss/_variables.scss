@@ -7,8 +7,6 @@ $lightgray-color: #D6D6D6;
 
 $border-size: 3rem;
 
-@import "colors"; // Color variants
-
 // Grid system (Bootstrap functions)
 
 $grid-breakpoints: (
@@ -31,7 +29,6 @@ $container-max-widths: (
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
-$grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
 
 $container-padding-x: $grid-gutter-width / 2 !default;

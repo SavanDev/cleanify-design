@@ -4,9 +4,10 @@
 // Bootstrap functions & mixins
 @import "functions";
 @import "mixins/breakpoints";
-@import "mixins/grid";
+@import "mixins/grid"; // Modified grid system
 
 @import "variables";
+@import "colors";
 @import "common";
 @import "navbar";
 @import "header";
