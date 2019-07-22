@@ -6,6 +6,10 @@ form {
         padding: .5rem 1rem;
         margin: .25rem auto;
 
+        &[type=text], &[type=number], &[type=password] {
+            background-color: $light-color;
+        }
+
         &[type=color] {
             border: none;
             padding: 0;
@@ -15,8 +19,10 @@ form {
             width: auto;
         }
 
-        &[type=button], &[type=submit] {
-            background-color: $button-color;
+        &[type=button], &[type=submit], &[type=reset] {
+            flex-basis: 1;
+            background-color: lighten($color: $button-color, $amount: 15);
+            color: $text-color;
 
             &:hover {
                 color: $light-color;

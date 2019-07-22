@@ -25,6 +25,10 @@ section {
     &[class="fluid"] {
         max-width: 100%;
     }
+
+    > h1, > h2, > h3, > h4, > h5, > h6 {
+        margin: 1.5rem;
+    }
 }
 
 article {
@@ -56,8 +60,14 @@ hr {
     margin: 1rem auto;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
+}
+
+pre {
+    background-color: lighten($color: $background-text-color, $amount: 10);
+    padding: 1.5rem;
+    border-radius: $border-size;
 }
 
 h1 { @include font-size(3.5rem); }
@@ -67,6 +77,10 @@ h2 { @include font-size(3rem); }
 h3 { @include font-size(2.5rem); }
 
 h4 { @include font-size(2rem); }
+
+h5 { @include font-size(1.5rem); }
+
+h6 { @include font-size(1rem); }
 
 p {
     @include font-size(1.2rem);

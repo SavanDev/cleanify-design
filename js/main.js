@@ -13,4 +13,7 @@ const darkmode = () => {
     darkToggle = !darkToggle;
 };
 
-document.getElementById("darkToggle").addEventListener("click", darkmode)
+window.onload = function() {
+	document.getElementById("darkToggle").addEventListener("click", darkmode)
+};
+

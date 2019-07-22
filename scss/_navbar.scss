@@ -1,7 +1,8 @@
-header {
+nav {
     padding: 1.5rem;
     margin: .5rem;
-    font-variant-caps: all-petite-caps;
+    @include font-size(.9rem);
+    text-transform: uppercase;
 
     .navbar-title, .navbar-menu {
         display: inline;

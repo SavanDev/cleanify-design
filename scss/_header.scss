@@ -1,7 +1,9 @@
-.header {
+header {
+    @include make-container();
     background-color: $background-color;
     border-style: none;
     text-align: center;
+    padding-bottom: 1.5rem;
 
     img {
         max-width: 256px;
