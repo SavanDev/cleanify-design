@@ -25,10 +25,6 @@ section {
     &[class="fluid"] {
         max-width: 100%;
     }
-
-    > h1, > h2, > h3, > h4, > h5, > h6 {
-        margin: 1.5rem;
-    }
 }
 
 article {
@@ -61,12 +57,13 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin: 1rem;
     font-weight: 400;
 }
 
-pre {
+.codeSnippet {
     background-color: lighten($color: $background-text-color, $amount: 10);
-    padding: 1.5rem;
+    padding: 1.5rem !important;
     border-radius: $border-size;
 }
 
@@ -84,11 +81,26 @@ h6 { @include font-size(1rem); }
 
 p {
     @include font-size(1.2rem);
-    margin: 0.5rem auto;
+    margin: .5rem;
     font-weight: 300;
 }
 
+b {
+    font-weight: bold;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+// Material icons position fix
 .material-icons {
     display: inline-flex;
     vertical-align: middle;
+}
+
+// Dark Toggle button style
+#darkToggle:hover {
+    color: $primary-color;
 }

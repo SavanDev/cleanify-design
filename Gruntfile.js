@@ -55,6 +55,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-babel');
 
-    grunt.registerTask('dist-css', ['clean', 'sass', 'cssmin', 'babel', 'uglify']);
+    grunt.registerTask('dist', ['clean', 'sass', 'cssmin', 'babel', 'uglify']);
     grunt.registerTask('default', ['watch']);
 }

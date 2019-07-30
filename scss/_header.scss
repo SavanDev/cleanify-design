@@ -1,9 +1,10 @@
 header {
     @include make-container();
     background-color: $background-color;
+    border-radius: $border-size;
     border-style: none;
     text-align: center;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem;
 
     img {
         max-width: 256px;
@@ -11,19 +12,19 @@ header {
     }
 
     h1 {
-        margin: 0.5rem auto;
+        margin: 1rem auto;
         font-weight: 700;
         @include font-size(4rem);
         text-transform: uppercase;
     }
 
     h2 {
+        display: table;
         background-color: $background-text-color;
-        display: inline-block;
-        width: auto;
         padding: 0.75rem;
         border-radius: $border-size;
         font-weight: 300;
+        margin: auto;
         @include font-size(2rem);
     }
 
@@ -35,7 +36,7 @@ header {
         }
 
         h1 {
-            margin: 50px auto 1rem auto;
+            padding-top: 3rem;
         }
     }
 
@@ -43,5 +44,17 @@ header {
         content: "";
         display: table;
         clear: both;
+    }
+
+    &.full {
+        background-size: cover;
+        min-height: 256px;
+
+        h1 {
+            display: table;
+            background-color: rgba($color: $background-color, $alpha: 0.7);
+            padding: 0.75rem;
+            border-radius: $border-size;
+        }
     }
 }

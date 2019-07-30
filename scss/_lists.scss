@@ -1,34 +1,14 @@
 ol {
-  display: flex;
-  flex-wrap: wrap;
   background-color: $lightgray-color;
   border-radius: $border-size;
   color: $dark-color;
   margin: 1rem auto;
+  overflow: hidden;
 
   > li {
     width: 100%;
-    flex-basis: 0;
-    flex-grow: 1;
     text-align: center;
     padding: 1rem;
-
-    &:not(:last-child) {
-      padding-right: 2rem;
-      border-right: 1px $dark-color solid;
-    }
-
-    &:not(:first-child) {
-      padding-left: 2rem;
-    }
-
-    &:first-child {
-      border-radius: $border-size 0 0 $border-size;
-    }
-
-    &:last-child {
-      border-radius: 0 $border-size $border-size 0;
-    }
 
     &:hover {
       background-color: $primary-color;
@@ -44,33 +24,40 @@ ol {
       }
     }
   }
+
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    > li {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
 }
 
-article {
-    ul {
-        margin: -1.5rem;
-        background-color: darken($container-color, $amount: 5);
-        border-radius: $border-size;
-    
-        > li {
-            padding: 1.5rem;
+section, article {
+  > ul {
+    background-color: darken($container-color, $amount: 5);
+    border-radius: $border-size;
+    overflow: hidden;
 
-            &:first-of-type {
-                border-radius: $border-size $border-size 0 0;
-            }
+    > li {
+      padding: 1.5rem;
 
-            &:last-child {
-                border-radius: 0 0 $border-size $border-size;
-            }
+      &:nth-child(odd) {
+        background-color: darken($container-color, $amount: 7);
+      }
 
-            &:nth-child(odd) {
-                background-color: darken($container-color, $amount: 7);
-            }
+      &:hover {
+        background-color: $primary-color;
+        color: $light-color;
+        cursor: pointer;
+      }
 
-            &:hover {
-                background-color: $primary-color;
-                color: $light-color;
-            }
-        }
+      > a:hover {
+        color: $light-color;
+      }
     }
+  }
 }
