@@ -24,7 +24,7 @@ const GStarted: React.FC = () => {
                     <p>--- index.html</p>
                 </article>
                 <h4>Starter template</h4>
-                <Highlight className="codeSnippet">
+                <Highlight className="codeSnippet html">
                     {'<!DOCTYPE html>'}<br/>
                     {'<html lang="en">'}<br/>
                     {'<head>'}<br/>
@@ -35,7 +35,7 @@ const GStarted: React.FC = () => {
                     {'</head>'}<br/>
                     {'<body>'}<br/>
                     {'  ...'}<br/>
-                    {'  <script src="./js/cleanify.min.js></script>'}<br/>
+                    {'  <script src="./js/cleanify.min.js"></script>'}<br/>
                     {'</body>'}<br/>
                     {'</html>'}<br/>
                 </Highlight>

@@ -10,16 +10,16 @@ ol {
     text-align: center;
     padding: 1rem;
 
-    &:hover {
-      background-color: $primary-color;
-      color: $light-color;
-      cursor: pointer;
-    }
-
     > a {
       color: $dark-color;
 
+      // Hover fix
+      display: block;
+      padding: 1rem;
+      margin: -1rem;
+
       &:hover {
+        background-color: $primary-color;
         color: $light-color;
       }
     }
@@ -49,14 +49,16 @@ section, article {
         background-color: darken($container-color, $amount: 7);
       }
 
-      &:hover {
-        background-color: $primary-color;
-        color: $light-color;
-        cursor: pointer;
-      }
+      > a {
+        // Hover fix
+        display: block;
+        padding: 1.5rem;
+        margin: -1.5rem;
 
-      > a:hover {
-        color: $light-color;
+        &:hover {
+          background-color: $primary-color;
+          color: $light-color;
+        }
       }
     }
   }

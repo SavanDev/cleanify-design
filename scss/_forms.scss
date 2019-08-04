@@ -1,10 +1,27 @@
+@mixin formBasis {
+    border-radius: $border-size;
+    border: 1px #ddd solid;
+    padding: .5rem 1rem;
+    margin: .25rem auto;
+}
+
+@mixin buttonBasis {
+    background-color: lighten($color: $button-color, $amount: 15);
+    color: $text-color;
+
+    &:hover {
+        color: $light-color;
+        background-color: $primary-color;
+    }
+}
+
 form {
     input {
-        width: 100%;
-        border-radius: $border-size;
-        border: 1px #ddd solid;
-        padding: .5rem 1rem;
-        margin: .25rem auto;
+        @include formBasis();
+
+        &:not([type=submit]), &:not([type=reset]), &:not([type=button]) {
+            width: 100%;
+        }
 
         &[type=text], &[type=number], &[type=password] {
             background-color: $light-color;
@@ -16,18 +33,26 @@ form {
         }
 
         &[type=checkbox], &[type=radio] {
+            margin: .5rem 1rem;
             width: auto;
         }
 
         &[type=button], &[type=submit], &[type=reset] {
-            flex-basis: 1;
-            background-color: lighten($color: $button-color, $amount: 15);
-            color: $text-color;
-
-            &:hover {
-                color: $light-color;
-                background-color: $primary-color;
-            }
+            @include buttonBasis();
         }
     }
+
+    .group {
+        @include make-row();
+
+        > fieldset {
+            @include make-col();
+        }
+    }
+}
+
+button {
+    width: 100%;
+    @include formBasis();
+    @include buttonBasis();
 }

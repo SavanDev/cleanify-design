@@ -378,11 +378,13 @@ header.full h1 {
 }
 
 form input {
-  width: 100%;
   border-radius: 3rem;
   border: 1px #ddd solid;
   padding: 0.5rem 1rem;
   margin: 0.25rem auto;
+}
+form input:not([type=submit]), form input:not([type=reset]), form input:not([type=button]) {
+  width: 100%;
 }
 form input[type=text], form input[type=number], form input[type=password] {
   background-color: #f5f5f5;
@@ -392,14 +394,49 @@ form input[type=color] {
   padding: 0;
 }
 form input[type=checkbox], form input[type=radio] {
+  margin: 0.5rem 1rem;
   width: auto;
 }
 form input[type=button], form input[type=submit], form input[type=reset] {
-  flex-basis: 1;
   background-color: #7b7b7b;
   color: #f5f5f5;
 }
 form input[type=button]:hover, form input[type=submit]:hover, form input[type=reset]:hover {
+  color: #f5f5f5;
+  background-color: #0062ff;
+}
+form .group {
+  display: flex;
+  flex-wrap: wrap;
+}
+form .group > fieldset {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+form .group > fieldset h1, form .group > fieldset h2, form .group > fieldset h3, form .group > fieldset h4 {
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  form .group > fieldset {
+    padding: auto 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  form .group > fieldset:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+button {
+  width: 100%;
+  border-radius: 3rem;
+  border: 1px #ddd solid;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem auto;
+  background-color: #7b7b7b;
+  color: #f5f5f5;
+}
+button:hover {
   color: #f5f5f5;
   background-color: #0062ff;
 }
@@ -416,15 +453,14 @@ ol > li {
   text-align: center;
   padding: 1rem;
 }
-ol > li:hover {
-  background-color: #0062ff;
-  color: #f5f5f5;
-  cursor: pointer;
-}
 ol > li > a {
   color: #222020;
+  display: block;
+  padding: 1rem;
+  margin: -1rem;
 }
 ol > li > a:hover {
+  background-color: #0062ff;
   color: #f5f5f5;
 }
 @media screen and (min-width: 1000px) {
@@ -449,12 +485,13 @@ section > ul > li, article > ul > li {
 section > ul > li:nth-child(odd), article > ul > li:nth-child(odd) {
   background-color: #434343;
 }
-section > ul > li:hover, article > ul > li:hover {
-  background-color: #0062ff;
-  color: #f5f5f5;
-  cursor: pointer;
+section > ul > li > a, article > ul > li > a {
+  display: block;
+  padding: 1.5rem;
+  margin: -1.5rem;
 }
 section > ul > li > a:hover, article > ul > li > a:hover {
+  background-color: #0062ff;
   color: #f5f5f5;
 }
 

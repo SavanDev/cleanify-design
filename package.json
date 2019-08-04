@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "grunt",
-    "docs-css": "sass scss:docs/css",
+    "docs-css": "sass scss:public/css",
     "docs-watch": "react-scripts start",
     "dist": "grunt dist",
     "build": "react-scripts build",

@@ -13,7 +13,7 @@ const Components: React.FC = () => {
                     <h2>HTML, CSS & JS personal framework</h2>
                 </header>
                 <br />
-                <Highlight className="codeSnippet">
+                <Highlight className="codeSnippet html">
                     {'<header>'}<br />
                     {'  <img src="IMAGE URL">'}<br />
                     {'  <h1>...</h1>'}<br />
@@ -28,7 +28,7 @@ const Components: React.FC = () => {
                     <h2>Photo by <a href="https://unsplash.com/@adrienolichon">Adrien Olichon</a> on Unsplash</h2>
                 </header>
                 <br />
-                <Highlight className="codeSnippet">
+                <Highlight className="codeSnippet html">
                     {'<header class="full" data-src="IMAGE URL">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
@@ -48,13 +48,13 @@ const Components: React.FC = () => {
                         </ul>
                     </nav>
                 </article>
-                <Highlight className="codeSnippet">
+                <Highlight className="codeSnippet html">
                     {'<nav>'}<br/>
                     {'  <a class="navbar-title" href="URL">...</a>'}<br/>
                     {'  <ul class="navbar-menu">'}<br/>
                     {'      <li>...</li>'}<br/>
                     {'  </ul>'}<br/>
-                    {'  <ul class="navbar-right-menu>'}<br/>
+                    {'  <ul class="navbar-right-menu">'}<br/>
                     {'      <li>...</li>'}<br/>
                     {'  </ul>'}<br/>
                     {'</nav>'}
@@ -66,9 +66,10 @@ const Components: React.FC = () => {
                     <li>Hello World!</li>
                     <li>Example text</li>
                     <li>Test 3</li>
+                    <li><a href="#">Link example</a></li>
                 </ul>
                 <br />
-                <Highlight className="codeSnippet">
+                <Highlight className="codeSnippet html">
                     {'<ul>'}<br />
                     {'  <li>...</li>'}<br />
                     {'</ul>'}
@@ -79,14 +80,96 @@ const Components: React.FC = () => {
                 <p>* Not visible in mobiles</p>
                 <ol>
                     <li>Home</li>
-                    <li>Dowload</li>
+                    <li><a href="#">Download</a></li>
                     <li>Documentation</li>
                 </ol>
-                <Highlight className="codeSnippet">
+                <Highlight className="codeSnippet html">
                     {'<ol>'}<br />
                     {'  <li>...</li>'}<br />
                     {'</ol>'}
                 </Highlight>
+            </article>
+            <article>
+                <h2>Forms</h2>
+                <article>
+                    <form>
+                        <h4>Common inputs</h4>
+                        <hr/>
+                        <p>Text</p>
+                        <input type="text" placeholder="Text" />
+                        <p>Number</p>
+                        <input type="number" placeholder="Number" />
+                        <p>Password</p>
+                        <input type="password" placeholder="Password" />
+                        <p>Date</p>
+                        <input type="date" />
+                        <p>Email</p>
+                        <input type="email" placeholder="Email@test.com" />
+                        <p>File</p>
+                        <input type="file" />
+                        <p>Color</p>
+                        <input type="color" />
+                        <hr/>
+                        <Highlight className="codeSnippet html">
+                            {'<p>...</p>'}<br/>
+                            {'<input type="..." placeholder="..." />'}
+                        </Highlight>
+                    </form>
+                </article>
+                <article>
+                    <form>
+                        <h4>Form groups</h4>
+                        <hr/>
+                        <div className="group">
+                            <fieldset>
+                                <p>Group Text</p>
+                                <input type="text" />
+                            </fieldset>
+                            <fieldset>
+                                <p>Group Date</p>
+                                <input type="date" />
+                            </fieldset>
+                        </div>
+                        <hr/>
+                        <Highlight className="codeSnippet html">
+                            {'<div class="group">'}<br/>
+                            {'  <fieldset>'}<br/>
+                            {'      ...'}<br/>
+                            {'  </fieldset>'}<br/>
+                            {'</div>'}
+                        </Highlight>
+                    </form>
+                </article>
+                <article>
+                    <form>
+                        <h4>Checkbox & Radio</h4>
+                        <hr/>
+                        <input type="checkbox" id="checkTest" />
+                        <label htmlFor="checkTest">Checkbox</label>
+                        <input type="radio" id="radioTest" />
+                        <label htmlFor="radioTest">Radio</label>
+                        <hr/>
+                        <Highlight className="codeSnippet html">
+                            {'<input type="checkbox/radio" id="..." />'}<br/>
+                            {'<label for="...">...</label>'}
+                        </Highlight>
+                    </form>
+                </article>
+                <article>
+                    <form>
+                        <h4>Buttons</h4>
+                        <hr/>
+                        <input type="button" value="Button"/>
+                        <input type="submit" value="Submit"/>
+                        <input type="reset" value="Reset"/>
+                        <button>Button tag</button>
+                        <hr/>
+                        <Highlight className="codeSnippet html">
+                            {'<input type="button/submit/reset" value="..." />'}<br/>
+                            {'<button>...</button>'}
+                        </Highlight>
+                    </form>
+                </article>
             </article>
         </section>
     );

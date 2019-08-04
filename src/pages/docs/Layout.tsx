@@ -8,7 +8,7 @@ const Layout: React.FC = () => {
                 <h2>Bubble</h2>
                 <div id="containerExample">
                 </div>
-                <Highlight className="codeSnippet">
+                <Highlight className="codeSnippet html">
                     {'<section>'}<br/>
                     {'  <article>'}<br/>
                     {'      ...'}<br/>
@@ -20,7 +20,7 @@ const Layout: React.FC = () => {
                 <h2>Bubble fluid</h2>
                 <div id="containerFluidExample">
                 </div>
-                <Highlight className="codeSnippet">
+                <Highlight className="codeSnippet html">
                     {'<section class="fluid">'}<br/>
                     {'  <article>'}<br/>
                     {'      ...'}<br/>
@@ -36,7 +36,7 @@ const Layout: React.FC = () => {
                     <div></div>
                     <div></div>
                 </div>
-                <Highlight className="codeSnippet">
+                <Highlight className="codeSnippet html">
                     {'<section class="grid">'}<br/>
                     {'  <article>...</article>'}<br/>
                     {'</section>'}
