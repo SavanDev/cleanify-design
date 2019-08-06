@@ -13,9 +13,7 @@ const Home: React.FC = () => {
                 <article>
                     <h3>About Cleanify</h3>
                     <hr/>
-                    <p>HTML, CSS & JS framework made from scratch based on
-                        <a href="http://samsunginter.net/OneUI-CSS/" target="_blank" rel="noopener noreferrer">One UI</a> (Samsung) and
-                        <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a>.</p>
+                    <p>HTML, CSS & JS framework made from scratch based on <a href="http://samsunginter.net/OneUI-CSS/" target="_blank" rel="noopener noreferrer">One UI</a> (Samsung) and <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a>.</p>
                     <p>Emerged from the need to mix both styles in a only framework for web design.</p>
                 </article>
             </section>
