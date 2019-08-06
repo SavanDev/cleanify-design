@@ -7,8 +7,8 @@ const Navbar: React.FC<INavbar> = ({Version}) => {
         <nav>
             <Link to="/" className="navbar-title">Cleanify Design</Link>
             <ul className="navbar-menu">
-                <li><a href="https://github.com/SavanDev/cleanify-design/releases">Download</a></li>
-                <li><Link to="/docs">Documentation</Link></li>
+                <li><a href="https://github.com/SavanDev/cleanify-design/releases"><FontAwesomeIcon icon="download" /> Download</a></li>
+                <li><Link to="/docs"><FontAwesomeIcon icon="book" /> Documentation</Link></li>
             </ul>
             <ul className="navbar-right-menu">
                 <li>v{Version}</li>

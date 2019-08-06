@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="cd-new.svg">
+   sodipodi:docname="cleanify-new.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -86,14 +86,19 @@
        ry="63.499996" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:70.55555725px;line-height:1.25;font-family:Oxygen-Sans;-inkscape-font-specification:'Oxygen-Sans Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f5f5f5;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="69.093445"
-       y="253.15475"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:Oxygen-Sans;-inkscape-font-specification:'Oxygen-Sans Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f5f5f5;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="68.03511"
+       y="223.74818"
        id="text4568"><tspan
          sodipodi:role="line"
-         x="69.093445"
-         y="253.15475"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:70.55555725px;font-family:Oxygen-Sans;-inkscape-font-specification:'Oxygen-Sans Bold';text-align:center;text-anchor:middle;fill:#f5f5f5;fill-opacity:1;stroke-width:0.26458332"
-         id="tspan4570">CD</tspan></text>
+         id="tspan4566"
+         x="68.03511"
+         y="223.74818"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.39999962px;font-family:Oxygen-Sans;-inkscape-font-specification:'Oxygen-Sans Bold';text-align:center;text-anchor:middle;stroke-width:0.26458332;fill:#f5f5f5;fill-opacity:1;">Cleanify</tspan><tspan
+         sodipodi:role="line"
+         x="68.03511"
+         y="255.49818"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.39999962px;font-family:Oxygen-Sans;-inkscape-font-specification:'Oxygen-Sans Bold';text-align:center;text-anchor:middle;stroke-width:0.26458332;fill:#f5f5f5;fill-opacity:1;"
+         id="tspan4570">Design</tspan></text>
   </g>
 </svg>

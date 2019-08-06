@@ -1,4 +1,5 @@
 @mixin formBasis {
+    background-color: $light-color;
     border-radius: $border-size;
     border: 1px #ddd solid;
     padding: .5rem 1rem;
@@ -12,6 +13,7 @@
     &:hover {
         color: $light-color;
         background-color: $primary-color;
+        cursor: pointer;
     }
 }
 
@@ -21,10 +23,6 @@ form {
 
         &:not([type=submit]), &:not([type=reset]), &:not([type=button]) {
             width: 100%;
-        }
-
-        &[type=text], &[type=number], &[type=password] {
-            background-color: $light-color;
         }
 
         &[type=color] {
@@ -55,4 +53,10 @@ button {
     width: 100%;
     @include formBasis();
     @include buttonBasis();
+}
+
+textarea {
+    @include formBasis();
+    padding: 1.5rem;
+    max-width: 100%;
 }

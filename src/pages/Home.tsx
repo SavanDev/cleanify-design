@@ -24,7 +24,6 @@ const Home: React.FC = () => {
                     <h4>HTML5 support</h4>
                     <hr/>
                     <p>Cleanify use tags implemented in HTML5 for better organization and code reading.</p>
-                    <br/>
                     <p><b>Examples:</b> {'<nav>, <section>, <article>'}</p>
                 </article>
                 <article>
@@ -36,7 +35,6 @@ const Home: React.FC = () => {
                     <h4>Mobile ready</h4>
                     <hr/>
                     <p>The design has been adapted for better mobile viewing and anything screen with a responsive style like Bootstrap!</p>
-                    <p><b>Note:</b> Sometimes the new features aren't available or not good implemented in a principle.</p>
                 </article>
             </section>
         </div>

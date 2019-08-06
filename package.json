@@ -1,6 +1,6 @@
 {
   "name": "cleanify-design",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "HTML & CSS personal framework",
   "homepage": "./",
   "repository": "https://github.com/SavanDev/cleanify-design.git",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.20",
+    "@fortawesome/free-brands-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.10.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@types/jest": "24.0.15",

@@ -5,6 +5,14 @@ const Content: React.FC = () => {
     return(
         <section>
             <article>
+                <h2>Dark Mode</h2>
+                <p>Any tag with the id "<b>darkToggle</b>" when pressed will alternate between dark and light mode.</p>
+                <p>In the <b>right-top</b> you have a example of this.</p>
+                <Highlight className="codeSnippet html">
+                    {'<... id="darkToggle"></...>'}
+                </Highlight>
+            </article>
+            <article>
                 <h2>Typography</h2>
                 <article>
                     <h1>h1 header</h1>
@@ -21,14 +29,6 @@ const Content: React.FC = () => {
                     {'<h4>...</h4>'}<br/>
                     {'<h5>...</h5>'}<br/>
                     {'<h6>...</h6>'}
-                </Highlight>
-            </article>
-            <article>
-                <h2>Dark Mode</h2>
-                <p>Any tag with the id "<b>darkToggle</b>" when pressed will alternate between dark and light mode.</p>
-                <p>In the <b>right-top</b> you have a example of this.</p>
-                <Highlight className="codeSnippet html">
-                    {'<... id="darkToggle"></...>'}
                 </Highlight>
             </article>
         </section>

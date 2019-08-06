@@ -5,11 +5,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faAdjust } from '@fortawesome/free-solid-svg-icons';
+import { faAdjust, faDownload, faBook, faLayerGroup, faLaptop, faBox, faBoxes, faGavel } from '@fortawesome/free-solid-svg-icons';
 
 const hashHistory = require('history').createHashHistory({ basename: process.env.PUBLIC_URL });
 
-library.add(faAdjust);
+library.add(faAdjust, faDownload, faBook, faLayerGroup, faLaptop, faBox, faBoxes, faGavel);
 
 ReactDOM.render(
     <Router history={hashHistory} >

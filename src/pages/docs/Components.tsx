@@ -6,90 +6,6 @@ const Components: React.FC = () => {
     return (
         <section>
             <article>
-                <h2>Header</h2>
-                <header>
-                    <img src={logo} alt="Logo" />
-                    <h1>Cleanify Design</h1>
-                    <h2>HTML, CSS & JS personal framework</h2>
-                </header>
-                <br />
-                <Highlight className="codeSnippet html">
-                    {'<header>'}<br />
-                    {'  <img src="IMAGE URL">'}<br />
-                    {'  <h1>...</h1>'}<br />
-                    {'  <h2>...</h2>'}<br />
-                    {'</header>'}
-                </Highlight>
-            </article>
-            <article>
-                <h2>Header with background</h2>
-                <header className="full" data-src="https://source.unsplash.com/X8o-P23flgI">
-                    <h1>Example Title</h1>
-                    <h2>Photo by <a href="https://unsplash.com/@adrienolichon">Adrien Olichon</a> on Unsplash</h2>
-                </header>
-                <br />
-                <Highlight className="codeSnippet html">
-                    {'<header class="full" data-src="IMAGE URL">'}<br />
-                    {'  ...'}<br />
-                    {'</header>'}
-                </Highlight>
-            </article>
-            <article>
-                <h2>Navbar</h2>
-                <article>
-                    <nav>
-                        <a className="navbar-title" href="">Cleanify Example</a>
-                        <ul className="navbar-menu">
-                            <li>Home</li>
-                            <li>Test</li>
-                        </ul>
-                        <ul className="navbar-right-menu">
-                            <li>Right Text</li>
-                        </ul>
-                    </nav>
-                </article>
-                <Highlight className="codeSnippet html">
-                    {'<nav>'}<br/>
-                    {'  <a class="navbar-title" href="URL">...</a>'}<br/>
-                    {'  <ul class="navbar-menu">'}<br/>
-                    {'      <li>...</li>'}<br/>
-                    {'  </ul>'}<br/>
-                    {'  <ul class="navbar-right-menu">'}<br/>
-                    {'      <li>...</li>'}<br/>
-                    {'  </ul>'}<br/>
-                    {'</nav>'}
-                </Highlight>
-            </article>
-            <article>
-                <h2>List</h2>
-                <ul>
-                    <li>Hello World!</li>
-                    <li>Example text</li>
-                    <li>Test 3</li>
-                    <li><a href="#">Link example</a></li>
-                </ul>
-                <br />
-                <Highlight className="codeSnippet html">
-                    {'<ul>'}<br />
-                    {'  <li>...</li>'}<br />
-                    {'</ul>'}
-                </Highlight>
-            </article>
-            <article>
-                <h2>Inline list</h2>
-                <p>* Not visible in mobiles</p>
-                <ol>
-                    <li>Home</li>
-                    <li><a href="#">Download</a></li>
-                    <li>Documentation</li>
-                </ol>
-                <Highlight className="codeSnippet html">
-                    {'<ol>'}<br />
-                    {'  <li>...</li>'}<br />
-                    {'</ol>'}
-                </Highlight>
-            </article>
-            <article>
                 <h2>Forms</h2>
                 <article>
                     <form>
@@ -109,10 +25,13 @@ const Components: React.FC = () => {
                         <input type="file" />
                         <p>Color</p>
                         <input type="color" />
+                        <p>Textarea</p>
+                        <textarea cols={30} rows={10}>Text Example</textarea>
                         <hr/>
                         <Highlight className="codeSnippet html">
                             {'<p>...</p>'}<br/>
-                            {'<input type="..." placeholder="..." />'}
+                            {'<input type="..." placeholder="..." />'}<br/>
+                            {'<textarea cols="..." rows="..."></textarea>'}
                         </Highlight>
                     </form>
                 </article>
@@ -170,6 +89,117 @@ const Components: React.FC = () => {
                         </Highlight>
                     </form>
                 </article>
+            </article>
+            <article>
+                <h2>Footer</h2>
+                <article>
+                    <footer>
+                        <small>Footer without links</small>
+                    </footer>
+                    <footer>
+                        <small>SavanDev - MIT License</small>
+                        <ol>
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                        </ol>
+                    </footer>
+                </article>
+                <Highlight className="codeSnippet html">
+                    {'<footer>'}<br/>
+                    {'  <small>...</small>'}<br/>
+                    {'</footer>'}<br/>
+                    <br/>
+                    {'<footer>'}<br/>
+                    {'  <small>...</small>'}<br/>
+                    {'  <ol>'}<br/>
+                    {'      <li>...</li>'}<br/>
+                    {'  </ol>'}<br/>
+                    {'</footer>'}
+                </Highlight>
+            </article>
+            <article>
+                <h2>Header</h2>
+                <header>
+                    <img src={logo} alt="Logo" />
+                    <h1>Cleanify Design</h1>
+                    <h2>HTML, CSS & JS personal framework</h2>
+                </header>
+                <br />
+                <Highlight className="codeSnippet html">
+                    {'<header>'}<br />
+                    {'  <img src="IMAGE URL">'}<br />
+                    {'  <h1>...</h1>'}<br />
+                    {'  <h2>...</h2>'}<br />
+                    {'</header>'}
+                </Highlight>
+            </article>
+            <article>
+                <h2>Header with background</h2>
+                <header className="full" data-src="https://source.unsplash.com/X8o-P23flgI">
+                    <h1>Example Title</h1>
+                    <h2>Photo by <a href="https://unsplash.com/@adrienolichon">Adrien Olichon</a> on Unsplash</h2>
+                </header>
+                <br />
+                <Highlight className="codeSnippet html">
+                    {'<header class="full" data-src="IMAGE URL">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+            </article>
+            <article>
+                <h2>Inline list</h2>
+                <p>* Not visible in mobiles</p>
+                <ol>
+                    <li>Home</li>
+                    <li><a href="#">Download</a></li>
+                    <li>Documentation</li>
+                </ol>
+                <Highlight className="codeSnippet html">
+                    {'<ol>'}<br />
+                    {'  <li>...</li>'}<br />
+                    {'</ol>'}
+                </Highlight>
+            </article>
+            <article>
+                <h2>List</h2>
+                <ul>
+                    <li>Hello World!</li>
+                    <li>Example text</li>
+                    <li>Test 3</li>
+                    <li><a href="#">Link example</a></li>
+                </ul>
+                <br />
+                <Highlight className="codeSnippet html">
+                    {'<ul>'}<br />
+                    {'  <li>...</li>'}<br />
+                    {'</ul>'}
+                </Highlight>
+            </article>
+            <article>
+                <h2>Navbar</h2>
+                <article>
+                    <nav>
+                        <a className="navbar-title" href="">Cleanify Example</a>
+                        <ul className="navbar-menu">
+                            <li>Home</li>
+                            <li>Test</li>
+                        </ul>
+                        <ul className="navbar-right-menu">
+                            <li>Right Text</li>
+                        </ul>
+                    </nav>
+                </article>
+                <Highlight className="codeSnippet html">
+                    {'<nav>'}<br/>
+                    {'  <a class="navbar-title" href="URL">...</a>'}<br/>
+                    {'  <ul class="navbar-menu">'}<br/>
+                    {'      <li>...</li>'}<br/>
+                    {'  </ul>'}<br/>
+                    {'  <ul class="navbar-right-menu">'}<br/>
+                    {'      <li>...</li>'}<br/>
+                    {'  </ul>'}<br/>
+                    {'</nav>'}
+                </Highlight>
             </article>
         </section>
     );

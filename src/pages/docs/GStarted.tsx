@@ -7,7 +7,7 @@ const GStarted: React.FC = () => {
             <article>
                 <h2>Download latest version</h2>
                 <hr/>
-                <h4>Version 0.7: <a href="https://github.com/SavanDev/cleanify-design/releases">GitHub Releases</a></h4>
+                <h4>Version 0.8: <a href="https://github.com/SavanDev/cleanify-design/releases">GitHub Releases</a></h4>
                 <hr/>
                 <p>You can download the latest version from GitHub.</p>
             </article>

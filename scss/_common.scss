@@ -37,7 +37,26 @@ article {
 
 footer {
     text-align: center;
-    margin: 1.5rem
+    margin: 1.5rem;
+
+    @media screen and (min-width: 1000px) {
+        @include make-container();
+        display: flex;
+        flex-wrap: wrap;
+
+        > * {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        small {
+            margin: 1rem;
+        }
+
+        ol {
+            margin: 0;
+        }
+    }
 }
 
 a {
@@ -103,4 +122,5 @@ pre {
 // Dark Toggle button style
 #darkToggle:hover {
     color: $primary-color;
+    cursor: pointer;
 }
