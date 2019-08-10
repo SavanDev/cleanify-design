@@ -2,7 +2,6 @@
   "name": "cleanify-design",
   "version": "0.8.0",
   "description": "HTML & CSS personal framework",
-  "homepage": "./",
   "repository": "https://github.com/SavanDev/cleanify-design.git",
   "author": "SavanDev <Dylan2018.2019@gmail.com>",
   "license": "MIT",
@@ -38,7 +37,7 @@
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "2.0.1",
     "grunt": "^1.0.4",
     "grunt-babel": "^8.0.0",
     "grunt-contrib-clean": "^2.0.0",
