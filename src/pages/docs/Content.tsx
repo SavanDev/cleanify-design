@@ -5,6 +5,13 @@ const Content: React.FC = () => {
     return(
         <section>
             <article>
+                <h2>Navigation Header</h2>
+                <h1 id="headerTitle" style={{ borderRadius: '3.5rem' }}>Navigation header</h1>
+                <Highlight className="codeSnippet html">
+                    {'<h1 id="headerTitle">...</h1>'}
+                </Highlight>
+            </article>
+            <article>
                 <h2>Dark Mode</h2>
                 <p>Any tag with the id "<b>darkToggle</b>" when pressed will alternate between dark and light mode.</p>
                 <p>In the <b>right-top</b> you have a example of this.</p>

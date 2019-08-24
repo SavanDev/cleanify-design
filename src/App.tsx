@@ -7,12 +7,14 @@ import Home from './pages/Home';
 import Docs from './pages/Docs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import Download from './pages/Download';
 
 const App: React.FC = () => {
   return (
     <div id="app">
-      <Navbar Version="0.8" />
+      <Navbar/>
       <Switch>
+        <Route path="/download" component={Download} />
         <Route path="/docs" component={Docs} />
         <Route component={Home} />
       </Switch>
