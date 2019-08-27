@@ -1,6 +1,6 @@
 {
   "name": "cleanify-design",
-  "version": "0.8.2",
+  "version": "1.0.0",
   "description": "HTML & CSS personal framework",
   "homepage": "./",
   "repository": "https://github.com/SavanDev/cleanify-design.git",
@@ -12,7 +12,6 @@
     "docs-watch": "react-scripts start",
     "dist": "grunt dist",
     "build": "react-scripts build",
-    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {

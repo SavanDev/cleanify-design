@@ -1,0 +1,7 @@
+Preparations for v1.0:
+
+[ ] Rewrite Javascript code to TypeScript completely.
+[ ] Use Gulp instead Grunt.
+[ ] Header gradients.
+[ ] Remove Header background style.
+[ ] Header titles.
