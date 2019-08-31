@@ -1,18 +1,18 @@
 {
   "name": "cleanify-design",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "HTML & CSS personal framework",
   "homepage": "./",
   "repository": "https://github.com/SavanDev/cleanify-design.git",
   "author": "SavanDev <Dylan2018.2019@gmail.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
-    "start": "grunt",
-    "docs-css": "sass scss:public/css",
+    "dist": "gulp",
+    "docs-build": "react-scripts build",
+    "docs-deploy": "gh-pages -d build",
     "docs-watch": "react-scripts start",
-    "dist": "grunt dist",
-    "build": "react-scripts build",
-    "deploy": "gh-pages -d build"
+    "start": "gulp watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.20",
@@ -38,14 +38,11 @@
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
     "gh-pages": "2.0.1",
-    "grunt": "^1.0.4",
-    "grunt-babel": "^8.0.0",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^4.0.1",
-    "grunt-contrib-watch": "^1.1.0"
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^4.0.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-stream": "^5.2.1"
   },
   "eslintConfig": {
     "extends": "react-app"

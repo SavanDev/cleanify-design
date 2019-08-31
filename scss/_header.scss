@@ -1,3 +1,14 @@
+@mixin gradientBase {
+    h1 {
+        display: table;
+        background-color: rgba($color: $background-color, $alpha: 0.7);
+        padding: 0.75rem;
+        border-radius: $border-size;
+    }
+}
+
+$gradientColors: $primary-color, $secondary-color, $dark-color, $light-color, $gray-color;
+
 header {
     @include make-container();
     background-color: $background-color;
@@ -46,15 +57,10 @@ header {
         clear: both;
     }
 
-    &.full {
-        background-size: cover;
-        min-height: 256px;
-
-        h1 {
-            display: table;
-            background-color: rgba($color: $background-color, $alpha: 0.7);
-            padding: 0.75rem;
-            border-radius: $border-size;
+    @for $i from 1 through 5 {
+        &.gradient-#{$i} {
+            background-image: linear-gradient(to bottom right, nth($gradientColors, $i), darken(nth($gradientColors, $i), 25));
+            @include gradientBase();
         }
     }
 }
@@ -66,4 +72,5 @@ header {
     background-color: $background-color;
     position: sticky;
     top: 0;
+    margin: 1.5rem -5rem;
 }

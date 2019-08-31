@@ -6,7 +6,7 @@ const Content: React.FC = () => {
         <section>
             <article>
                 <h2>Navigation Header</h2>
-                <h1 id="headerTitle" style={{ borderRadius: '3.5rem' }}>Navigation header</h1>
+                <h1 id="headerTitle">Navigation header</h1>
                 <Highlight className="codeSnippet html">
                     {'<h1 id="headerTitle">...</h1>'}
                 </Highlight>
@@ -18,6 +18,7 @@ const Content: React.FC = () => {
                 <Highlight className="codeSnippet html">
                     {'<... id="darkToggle"></...>'}
                 </Highlight>
+                <p><b>NOTE:</b> This work with only one time per page and uses <b>cookies</b> for a persistent change after reload.</p>
             </article>
             <article>
                 <h2>Typography</h2>

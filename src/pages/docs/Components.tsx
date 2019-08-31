@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../img/logo.svg';
 import Highlight from 'react-highlight';
+import { Link } from 'react-router-dom';
 
 const Components: React.FC = () => {
     return (
@@ -25,6 +26,12 @@ const Components: React.FC = () => {
                         <input type="file" />
                         <p>Color</p>
                         <input type="color" />
+                        <p>Select</p>
+                        <select>
+                            <option>Test 1</option>
+                            <option>Test 2</option>
+                            <option>Test 3</option>
+                        </select>
                         <p>Textarea</p>
                         <textarea cols={30} rows={10}>Text Example</textarea>
                         <hr/>
@@ -134,14 +141,53 @@ const Components: React.FC = () => {
                 </Highlight>
             </article>
             <article>
-                <h2>Header with background</h2>
-                <header className="full" data-src="https://source.unsplash.com/X8o-P23flgI">
+                <h2>Header gradients</h2>
+                <header className="gradient-1" >
                     <h1>Example Title</h1>
-                    <h2>Photo by <a href="https://unsplash.com/@adrienolichon">Adrien Olichon</a> on Unsplash</h2>
                 </header>
                 <br />
                 <Highlight className="codeSnippet html">
-                    {'<header class="full" data-src="IMAGE URL">'}<br />
+                    {'<header class="gradient-1">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+                <br/>
+                <header className="gradient-2">
+                    <h1>Example Title</h1>
+                </header>
+                <br />
+                <Highlight className="codeSnippet html">
+                    {'<header class="gradient-2">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+                <br/>
+                <header className="gradient-3">
+                    <h1>Example Title</h1>
+                </header>
+                <br />
+                <Highlight className="codeSnippet html">
+                    {'<header class="gradient-3">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+                <br/>
+                <header className="gradient-4">
+                    <h1>Example Title</h1>
+                </header>
+                <br />
+                <Highlight className="codeSnippet html">
+                    {'<header class="gradient-4">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+                <br/>
+                <header className="gradient-5">
+                    <h1>Example Title</h1>
+                </header>
+                <br />
+                <Highlight className="codeSnippet html">
+                    {'<header class="gradient-5">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
@@ -151,7 +197,7 @@ const Components: React.FC = () => {
                 <p>* Not visible in mobiles</p>
                 <ol>
                     <li>Home</li>
-                    <li><a href="#">Download</a></li>
+                    <li><Link to="/docs/components">Download</Link></li>
                     <li>Documentation</li>
                 </ol>
                 <Highlight className="codeSnippet html">
@@ -166,7 +212,7 @@ const Components: React.FC = () => {
                     <li>Hello World!</li>
                     <li>Example text</li>
                     <li>Test 3</li>
-                    <li><a href="#">Link example</a></li>
+                    <li><Link to="/docs/components">Link example</Link></li>
                 </ul>
                 <br />
                 <Highlight className="codeSnippet html">
@@ -179,7 +225,7 @@ const Components: React.FC = () => {
                 <h2>Navbar</h2>
                 <article>
                     <nav>
-                        <a className="navbar-title" href="">Cleanify Example</a>
+                        <Link to="/docs/components" className="navbar-title">Cleanify Example</Link>
                         <ul className="navbar-menu">
                             <li>Home</li>
                             <li>Test</li>

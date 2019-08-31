@@ -47,6 +47,11 @@ form {
             @include make-col();
         }
     }
+
+    select {
+        @include formBasis();
+        width: 100%;
+    }
 }
 
 button {

@@ -1,39 +1,29 @@
-var lightModeCSS = "./css/cleanify.css";
-var darkModeCSS = "./css/cleanify-dark.css";
+import Style from './modules/style';
+import { Observer } from './modules/observer';
+import { getCookie } from './modules/cookies';
 
-let darkToggle;
+let observerEnable = true;
+let switchStyles = true;
 
-const darkmode = () => {
-    if (darkToggle) {
-        document.getElementById('cleanifyCss').setAttribute('href', lightModeCSS);
-    } else {
-        document.getElementById('cleanifyCss').setAttribute('href', darkModeCSS);
-    }
+let styleCss = new Style();
 
-    darkToggle = !darkToggle;
-};
-
-const dynamicChanges = () => {
-    let darkToggle = document.getElementById("darkToggle");
-    let fullHeader = document.getElementsByClassName("full");
-
-    darkToggle.addEventListener("click", darkmode);
-    for (let index = 0; index < fullHeader.length; index++) {
-        const element = fullHeader[index];
-        element.style.backgroundImage = "url(" + element.getAttribute("data-src") + ")";
-    }
+window.onscroll = () => {
+    styleCss.handleHeaderTitle(100);
 }
 
-window.onload = () => {
-    dynamicChanges();
+if(observerEnable)
+    Observer(() => {
+        styleCss.handleDarkButton();
+        styleCss.handleHeaderTitle(100);
+        console.log("Changes detected in DOM");
+    });
+
+if(switchStyles) {
+    window.onload = () => {
+        styleCss.handleDarkButton();
+    }
+
+    if(getCookie("darkmode") != null) {
+        styleCss.checkDarkMode();
+    }
 }
-
-let mutationObserver = new MutationObserver((mutations) => {
-    dynamicChanges();
-});
-
-// Starts listening for changes in the root HTML element of the page.
-mutationObserver.observe(document.documentElement, {
-    childList: true,
-    subtree: true
-});

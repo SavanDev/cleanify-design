@@ -1,4 +1,4 @@
-const Observer = (changes : MutationCallback) => {
+export const Observer = (changes) => {
     let mutationObserver = new MutationObserver(changes);
 
     mutationObserver.observe(document.documentElement, {
@@ -6,5 +6,3 @@ const Observer = (changes : MutationCallback) => {
         subtree: true
     });
 }
-
-export default Observer;

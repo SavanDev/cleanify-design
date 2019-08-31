@@ -9,6 +9,7 @@ const Download: React.FC = () => {
             .then(response => response.json())
             .then(json => {
                 let version = json[0];
+                json.shift();
                 ReactDOM.render(
                 <article>
                     <h4>{version.name}</h4>
@@ -19,6 +20,12 @@ const Download: React.FC = () => {
                     </ol>
                 </article>,
                 document.getElementById("latest"));
+                ReactDOM.render(
+                    json.map((element) => 
+                        <li><a href={element.html_url} title={element.body}>{element.name}</a></li>
+                        ),
+                    document.getElementById('older')
+                );
             });
     })();
 
@@ -28,8 +35,12 @@ const Download: React.FC = () => {
             <article>
                 <h2>Latest version</h2>
                 <div id="latest">
-                    <h4>Loading...</h4>
+                    <p>Loading latest version...</p>
                 </div>
+                <h3>Other versions</h3>
+                <ul id="older">
+                    <li>Loading older versions...</li>
+                </ul>
             </article>
         </section>
     );
