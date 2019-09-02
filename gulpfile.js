@@ -11,15 +11,15 @@ function compileJS() {
                 filename: 'cleanify.js'
             }
         }))
-        .pipe(dest('./dist'))
-        .pipe(dest('./public/cleanify'));
+        .pipe(dest('./dist/js'))
+        .pipe(dest('./public/js'));
 }
 
 function compileCSS() {
     return src('./scss/**/*.scss')
         .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(dest('./dist'))
-        .pipe(dest('./public/cleanify'));
+        .pipe(dest('./dist/css'))
+        .pipe(dest('./public/css'));
 }
 
 function cleanDist() {
@@ -28,7 +28,7 @@ function cleanDist() {
 }
 
 function cleanDocs() {
-    return src('./public/cleanify/*')
+    return src(['./public/css/*', './public/js/*'])
         .pipe(clean());
 }
 

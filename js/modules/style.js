@@ -1,7 +1,7 @@
 import { setCookie, getCookie } from './cookies';
 
 export default class Style {
-    constructor(location = "./cleanify") {
+    constructor(location = "./css") {
         this.directoryCSS = location;
     }
 

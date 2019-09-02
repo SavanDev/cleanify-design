@@ -18,8 +18,7 @@ header {
     padding: 1.5rem;
 
     img {
-        max-width: 256px;
-        max-height: 256px;
+        max-width: 100%;
     }
 
     h1 {
@@ -44,6 +43,8 @@ header {
 
         img {
             float: left;
+            max-width: 256px;
+            max-height: 256px;
         }
 
         h1 {

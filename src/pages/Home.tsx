@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../img/logo.svg';
+import version from '../../package.json';
 
 const Home: React.FC = () => {
     return(
@@ -7,7 +8,7 @@ const Home: React.FC = () => {
             <header>
                 <img src={logo} alt="Logo" />
                 <h1>Cleanify Design</h1>
-                <h2>HTML, CSS & JS personal framework</h2>
+                <h2>{version.description}</h2>
             </header>
             <section>
                 <article>
