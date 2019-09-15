@@ -21,7 +21,7 @@ const Download: React.FC = () => {
                 </article>,
                 document.getElementById("latest"));
                 ReactDOM.render(
-                    json.map((element) => 
+                    json.map((element: any) => 
                         <li><a href={element.html_url} title={element.body}>{element.name}</a></li>
                         ),
                     document.getElementById('older')

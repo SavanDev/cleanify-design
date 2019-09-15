@@ -34,12 +34,12 @@ yarn start
 
 Watch docs
 ```
-yarn run docs-watch
+yarn run docs:watch
 ```
 
 Compile docs
 ```
-yarn run docs-build
+yarn run docs:build
 ```
 
 ---
