@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 const Components: React.FC = () => {
     return (
-        <section>
-            <article>
+        <article>
+            <section>
                 <h2>Forms</h2>
-                <article>
+                <section>
                     <form>
                         <h4>Common inputs</h4>
                         <hr/>
@@ -41,8 +41,8 @@ const Components: React.FC = () => {
                             {'<textarea cols="..." rows="..."></textarea>'}
                         </Highlight>
                     </form>
-                </article>
-                <article>
+                </section>
+                <section>
                     <form>
                         <h4>Form groups</h4>
                         <hr/>
@@ -65,8 +65,8 @@ const Components: React.FC = () => {
                             {'</div>'}
                         </Highlight>
                     </form>
-                </article>
-                <article>
+                </section>
+                <section>
                     <form>
                         <h4>Checkbox & Radio</h4>
                         <hr/>
@@ -80,8 +80,8 @@ const Components: React.FC = () => {
                             {'<label for="...">...</label>'}
                         </Highlight>
                     </form>
-                </article>
-                <article>
+                </section>
+                <section>
                     <form>
                         <h4>Buttons</h4>
                         <hr/>
@@ -95,11 +95,11 @@ const Components: React.FC = () => {
                             {'<button>...</button>'}
                         </Highlight>
                     </form>
-                </article>
-            </article>
-            <article>
+                </section>
+            </section>
+            <section>
                 <h2>Footer</h2>
-                <article>
+                <section>
                     <footer>
                         <small>Footer without links</small>
                     </footer>
@@ -110,7 +110,7 @@ const Components: React.FC = () => {
                             <li>Link 2</li>
                         </ol>
                     </footer>
-                </article>
+                </section>
                 <Highlight className="codeSnippet html">
                     {'<footer>'}<br/>
                     {'  <small>...</small>'}<br/>
@@ -123,8 +123,8 @@ const Components: React.FC = () => {
                     {'  </ol>'}<br/>
                     {'</footer>'}
                 </Highlight>
-            </article>
-            <article>
+            </section>
+            <section>
                 <h2>Header</h2>
                 <header>
                     <img src={logo} alt="Logo" />
@@ -139,8 +139,8 @@ const Components: React.FC = () => {
                     {'  <h2>...</h2>'}<br />
                     {'</header>'}
                 </Highlight>
-            </article>
-            <article>
+            </section>
+            <section>
                 <h2>Header gradients</h2>
                 <header className="gradient-1" >
                     <h1>Example Title</h1>
@@ -191,8 +191,8 @@ const Components: React.FC = () => {
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-            </article>
-            <article>
+            </section>
+            <section>
                 <h2>Inline list</h2>
                 <p>* Not visible in mobiles</p>
                 <ol>
@@ -205,8 +205,8 @@ const Components: React.FC = () => {
                     {'  <li>...</li>'}<br />
                     {'</ol>'}
                 </Highlight>
-            </article>
-            <article>
+            </section>
+            <section>
                 <h2>List</h2>
                 <ul>
                     <li>Hello World!</li>
@@ -220,10 +220,10 @@ const Components: React.FC = () => {
                     {'  <li>...</li>'}<br />
                     {'</ul>'}
                 </Highlight>
-            </article>
-            <article>
+            </section>
+            <section>
                 <h2>Navbar</h2>
-                <article>
+                <section>
                     <nav>
                         <Link to="/docs/components" className="navbar-title">Cleanify Example</Link>
                         <ul className="navbar-menu">
@@ -234,7 +234,7 @@ const Components: React.FC = () => {
                             <li>Right Text</li>
                         </ul>
                     </nav>
-                </article>
+                </section>
                 <Highlight className="codeSnippet html">
                     {'<nav>'}<br/>
                     {'  <a class="navbar-title" href="URL">...</a>'}<br/>
@@ -246,8 +246,8 @@ const Components: React.FC = () => {
                     {'  </ul>'}<br/>
                     {'</nav>'}
                 </Highlight>
-            </article>
-        </section>
+            </section>
+        </article>
     );
 }
 

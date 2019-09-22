@@ -6,14 +6,14 @@ body {
     color: $text-color;
 }
 
-section {
+article {
     @include make-container();
 
     // Grid system
     &[class="grid"] {
         @include make-row();
 
-        > article {
+        > section {
             @include make-col();
         }
     }
@@ -23,7 +23,7 @@ section {
     }
 }
 
-article {
+section {
     background-color: $container-color;
     border-radius: $border-size;
     border: 1px solid #ddd;
