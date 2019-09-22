@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const GStarted: React.FC = () => {
     return (
-        <section>
-            <article>
+        <article>
+            <section>
                 <h2>Let's start!</h2>
                 <p>Once the files have been <Link to="/download">downloaded</Link>, the directory should look like this.</p>
-                <article>
+                <section>
                     <pre style={{ margin: 5 }}>
                         {'website'}<br/>
                         {'--> css'}<br/>
@@ -18,7 +18,7 @@ const GStarted: React.FC = () => {
                         {'-----> cleanify.js'}<br/>
                         {'--> index.html'}
                     </pre>
-                </article>
+                </section>
                 <h4>Starter template</h4>
                 <Highlight className="codeSnippet html">
                     {'<!DOCTYPE html>'}<br />
@@ -35,8 +35,8 @@ const GStarted: React.FC = () => {
                     {'</body>'}<br />
                     {'</html>'}<br />
                 </Highlight>
-            </article>
-        </section>
+            </section>
+        </article>
     );
 }
 

@@ -3,32 +3,32 @@ import Highlight from 'react-highlight';
 
 const Layout: React.FC = () => {
     return(
-        <section>
-            <article>
+        <article>
+            <section>
                 <h2>Bubble</h2>
                 <div id="containerExample">
                 </div>
                 <Highlight className="codeSnippet html">
-                    {'<section>'}<br/>
-                    {'  <article>'}<br/>
+                    {'<article>'}<br/>
+                    {'  <section>'}<br/>
                     {'      ...'}<br/>
-                    {'  </article>'}<br/>
-                    {'</section>'}
+                    {'  </section>'}<br/>
+                    {'</article>'}
                 </Highlight>
-            </article>
-            <article>
+            </section>
+            <section>
                 <h2>Bubble fluid</h2>
                 <div id="containerFluidExample">
                 </div>
                 <Highlight className="codeSnippet html">
-                    {'<section class="fluid">'}<br/>
-                    {'  <article>'}<br/>
+                    {'<article class="fluid">'}<br/>
+                    {'  <section>'}<br/>
                     {'      ...'}<br/>
-                    {'  </article>'}<br/>
-                    {'</section>'}
+                    {'  </section>'}<br/>
+                    {'</article>'}
                 </Highlight>
-            </article>
-            <article>
+            </section>
+            <section>
                 <h2>Grid system</h2>
                 <p>Based in Bootstrap Grids principles</p>
                 <div className="gridExample">
@@ -37,12 +37,12 @@ const Layout: React.FC = () => {
                     <div></div>
                 </div>
                 <Highlight className="codeSnippet html">
-                    {'<section class="grid">'}<br/>
-                    {'  <article>...</article>'}<br/>
-                    {'</section>'}
+                    {'<article class="grid">'}<br/>
+                    {'  <section>...</section>'}<br/>
+                    {'</article>'}
                 </Highlight>
-            </article>
-        </section>
+            </section>
+        </article>
     );
 }
 

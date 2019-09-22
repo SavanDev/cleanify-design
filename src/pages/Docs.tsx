@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Docs: React.FC = () => {
     return(
-        <section>
+        <article>
             <ol>
                 <li><Link to="/docs"><FontAwesomeIcon icon="laptop" /> Getting Started</Link></li>
                 <li><Link to="/docs/layout"><FontAwesomeIcon icon="layer-group" /> Layout</Link></li>
@@ -21,7 +21,7 @@ const Docs: React.FC = () => {
                 <Route path="/docs/components" component={Components} />
                 <Route component={GStarted} />
             </Switch>
-        </section>
+        </article>
     );
 }
 
