@@ -35,11 +35,9 @@ export default class Style {
             let scrollValue = document.documentElement.scrollTop;
 
             if(scrollValue < max) {
-                title.style.fontSize = 3.5 + -(scrollValue/max * 2) + 'rem';
-                title.style.padding = 5 + -(scrollValue/max * 4) + 'rem';
+                title.style.opacity = 1 - (scrollValue/max);
             } else {
-                title.style.fontSize = '1.5rem';
-                title.style.padding = '1rem';
+                title.style.opacity = 0;
             }
         }
     }

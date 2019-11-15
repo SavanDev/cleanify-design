@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <Route component={Home} />
       </Switch>
       <footer>
-        <small>SavanDev - {new Date().getFullYear()}</small>
+        <small>SavanDev - 2019 / {new Date().getFullYear()}</small>
         <ol>
           <li><a href="https://github.com/SavanDev/cleanify-design/blob/master/LICENSE"><FontAwesomeIcon icon="gavel" /> MIT License</a></li>
           <li><a href="https://github.com/SavanDev/cleanify-design"><FontAwesomeIcon icon={faGithub} /> GitHub</a></li>

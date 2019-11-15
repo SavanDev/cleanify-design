@@ -1,18 +1,57 @@
+@mixin menuMobile {
+    padding: 0;
+
+    *:hover {
+        background-color: $gray-color;
+        color: white !important;
+    }
+
+    > li {
+        display: block;
+        padding: 1rem;
+
+        /* Bottom Borders */
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: $lightgray-color;
+
+        a {
+            display: block;
+            
+            /* TODO: Find another way for links in menu */
+            margin: -1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+@mixin menuDesktop {
+    padding: 1rem;
+
+    > li {
+        display: inline-block;
+
+        &:not(:last-child) {
+            padding-right: 1rem;
+        }
+    }
+}
+
 nav {
-    padding: 1.5rem;
-    margin: .5rem;
     @include font-size(.9rem);
     text-transform: uppercase;
+    position: sticky;
+    top: 0;
 
     .navbar-title, .navbar-menu {
-        display: inline;
+        display: inline-block;
     }
 
     .navbar-title {
         background-color: $primary-color;
         padding: 1rem;
         color: $light-color !important;
-        border-radius: $border-size;
+        border-radius: 0 0 $border-size 0;
 
         &:hover {
             background-color: $secondary-color;
@@ -20,40 +59,63 @@ nav {
     }
 
     .navbar-menu {
-        padding-left: 1.5rem;
+        @include menuDesktop();
+
+        background-color: rgba($background-color, $alpha: 0.7);
 
         > li {
-            display: inline-block;
             color: $text-color;
-            padding-right: 1rem;
         }
     }
 
     .navbar-right-menu {
-        @extend .navbar-menu;
+        @include menuDesktop();
+
+        background-color: $secondary-color;
         float: right;
+        border-radius: 0 0 0 $border-size;
+
+        > li, a {
+            color: white;
+        }
+    }
+
+    svg {
+        margin-right: .25rem;
+    }
+
+    // Dark Toggle button style
+    #darkToggle:hover {
+        color: $lightgray-color;
+        cursor: pointer;
     }
 
     @media screen and (max-width: 1000px) {
-        margin: .25rem;
+        position: initial;
+        text-align: center;
 
         .navbar-title, .navbar-menu {
             display: block;
-            text-align: center;
+            border-radius: 0;
+        }
+
+        .navbar-title {
+            position: sticky;
+            top: 0;
         }
 
         .navbar-menu {
-            padding: 0;
-            margin-top: .5rem;
-
-            > li {
-                display: block;
-                padding: .3rem;
-            }
+            @include menuMobile();
         }
 
         .navbar-right-menu {
+            @include menuMobile();
             float: none;
+            background-color: rgba($background-color, $alpha: 0.7);
+
+            > li, a {
+                color: $text-color;
+            }
         }
 
         #darkToggle::after {

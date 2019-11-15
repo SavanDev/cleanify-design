@@ -8,7 +8,7 @@ let switchStyles = true;
 let styleCss = new Style();
 
 window.onscroll = () => {
-    styleCss.handleHeaderTitle(50);
+    styleCss.handleHeaderTitle(100);
 }
 
 if(observerEnable)
