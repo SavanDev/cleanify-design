@@ -10,7 +10,7 @@
 $gradientColors: $primary-color, $secondary-color, $dark-color, $light-color, $gray-color;
 
 header {
-    @include make-container();
+    @include init-container();
     background-color: $background-color;
     border-radius: $border-size;
     border-style: none;

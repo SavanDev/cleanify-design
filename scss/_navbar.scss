@@ -25,11 +25,15 @@
     }
 }
 
-@mixin menuDesktop {
+@mixin menuDesktop($right: false) {
     padding: 1rem;
 
     > li {
         display: inline-block;
+
+        @if $right {
+            color: white;
+        }
 
         &:not(:last-child) {
             padding-right: 1rem;
@@ -38,20 +42,18 @@
 }
 
 nav {
+    background-color: rgba($background-color, $alpha: 0.7);
     @include font-size(.9rem);
     text-transform: uppercase;
     position: sticky;
     top: 0;
 
-    .navbar-title, .navbar-menu {
-        display: inline-block;
-    }
-
     .navbar-title {
+        display: inline-block;
         background-color: $primary-color;
-        padding: 1rem;
         color: $light-color !important;
         border-radius: 0 0 $border-size 0;
+        padding: 1rem;
 
         &:hover {
             background-color: $secondary-color;
@@ -59,9 +61,8 @@ nav {
     }
 
     .navbar-menu {
+        display: inline-block;
         @include menuDesktop();
-
-        background-color: rgba($background-color, $alpha: 0.7);
 
         > li {
             color: $text-color;
@@ -69,15 +70,11 @@ nav {
     }
 
     .navbar-right-menu {
-        @include menuDesktop();
-
-        background-color: $secondary-color;
         float: right;
+        background-color: $secondary-color;
         border-radius: 0 0 0 $border-size;
 
-        > li, a {
-            color: white;
-        }
+        @include menuDesktop(true);
     }
 
     svg {

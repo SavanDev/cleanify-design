@@ -11,7 +11,6 @@ const Components: React.FC = () => {
                 <section>
                     <form>
                         <h4>Common inputs</h4>
-                        <hr/>
                         <p>Text</p>
                         <input type="text" placeholder="Text" />
                         <p>Number</p>
@@ -34,7 +33,6 @@ const Components: React.FC = () => {
                         </select>
                         <p>Textarea</p>
                         <textarea cols={30} rows={10}>Text Example</textarea>
-                        <hr/>
                         <Highlight className="codeSnippet html">
                             {'<p>...</p>'}<br/>
                             {'<input type="..." placeholder="..." />'}<br/>
@@ -45,7 +43,6 @@ const Components: React.FC = () => {
                 <section>
                     <form>
                         <h4>Form groups</h4>
-                        <hr/>
                         <div className="group">
                             <fieldset>
                                 <p>Group Text</p>
@@ -56,7 +53,6 @@ const Components: React.FC = () => {
                                 <input type="date" />
                             </fieldset>
                         </div>
-                        <hr/>
                         <Highlight className="codeSnippet html">
                             {'<div class="group">'}<br/>
                             {'  <fieldset>'}<br/>
@@ -69,12 +65,10 @@ const Components: React.FC = () => {
                 <section>
                     <form>
                         <h4>Checkbox & Radio</h4>
-                        <hr/>
                         <input type="checkbox" id="checkTest" />
                         <label htmlFor="checkTest">Checkbox</label>
                         <input type="radio" id="radioTest" />
                         <label htmlFor="radioTest">Radio</label>
-                        <hr/>
                         <Highlight className="codeSnippet html">
                             {'<input type="checkbox/radio" id="..." />'}<br/>
                             {'<label for="...">...</label>'}
@@ -89,7 +83,6 @@ const Components: React.FC = () => {
                         <input type="submit" value="Submit"/>
                         <input type="reset" value="Reset"/>
                         <button>Button tag</button>
-                        <hr/>
                         <Highlight className="codeSnippet html">
                             {'<input type="button/submit/reset" value="..." />'}<br/>
                             {'<button>...</button>'}
@@ -104,7 +97,7 @@ const Components: React.FC = () => {
                         <small>Footer without links</small>
                     </footer>
                     <footer>
-                        <small>SavanDev - MIT License</small>
+                        <small>Footer with links</small>
                         <ol>
                             <li>Link 1</li>
                             <li>Link 2</li>

@@ -1,16 +1,16 @@
 @import "reset";
+
+// Modules
 @import "../node_modules/rfs/scss";
 
-// Bootstrap functions & mixins
-@import "functions";
-@import "mixins/breakpoints";
-@import "mixins/grid"; // Modified grid system
+// Mixin
+@import "./mixins/container";
 
+// Design
 @import "variables";
 @import "colors";
 @import "common";
 @import "navbar";
 @import "header";
-@import "forms";
+//@import "forms";
 @import "lists";
-@import "grid";
