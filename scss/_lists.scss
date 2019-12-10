@@ -1,8 +1,10 @@
+// TODO: Fix lists
 ol {
   background-color: $lightgray-color;
   border-radius: $border-size;
   color: $dark-color;
-  margin: 1rem auto;
+  list-style: none;
+  margin: 1rem;
   overflow: hidden;
 
   > li {
@@ -38,7 +40,7 @@ ol {
 
 section, article {
   > ul {
-    background-color: darken($container-color, $amount: 5);
+    background-color: getColor(listP);
     border-radius: $border-size;
     overflow: hidden;
 
@@ -46,11 +48,10 @@ section, article {
       padding: 1.5rem;
 
       &:nth-child(odd) {
-        background-color: darken($container-color, $amount: 7);
+        background-color: getColor(listI);
       }
 
       > a {
-        // Hover fix
         display: block;
         padding: 1.5rem;
         margin: -1.5rem;

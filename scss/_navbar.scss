@@ -42,7 +42,7 @@
 }
 
 nav {
-    background-color: rgba($background-color, $alpha: 0.7);
+    background-color: getColor(backAlpha);
     @include font-size(.9rem);
     text-transform: uppercase;
     position: sticky;
@@ -65,7 +65,7 @@ nav {
         @include menuDesktop();
 
         > li {
-            color: $text-color;
+            color: getColor(text);
         }
     }
 
@@ -108,10 +108,10 @@ nav {
         .navbar-right-menu {
             @include menuMobile();
             float: none;
-            background-color: rgba($background-color, $alpha: 0.7);
+            background-color: getColor(backAlpha);
 
             > li, a {
-                color: $text-color;
+                color: getColor(text);
             }
         }
 

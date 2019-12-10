@@ -5,7 +5,7 @@ export default class Style {
         this.directoryCSS = location;
     }
 
-    getLightMode() {
+    /*getLightMode() {
         return this.directoryCSS + "/cleanify.css";
     }
 
@@ -27,7 +27,7 @@ export default class Style {
         let darkButton = document.getElementById('darkToggle');
         if(darkButton != null)
             darkButton.onclick = () => { this.toggleDarkMode() }
-    }
+    }*/
 
     handleHeaderTitle(max) {
         let title = document.getElementById('headerTitle');

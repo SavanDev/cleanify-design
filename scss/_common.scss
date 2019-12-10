@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cantarell:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: $background-color;
-    color: $text-color;
+    font-family: 'Cantarell', 'Open Sans', sans-serif;
+    background-color: getColor(background);
+    color: getColor(text);
 }
 
 article {
@@ -15,7 +20,7 @@ article {
 }
 
 section {
-    background-color: $container-color;
+    background-color: getColor(container);
     border-radius: $border-size;
     border: 1px solid #ddd;
     margin-bottom: 1.5rem;
@@ -27,7 +32,6 @@ footer {
     margin: 1.5rem;
 
     @media screen and (min-width: 1000px) {
-        // TODO: @include make-container();
         display: flex;
         flex-wrap: wrap;
 
@@ -47,7 +51,7 @@ footer {
 }
 
 a {
-    color: $text-color;
+    color: getColor(text);
     text-decoration: none;
     outline: none;
 
@@ -64,11 +68,11 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
     margin: .75rem .5rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .codeSnippet {
-    background-color: lighten($color: $background-text-color, $amount: 10);
+    background-color: getColor(backText);
     padding: 1.5rem !important;
     border-radius: $border-size;
 }
@@ -88,11 +92,6 @@ h6 { @include font-size(1rem); }
 p {
     @include font-size(1.2rem);
     margin: .5rem;
-    font-weight: 300;
-}
-
-b {
-    font-weight: bold;
 }
 
 pre {

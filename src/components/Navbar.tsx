@@ -5,6 +5,7 @@ import packageJson from '../../package.json';
 import { faSun, faMoon, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { getDarkMode } from "./Cookies";
 
+// TODO: Complete new dark mode switch
 class Navbar extends React.Component<any, INavbar> {
     constructor(props: any) {
         super(props);
@@ -28,7 +29,7 @@ class Navbar extends React.Component<any, INavbar> {
                 </ul>
                 <ul className="navbar-right-menu">
                     <li id="version">v{ packageJson.version }</li>
-                    <li id="darkToggle" onClick={this.iconToggle}><FontAwesomeIcon icon={this.state.icon}/></li>
+                    {/*<li id="darkToggle" onClick={this.iconToggle}><FontAwesomeIcon icon={this.state.icon}/></li>*/}
                 </ul>
             </nav>
         );

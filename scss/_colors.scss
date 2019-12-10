@@ -1,13 +1,35 @@
-$background-color: $light-color;
-$text-color: $dark-color;
-$container-color: white;
-$background-text-color: $lightgray-color;
-$button-color: $lightgray-color;
+$colors: (
+    background: $light-color,
+    text: $dark-color,
+    backText: $lightgray-color,
+    button: $lightgray-color,
+    backAlpha: rgba($light-color, 0.7),
+    container: white,
+    listP: darken(white, 5),
+    listI: darken(white, 7)
+);
 
-@if $dark-mode {
-    $background-color: $dark-color;
-    $text-color: $light-color;
-    $container-color: $gray-color;
-    $background-text-color: $gray-color;
-    $button-color: $gray-color;
+$colors-dark: (
+    background: $dark-color,
+    text: $light-color,
+    backText: $gray-color,
+    button: $gray-color,
+    backAlpha: rgba($dark-color, 0.7),
+    container: $gray-color,
+    listP: darken($gray-color, 5),
+    listI: darken($gray-color, 7)
+);
+
+:root {
+    @each $name, $color in $colors {
+        --color-#{$name}:#{$color};
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @each $name, $color in $colors-dark {
+            --color-#{$name}:#{$color};
+        }
+    }
 }

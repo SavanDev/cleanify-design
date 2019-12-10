@@ -6,7 +6,7 @@ const Home: React.FC = () => {
     return(
         <div id="home">
             <header>
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt="Logo"/>
                 <h1>Cleanify Design</h1>
                 <h2>{version.description}</h2>
             </header>

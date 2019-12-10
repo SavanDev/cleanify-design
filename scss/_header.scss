@@ -1,7 +1,7 @@
 @mixin gradientBase {
     h1 {
         display: table;
-        background-color: rgba($color: $background-color, $alpha: 0.7);
+        background-color: getColor(backAlpha);
         padding: 0.75rem;
         border-radius: $border-size;
     }
@@ -11,29 +11,27 @@ $gradientColors: $primary-color, $secondary-color, $dark-color, $light-color, $g
 
 header {
     @include init-container();
-    background-color: $background-color;
+    background-color: getColor(background);
     border-radius: $border-size;
-    border-style: none;
     text-align: center;
     padding: 1.5rem;
 
     img {
-        max-width: 100%;
+        width: 50%;
     }
 
     h1 {
         margin: 1rem auto;
-        font-weight: 700;
         @include font-size(4rem);
         text-transform: uppercase;
     }
 
     h2 {
         display: table;
-        background-color: $background-text-color;
+        background-color: getColor(backText);
         padding: 0.75rem;
         border-radius: $border-size;
-        font-weight: 300;
+        font-weight: normal;
         margin: auto;
         @include font-size(2rem);
     }
@@ -45,6 +43,7 @@ header {
             float: left;
             max-width: 256px;
             max-height: 256px;
+            margin-right: 1rem;
         }
 
         h1 {

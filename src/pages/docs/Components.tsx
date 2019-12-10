@@ -26,7 +26,15 @@ const Components: React.FC = () => {
                         <p>Color</p>
                         <input type="color" />
                         <p>Select</p>
-                        <select>
+                        <div className="select-wrap">
+                            <select>
+                                <option>Test 1</option>
+                                <option>Test 2</option>
+                                <option>Test 3</option>
+                            </select>
+                        </div>
+                        <p>Select multiple</p>
+                        <select multiple>
                             <option>Test 1</option>
                             <option>Test 2</option>
                             <option>Test 3</option>
@@ -78,7 +86,6 @@ const Components: React.FC = () => {
                 <section>
                     <form>
                         <h4>Buttons</h4>
-                        <hr/>
                         <input type="button" value="Button"/>
                         <input type="submit" value="Submit"/>
                         <input type="reset" value="Reset"/>
@@ -120,7 +127,7 @@ const Components: React.FC = () => {
             <section>
                 <h2>Header</h2>
                 <header>
-                    <img src={logo} alt="Logo" />
+                    <img src={logo} alt="Logo"/>
                     <h1>Cleanify Design</h1>
                     <h2>HTML, CSS & JS personal framework</h2>
                 </header>

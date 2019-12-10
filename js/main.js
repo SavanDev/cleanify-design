@@ -3,7 +3,7 @@ import { Observer } from './modules/observer';
 import { getCookie } from './modules/cookies';
 
 let observerEnable = true;
-let switchStyles = true;
+//let switchStyles = true;
 
 let styleCss = new Style();
 
@@ -13,11 +13,11 @@ window.onscroll = () => {
 
 if(observerEnable)
     Observer(() => {
-        styleCss.handleDarkButton();
+        //styleCss.handleDarkButton();
         styleCss.handleHeaderTitle(100);
         console.log("Changes detected in DOM");
     });
-
+/* TODO: Work in dark mode
 if(switchStyles) {
     window.onload = () => {
         styleCss.handleDarkButton();
@@ -27,3 +27,4 @@ if(switchStyles) {
         styleCss.checkDarkMode();
     }
 }
+*/

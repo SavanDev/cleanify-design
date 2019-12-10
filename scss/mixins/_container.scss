@@ -14,11 +14,11 @@
     }
 }
 
-@mixin init-grid {
+@mixin init-grid($form: false) {
     display: flex;
     flex-wrap: wrap;
 
-    > section {
+    > section, fieldset {
         flex-basis: 0;
         flex-grow: 1;
 

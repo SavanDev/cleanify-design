@@ -1,67 +1,60 @@
-@mixin formBasis {
-    background-color: $light-color;
-    border-radius: $border-size;
-    border: 1px #ddd solid;
-    padding: .5rem 1rem;
-    margin: .25rem auto;
-}
+form {
+  input[type="text"],
+  input[type="url"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"] {
+    @include sassy-text;
+    background-color: getColor(background);
+    color: getColor(text);
+  }
 
-@mixin buttonBasis {
-    background-color: lighten($color: $button-color, $amount: 15);
-    color: $text-color;
+  textarea {
+    @include sassy-textarea;
+    background-color: getColor(background);
+    color: getColor(text);
+  }
+
+  .select-wrap {
+    @include sassy-select;
+  }
+
+  select[multiple] {
+    @include sassy-select-multiple;
+  }
+
+  input[type="radio"] {
+    @include sassy-radio;
+  }
+
+  input[type="checkbox"] {
+    @include sassy-checkbox;
+  }
+
+  input[type="submit"] {
+    @include sassy-button;
+    color: white;
+    margin: .5rem;
 
     &:hover {
-        color: $light-color;
-        background-color: $primary-color;
-        cursor: pointer;
+      background-color: $secondary-color;
     }
-}
+  }
 
-form {
-    input {
-        @include formBasis();
+  input[type="button"],
+  input[type="reset"],
+  button {
+    @include sassy-button;
+    background-color: $lightgray-color;
+    margin: .5rem;
+  }
 
-        &:not([type=submit]), &:not([type=reset]), &:not([type=button]) {
-            width: 100%;
-        }
+  .group {
+    @include init-grid();
+  }
 
-        &[type=color] {
-            border: none;
-            padding: 0;
-        }
-
-        &[type=checkbox], &[type=radio] {
-            margin: .5rem 1rem;
-            width: auto;
-        }
-
-        &[type=button], &[type=submit], &[type=reset] {
-            @include buttonBasis();
-        }
-    }
-
-    .group {
-        // TODO: @include make-row();
-
-        > fieldset {
-            // TODO: @include make-col();
-        }
-    }
-
-    select {
-        @include formBasis();
-        width: 100%;
-    }
-}
-
-button {
-    width: 100%;
-    @include formBasis();
-    @include buttonBasis();
-}
-
-textarea {
-    @include formBasis();
-    padding: 1.5rem;
-    max-width: 100%;
+  fieldset {
+    border: none;
+  }
 }
