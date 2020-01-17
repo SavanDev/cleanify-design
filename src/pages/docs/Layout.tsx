@@ -30,7 +30,6 @@ const Layout: React.FC = () => {
             </section>
             <section>
                 <h2>Grid system</h2>
-                <p>Based in Bootstrap Grids principles</p>
                 <div className="gridExample">
                     <div></div>
                     <div></div>

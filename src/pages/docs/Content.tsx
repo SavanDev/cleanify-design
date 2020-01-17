@@ -2,7 +2,7 @@ import React from 'react';
 import Highlight from 'react-highlight';
 
 const Content: React.FC = () => {
-    return(
+    return (
         <article>
             <section>
                 <h2>Navigation Header</h2>
@@ -12,13 +12,14 @@ const Content: React.FC = () => {
                 </Highlight>
             </section>
             <section>
-                <h2>Dark Mode</h2>
-                <p>Any tag with the id "<b>darkToggle</b>" when pressed will alternate between dark and light mode.</p>
-                <p>In the <b>right-top</b> you have a example of this.</p>
+                <h2>Styled Title</h2>
+            </section>
+            <h1 className="styledTitle">New Cleanify 2.0!</h1>
+            <section>
                 <Highlight className="codeSnippet html">
-                    {'<... id="darkToggle"></...>'}
+                    {'<h1 class="styledTitle">...</h1>'}
                 </Highlight>
-                <p><b>NOTE:</b> This work with only one time per page and uses <b>cookies</b> for a persistent change after reload.</p>
+                <p><b>NOTE:</b> Only works outside of tags "article".</p>
             </section>
             <section>
                 <h2>Typography</h2>
@@ -31,11 +32,11 @@ const Content: React.FC = () => {
                     <h6>h6 header</h6>
                 </section>
                 <Highlight className="codeSnippet html">
-                    {'<h1>...</h1>'}<br/>
-                    {'<h2>...</h2>'}<br/>
-                    {'<h3>...</h3>'}<br/>
-                    {'<h4>...</h4>'}<br/>
-                    {'<h5>...</h5>'}<br/>
+                    {'<h1>...</h1>'}<br />
+                    {'<h2>...</h2>'}<br />
+                    {'<h3>...</h3>'}<br />
+                    {'<h4>...</h4>'}<br />
+                    {'<h5>...</h5>'}<br />
                     {'<h6>...</h6>'}
                 </Highlight>
             </section>

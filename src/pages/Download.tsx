@@ -31,7 +31,7 @@ const Download: React.FC = () => {
 
     return(
         <article>
-            <h1 id="headerTitle">Download <b>Cleanify Design</b></h1>
+            <h1 id="headerTitle">Download Cleanify Design</h1>
             <section>
                 <h2>Latest version</h2>
                 <div id="latest">

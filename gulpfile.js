@@ -35,8 +35,14 @@ function cleanDocs() {
 function watchDist() {
     watch([
         './scss/**/*.scss',
-        './js/**/*.js'
-    ], series(cleanDist, cleanDocs, compileCSS, compileJS));
+        './js/**/*.js',
+        './icons/**/*.svg'
+    ], series(cleanDist, cleanDocs, compileCSS, compileJS, updateLogo));
+}
+
+function updateLogo() {
+    return src('./icons/cd-next.svg')
+        .pipe(dest('./src/img/'));
 }
 
 exports.watch = watchDist;

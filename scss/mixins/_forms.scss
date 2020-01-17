@@ -1,0 +1,85 @@
+@mixin disableAppareance {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+@mixin form-baseStyle {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: $border-size;
+    border: 1px solid #ddd;
+    background-color: getColor(background);
+    color: getColor(text);
+    margin-bottom: 0.5rem;
+
+    &:focus {
+        border-color: $primary-color;
+    }
+}
+
+@mixin form-textarea {
+    @include form-baseStyle();
+    padding: 1rem;
+
+    resize: none;
+    overflow: hidden;
+}
+
+@mixin form-select {
+    @include disableAppareance();
+    @include form-baseStyle();
+    outline: none;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px' width='16px'><text y='15' font-size='20'>▾</text></svg>")
+        no-repeat right getColor(background);
+    padding: 0.5rem 1rem;
+}
+
+@mixin form-selectMultiple {
+    @include form-select();
+    background-image: none;
+    border-radius: $border-size 0 0 $border-size;
+}
+
+@mixin form-checkRadio {
+    display: none;
+
+    + label {
+        display: inline-block;
+        border-radius: $border-size;
+        background-color: getColor(background);
+        padding: 1rem;
+        margin: 0.5rem;
+        cursor: pointer;
+    }
+
+    &:hover + label {
+        background-color: $lightgray-color;
+    }
+
+    &:checked + label {
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+@mixin form-button {
+    @include form-baseStyle();
+    padding: 0.5rem;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        background-color: $lightgray-color;
+    }
+}
+
+@mixin form-buttonSubmit {
+    @include form-button();
+    background-color: $primary-color;
+    color: white;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}

@@ -13,7 +13,6 @@ const GStarted: React.FC = () => {
                         {'website'}<br/>
                         {'--> css'}<br/>
                         {'-----> cleanify.css'}<br/>
-                        {'-----> cleanify-dark.css'}<br/>
                         {'--> js'}<br/>
                         {'-----> cleanify.js'}<br/>
                         {'--> index.html'}
@@ -26,7 +25,7 @@ const GStarted: React.FC = () => {
                     {'<head>'}<br />
                     {'  <meta charset="UTF-8"/>'}<br />
                     {'  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>'}<br />
-                    {'  <link id="cleanifyCss" rel="stylesheet" href="./css/cleanify.css">'}<br />
+                    {'  <link rel="stylesheet" href="./css/cleanify.css">'}<br />
                     {'  <title>Cleanify Example</title>'}<br />
                     {'</head>'}<br />
                     {'<body>'}<br />

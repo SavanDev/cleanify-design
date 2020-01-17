@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../img/logo.svg';
+import logo from '../../img/cd-next.svg';
 import Highlight from 'react-highlight';
 import { Link } from 'react-router-dom';
 
@@ -21,18 +21,12 @@ const Components: React.FC = () => {
                         <input type="date" />
                         <p>Email</p>
                         <input type="email" placeholder="Email@test.com" />
-                        <p>File</p>
-                        <input type="file" />
-                        <p>Color</p>
-                        <input type="color" />
                         <p>Select</p>
-                        <div className="select-wrap">
-                            <select>
-                                <option>Test 1</option>
-                                <option>Test 2</option>
-                                <option>Test 3</option>
-                            </select>
-                        </div>
+                        <select>
+                            <option>Test 1</option>
+                            <option>Test 2</option>
+                            <option>Test 3</option>
+                        </select>
                         <p>Select multiple</p>
                         <select multiple>
                             <option>Test 1</option>
@@ -42,8 +36,8 @@ const Components: React.FC = () => {
                         <p>Textarea</p>
                         <textarea cols={30} rows={10}>Text Example</textarea>
                         <Highlight className="codeSnippet html">
-                            {'<p>...</p>'}<br/>
-                            {'<input type="..." placeholder="..." />'}<br/>
+                            {'<p>...</p>'}<br />
+                            {'<input type="..." placeholder="..." />'}<br />
                             {'<textarea cols="..." rows="..."></textarea>'}
                         </Highlight>
                     </form>
@@ -62,10 +56,10 @@ const Components: React.FC = () => {
                             </fieldset>
                         </div>
                         <Highlight className="codeSnippet html">
-                            {'<div class="group">'}<br/>
-                            {'  <fieldset>'}<br/>
-                            {'      ...'}<br/>
-                            {'  </fieldset>'}<br/>
+                            {'<div class="group">'}<br />
+                            {'  <fieldset>'}<br />
+                            {'      ...'}<br />
+                            {'  </fieldset>'}<br />
                             {'</div>'}
                         </Highlight>
                     </form>
@@ -73,12 +67,28 @@ const Components: React.FC = () => {
                 <section>
                     <form>
                         <h4>Checkbox & Radio</h4>
-                        <input type="checkbox" id="checkTest" />
-                        <label htmlFor="checkTest">Checkbox</label>
-                        <input type="radio" id="radioTest" />
-                        <label htmlFor="radioTest">Radio</label>
+                        <div className="group">
+                            <fieldset>
+                                <input type="checkbox" id="checkTest" />
+                                <label htmlFor="checkTest">Checkbox 1</label>
+                                <input type="checkbox" id="checkTest2"/>
+                                <label htmlFor="checkTest2">Checkbox 2</label>
+                                <input type="checkbox" id="checkTest3" />
+                                <label htmlFor="checkTest3">Checkbox 3</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" id="radioTest" name="test"/>
+                                <label htmlFor="radioTest">Radio 1</label>
+                                <input type="radio" id="radioTest2" name="test"/>
+                                <label htmlFor="radioTest2">Radio 2</label>
+                                <input type="radio" id="radioTest3" name="test"/>
+                                <label htmlFor="radioTest3">Radio 3</label>
+                            </fieldset>
+                        </div>
+
+
                         <Highlight className="codeSnippet html">
-                            {'<input type="checkbox/radio" id="..." />'}<br/>
+                            {'<input type="checkbox/radio" id="..." />'}<br />
                             {'<label for="...">...</label>'}
                         </Highlight>
                     </form>
@@ -86,12 +96,12 @@ const Components: React.FC = () => {
                 <section>
                     <form>
                         <h4>Buttons</h4>
-                        <input type="button" value="Button"/>
-                        <input type="submit" value="Submit"/>
-                        <input type="reset" value="Reset"/>
+                        <input type="button" value="Button" />
+                        <input type="submit" value="Submit" />
+                        <input type="reset" value="Reset" />
                         <button>Button tag</button>
                         <Highlight className="codeSnippet html">
-                            {'<input type="button/submit/reset" value="..." />'}<br/>
+                            {'<input type="button/submit/reset" value="..." />'}<br />
                             {'<button>...</button>'}
                         </Highlight>
                     </form>
@@ -112,22 +122,22 @@ const Components: React.FC = () => {
                     </footer>
                 </section>
                 <Highlight className="codeSnippet html">
-                    {'<footer>'}<br/>
-                    {'  <small>...</small>'}<br/>
-                    {'</footer>'}<br/>
-                    <br/>
-                    {'<footer>'}<br/>
-                    {'  <small>...</small>'}<br/>
-                    {'  <ol>'}<br/>
-                    {'      <li>...</li>'}<br/>
-                    {'  </ol>'}<br/>
+                    {'<footer>'}<br />
+                    {'  <small>...</small>'}<br />
+                    {'</footer>'}<br />
+                    <br />
+                    {'<footer>'}<br />
+                    {'  <small>...</small>'}<br />
+                    {'  <ol>'}<br />
+                    {'      <li>...</li>'}<br />
+                    {'  </ol>'}<br />
                     {'</footer>'}
                 </Highlight>
             </section>
             <section>
                 <h2>Header</h2>
                 <header>
-                    <img src={logo} alt="Logo"/>
+                    <img src={logo} alt="Logo" />
                     <h1>Cleanify Design</h1>
                     <h2>HTML, CSS & JS personal framework</h2>
                 </header>
@@ -151,7 +161,7 @@ const Components: React.FC = () => {
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <br/>
+                <br />
                 <header className="gradient-2">
                     <h1>Example Title</h1>
                 </header>
@@ -161,7 +171,7 @@ const Components: React.FC = () => {
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <br/>
+                <br />
                 <header className="gradient-3">
                     <h1>Example Title</h1>
                 </header>
@@ -171,7 +181,7 @@ const Components: React.FC = () => {
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <br/>
+                <br />
                 <header className="gradient-4">
                     <h1>Example Title</h1>
                 </header>
@@ -181,7 +191,7 @@ const Components: React.FC = () => {
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <br/>
+                <br />
                 <header className="gradient-5">
                     <h1>Example Title</h1>
                 </header>
@@ -236,14 +246,14 @@ const Components: React.FC = () => {
                     </nav>
                 </section>
                 <Highlight className="codeSnippet html">
-                    {'<nav>'}<br/>
-                    {'  <a class="navbar-title" href="URL">...</a>'}<br/>
-                    {'  <ul class="navbar-menu">'}<br/>
-                    {'      <li>...</li>'}<br/>
-                    {'  </ul>'}<br/>
-                    {'  <ul class="navbar-right-menu">'}<br/>
-                    {'      <li>...</li>'}<br/>
-                    {'  </ul>'}<br/>
+                    {'<nav>'}<br />
+                    {'  <a class="navbar-title" href="URL">...</a>'}<br />
+                    {'  <ul class="navbar-menu">'}<br />
+                    {'      <li>...</li>'}<br />
+                    {'  </ul>'}<br />
+                    {'  <ul class="navbar-right-menu">'}<br />
+                    {'      <li>...</li>'}<br />
+                    {'  </ul>'}<br />
                     {'</nav>'}
                 </Highlight>
             </section>

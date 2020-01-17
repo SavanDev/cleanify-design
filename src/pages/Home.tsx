@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../img/logo.svg';
+import logo from '../img/cd-next.svg';
 import version from '../../package.json';
 
 const Home: React.FC = () => {
@@ -10,6 +10,7 @@ const Home: React.FC = () => {
                 <h1>Cleanify Design</h1>
                 <h2>{version.description}</h2>
             </header>
+            <h1 className="styledTitle">Example Test</h1>
             <article>
                 <section>
                     <h3>About Cleanify</h3>

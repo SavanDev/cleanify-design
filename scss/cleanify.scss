@@ -3,10 +3,10 @@
 // Modules
 @import "../node_modules/normalize.css/normalize";
 @import "../node_modules/rfs/scss";
-@import "../node_modules/sassy-inputs/sass/main";
 
 // Mixin
 @import "./mixins/container";
+@import "./mixins/forms";
 
 // Design
 @import "functions";
@@ -16,3 +16,4 @@
 @import "header";
 @import "forms";
 @import "lists";
+@import "newStyle";

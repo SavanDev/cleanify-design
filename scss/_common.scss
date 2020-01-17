@@ -22,6 +22,7 @@ article {
 section {
     background-color: getColor(container);
     border-radius: $border-size;
+    box-shadow: 3px 3px $lightgray-color;
     border: 1px solid #ddd;
     margin-bottom: 1.5rem;
     padding: 1.5rem;

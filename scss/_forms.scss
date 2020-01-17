@@ -5,49 +5,35 @@ form {
   input[type="password"],
   input[type="number"],
   input[type="date"] {
-    @include sassy-text;
-    background-color: getColor(background);
-    color: getColor(text);
+    @include form-baseStyle();
+    padding: .5rem 1rem;
   }
 
   textarea {
-    @include sassy-textarea;
-    background-color: getColor(background);
-    color: getColor(text);
+    @include form-textarea();
   }
 
-  .select-wrap {
-    @include sassy-select;
+  select {
+    @include form-select();
   }
 
   select[multiple] {
-    @include sassy-select-multiple;
+    @include form-selectMultiple();
   }
 
-  input[type="radio"] {
-    @include sassy-radio;
-  }
-
+  input[type="radio"],
   input[type="checkbox"] {
-    @include sassy-checkbox;
+    @include form-checkRadio();
   }
 
   input[type="submit"] {
-    @include sassy-button;
-    color: white;
-    margin: .5rem;
-
-    &:hover {
-      background-color: $secondary-color;
-    }
+    @include form-buttonSubmit();
   }
 
   input[type="button"],
   input[type="reset"],
   button {
-    @include sassy-button;
-    background-color: $lightgray-color;
-    margin: .5rem;
+    @include form-button();
   }
 
   .group {

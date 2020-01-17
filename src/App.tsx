@@ -8,6 +8,7 @@ import Docs from './pages/Docs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Download from './pages/Download';
+import Info from './pages/Info';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <Switch>
         <Route path="/download" component={Download} />
         <Route path="/docs" component={Docs} />
+        <Route path="/info" component={Info} />
         <Route component={Home} />
       </Switch>
       <footer>
