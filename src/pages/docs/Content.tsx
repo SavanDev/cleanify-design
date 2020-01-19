@@ -4,24 +4,25 @@ import Highlight from 'react-highlight';
 const Content: React.FC = () => {
     return (
         <article>
-            <section>
+            <section className="transparent">
                 <h2>Navigation Header</h2>
-                <h1 id="headerTitle">Navigation header</h1>
+                <h1 id="headerTitle">Example Text</h1>
                 <Highlight className="codeSnippet html">
                     {'<h1 id="headerTitle">...</h1>'}
                 </Highlight>
             </section>
-            <section>
-                <h2>Styled Title</h2>
-            </section>
-            <h1 className="styledTitle">New Cleanify 2.0!</h1>
-            <section>
+            <hr/>
+            <section className="transparent">
+                <h1>Banners</h1>
+                <h1 className="blueBanner">Cleanify 2.0!</h1>
+                <h1 className="redBanner">In red too!</h1>
                 <Highlight className="codeSnippet html">
-                    {'<h1 class="styledTitle">...</h1>'}
+                    {'<h1 class="blueBanner/redBanner">...</h1>'}
                 </Highlight>
-                <p><b>NOTE:</b> Only works outside of tags "article".</p>
+                <p><b>NOTE:</b> Not work in normal "section".</p>
             </section>
-            <section>
+            <hr/>
+            <section className="transparent">
                 <h2>Typography</h2>
                 <section>
                     <h1>h1 header</h1>

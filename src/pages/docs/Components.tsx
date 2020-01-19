@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../../img/cd-next.svg';
+import logo from '../../img/cd-current.svg';
 import Highlight from 'react-highlight';
 import { Link } from 'react-router-dom';
 
 const Components: React.FC = () => {
     return (
         <article>
-            <section>
+            <section className="transparent">
                 <h2>Forms</h2>
                 <section>
                     <form>
@@ -71,17 +71,17 @@ const Components: React.FC = () => {
                             <fieldset>
                                 <input type="checkbox" id="checkTest" />
                                 <label htmlFor="checkTest">Checkbox 1</label>
-                                <input type="checkbox" id="checkTest2"/>
+                                <input type="checkbox" id="checkTest2" />
                                 <label htmlFor="checkTest2">Checkbox 2</label>
                                 <input type="checkbox" id="checkTest3" />
                                 <label htmlFor="checkTest3">Checkbox 3</label>
                             </fieldset>
                             <fieldset>
-                                <input type="radio" id="radioTest" name="test"/>
+                                <input type="radio" id="radioTest" name="test" />
                                 <label htmlFor="radioTest">Radio 1</label>
-                                <input type="radio" id="radioTest2" name="test"/>
+                                <input type="radio" id="radioTest2" name="test" />
                                 <label htmlFor="radioTest2">Radio 2</label>
-                                <input type="radio" id="radioTest3" name="test"/>
+                                <input type="radio" id="radioTest3" name="test" />
                                 <label htmlFor="radioTest3">Radio 3</label>
                             </fieldset>
                         </div>
@@ -107,34 +107,36 @@ const Components: React.FC = () => {
                     </form>
                 </section>
             </section>
-            <section>
+            <hr />
+            <section className="transparent">
                 <h2>Footer</h2>
                 <section>
                     <footer>
-                        <small>Footer without links</small>
+                        <p>Footer without list/links</p>
                     </footer>
                     <footer>
-                        <small>Footer with links</small>
+                        <p>Footer with list/links</p>
                         <ol>
-                            <li>Link 1</li>
-                            <li>Link 2</li>
+                            <li>Text 1</li>
+                            <li>Text 2</li>
                         </ol>
                     </footer>
                 </section>
                 <Highlight className="codeSnippet html">
                     {'<footer>'}<br />
-                    {'  <small>...</small>'}<br />
+                    {'  <p>...</p>'}<br />
                     {'</footer>'}<br />
                     <br />
                     {'<footer>'}<br />
-                    {'  <small>...</small>'}<br />
+                    {'  <p>...</p>'}<br />
                     {'  <ol>'}<br />
                     {'      <li>...</li>'}<br />
                     {'  </ol>'}<br />
                     {'</footer>'}
                 </Highlight>
             </section>
-            <section>
+            <hr />
+            <section className="transparent">
                 <h2>Header</h2>
                 <header>
                     <img src={logo} alt="Logo" />
@@ -150,7 +152,8 @@ const Components: React.FC = () => {
                     {'</header>'}
                 </Highlight>
             </section>
-            <section>
+            <hr />
+            <section className="transparent">
                 <h2>Header gradients</h2>
                 <header className="gradient-1" >
                     <h1>Example Title</h1>
@@ -202,13 +205,13 @@ const Components: React.FC = () => {
                     {'</header>'}
                 </Highlight>
             </section>
-            <section>
+            <hr />
+            <section className="transparent">
                 <h2>Inline list</h2>
-                <p>* Not visible in mobiles</p>
                 <ol>
-                    <li>Home</li>
-                    <li><Link to="/docs/components">Download</Link></li>
-                    <li>Documentation</li>
+                    <li>Text</li>
+                    <li><Link to="/docs/components">Link</Link></li>
+                    <li>Text</li>
                 </ol>
                 <Highlight className="codeSnippet html">
                     {'<ol>'}<br />
@@ -216,7 +219,8 @@ const Components: React.FC = () => {
                     {'</ol>'}
                 </Highlight>
             </section>
-            <section>
+            <hr />
+            <section className="transparent">
                 <h2>List</h2>
                 <ul>
                     <li>Hello World!</li>
@@ -231,7 +235,8 @@ const Components: React.FC = () => {
                     {'</ul>'}
                 </Highlight>
             </section>
-            <section>
+            <hr />
+            <section className="transparent">
                 <h2>Navbar</h2>
                 <section>
                     <nav>
@@ -256,6 +261,20 @@ const Components: React.FC = () => {
                     {'  </ul>'}<br />
                     {'</nav>'}
                 </Highlight>
+            </section>
+            <hr />
+            <section className="transparent">
+                <h2>Progress bar</h2>
+                <article className="grid">
+                    <section>
+                        <p>35%</p>
+                        <progress max="100" value="35"></progress>
+                    </section>
+                    <section>
+                        <p>Indetermined</p>
+                        <progress max="100"></progress>
+                    </section>
+                </article>
             </section>
         </article>
     );

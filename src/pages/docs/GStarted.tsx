@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const GStarted: React.FC = () => {
     return (
         <article>
-            <section>
+            <section className="transparent">
                 <h2>Let's start!</h2>
                 <p>Once the files have been <Link to="/download">downloaded</Link>, the directory should look like this.</p>
                 <section>

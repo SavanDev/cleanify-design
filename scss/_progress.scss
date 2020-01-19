@@ -1,0 +1,42 @@
+progress {
+    @include disableAppareance();
+    border-radius: $border-size;
+    border: 1px solid $lightgray-color;
+    width: 100%;
+    overflow: hidden;
+
+    // Firefox
+    background-color: getColor(background);
+    &[value]::-moz-progress-bar {
+        background-image: linear-gradient(to right, $primary-color, $secondary-color);
+        border-radius: $border-size;
+    }
+    &:not([value])::-moz-progress-bar {
+        background-color: $secondary-color;
+    }
+
+    // Chromium
+    &[value] {
+        &::-webkit-progress-bar {
+            background-color: getColor(background);
+        }
+        &::-webkit-progress-value {
+            background-image: linear-gradient(to right, $primary-color, $secondary-color);
+            border-radius: $border-size;
+        }
+    }
+    &:not([value]) {
+        &::-webkit-progress-bar {
+            background-color: $secondary-color;
+        }
+    }
+
+    // Edge (not chromium)
+    &[value]::-ms-fill {
+        background-image: linear-gradient(to right, $primary-color, $secondary-color);
+        border-radius: $border-size;
+    }
+    &:not([value])::-ms-fill {
+        background-color: $secondary-color;
+    }
+}

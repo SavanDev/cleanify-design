@@ -17,11 +17,11 @@ const App: React.FC = () => {
       <Switch>
         <Route path="/download" component={Download} />
         <Route path="/docs" component={Docs} />
-        <Route path="/info" component={Info} />
+        <Route path="/about" component={Info} />
         <Route component={Home} />
       </Switch>
       <footer>
-        <small>SavanDev - 2019 / {new Date().getFullYear()}</small>
+        <p>SavanDev - 2019 / {new Date().getFullYear()}</p>
         <ol>
           <li><a href="https://github.com/SavanDev/cleanify-design/blob/master/LICENSE"><FontAwesomeIcon icon="gavel" /> MIT License</a></li>
           <li><a href="https://github.com/SavanDev/cleanify-design"><FontAwesomeIcon icon={faGithub} /> GitHub</a></li>

@@ -26,7 +26,7 @@ class Navbar extends React.Component<any, INavbar> {
                 <ul className="navbar-menu">
                     <li><Link to="/download"><FontAwesomeIcon icon={faDownload} /> Download</Link></li>
                     <li><Link to="/docs"><FontAwesomeIcon icon={faBook} /> Documentation</Link></li>
-                    <li><Link to="/info"><FontAwesomeIcon icon={faAddressCard} /> Info</Link></li>
+                    <li><Link to="/about"><FontAwesomeIcon icon={faAddressCard} /> About</Link></li>
                 </ul>
                 <ul className="navbar-right-menu">
                     <li id="version">v{ packageJson.version }</li>

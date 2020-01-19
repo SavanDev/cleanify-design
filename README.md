@@ -1,5 +1,5 @@
 <div align=center>
-<img src="./src/img/logo.svg" width="256px" />
+<img src="./icons/cd-current.svg" width="256px" />
 </div>
 
 HTML, CSS & JS personal framework.

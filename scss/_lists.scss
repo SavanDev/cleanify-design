@@ -1,66 +1,69 @@
-// TODO: Fix lists
 ol {
-  background-color: $lightgray-color;
-  border-radius: $border-size;
-  color: $dark-color;
-  list-style: none;
-  margin: 1rem;
-  overflow: hidden;
-
-  > li {
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
-
-    > a {
-      color: $dark-color;
-
-      // Hover fix
-      display: block;
-      padding: 1rem;
-      margin: -1rem;
-
-      &:hover {
-        background-color: $primary-color;
-        color: $light-color;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    display: flex;
-    flex-wrap: wrap;
-
-    > li {
-      flex-basis: 0;
-      flex-grow: 1;
-    }
-  }
-}
-
-section, article {
-  > ul {
-    background-color: getColor(listP);
+    background-color: $lightgray-color;
     border-radius: $border-size;
+    color: $dark-color;
+    list-style: none;
+    margin: 1rem auto;
     overflow: hidden;
 
     > li {
-      padding: 1.5rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
 
-      &:nth-child(odd) {
-        background-color: getColor(listI);
-      }
+        > a {
+            display: block;
+            color: $dark-color;
+            padding: 1rem;
+            margin: -1rem;
 
-      > a {
-        display: block;
-        padding: 1.5rem;
-        margin: -1.5rem;
-
-        &:hover {
-          background-color: $primary-color;
-          color: $light-color;
+            &:hover {
+                background-color: $primary-color;
+                color: $light-color;
+            }
         }
-      }
     }
-  }
+
+    @media screen and (min-width: 500px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+
+        > li {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+    }
+}
+
+section,
+article {
+    > ul {
+        background-color: getColor(listP);
+        border-radius: $border-size;
+        overflow: hidden;
+
+        > li {
+            padding: 1.5rem;
+
+            &:nth-child(odd) {
+                background-color: getColor(listI);
+            }
+
+            > a {
+                display: block;
+                padding: 1.5rem;
+                margin: -1.5rem;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+}
+
+section.transparent > ul {
+    border: 1px solid $lightgray-color;
 }

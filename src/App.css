@@ -12,6 +12,13 @@
     border-radius: 2rem;
 }
 
+#containerTransparentExample {
+    height: 120px;
+    margin: 1.5rem auto;
+    border-radius: 2rem;
+    border: 1px dashed dodgerblue;
+}
+
 .gridExample {
     display: flex;
     flex-wrap: wrap;
@@ -25,4 +32,19 @@
     background-color: dodgerblue;
     border-radius: 2rem;
     margin: .5rem;
+}
+
+#docsMenu {
+    max-width: 25rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #docsMenu {
+        max-width: initial;
+    }
+}
+
+#docsMenu > ul {
+    position: sticky;
+    top: 4rem;
 }

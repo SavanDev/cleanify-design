@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Cantarell:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cantarell", "Open Sans", sans-serif;
+    background-color: getColor(background);
+    color: getColor(text);
+}
+
+article {
+    @include init-container();
+
+    &.grid {
+        @include init-grid();
+    }
+}
+
+section {
+    background-color: getColor(container);
+    border-radius: $border-size;
+    box-shadow: 3px 3px $lightgray-color;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+
+    &.transparent {
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        border: 0;
+        padding: 0;
+    }
+}
+
+footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: $border-size $border-size 0 0;
+    background-color: $primary-color;
+    color: white;
+    font-weight: bold;
+
+    ol > li > a:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.codeSnippet {
+    background-color: getColor(backText);
+    padding: 1.5rem !important;
+    border-radius: $border-size;
+}

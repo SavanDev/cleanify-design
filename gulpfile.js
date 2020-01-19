@@ -41,7 +41,7 @@ function watchDist() {
 }
 
 function updateLogo() {
-    return src('./icons/cd-next.svg')
+    return src('./icons/cd-current.svg')
         .pipe(dest('./src/img/'));
 }
 

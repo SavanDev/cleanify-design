@@ -7,13 +7,16 @@
 // Mixin
 @import "./mixins/container";
 @import "./mixins/forms";
+@import "./mixins/styles";
 
 // Design
 @import "functions";
 @import "colors";
-@import "common";
+@import "body";
+@import "typo";
 @import "navbar";
 @import "header";
 @import "forms";
 @import "lists";
 @import "newStyle";
+@import "progress";
