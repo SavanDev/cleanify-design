@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router } from 'react-router-dom';
 import './index.css';
+import './external/dark.min.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLayerGroup, faLaptop, faBox, faBoxes, faGavel, faExclamation } from '@fortawesome/free-solid-svg-icons';
+import { faLayerGroup, faLaptop, faBox, faBoxes, faGavel, faToolbox } from '@fortawesome/free-solid-svg-icons';
 
 const hashHistory = require('history').createHashHistory({ basename: process.env.PUBLIC_URL });
 
-library.add(faLayerGroup, faLaptop, faBox, faBoxes, faGavel, faExclamation);
+library.add(faLayerGroup, faLaptop, faBox, faBoxes, faGavel, faToolbox);
 
 ReactDOM.render(
     <Router history={hashHistory} >
