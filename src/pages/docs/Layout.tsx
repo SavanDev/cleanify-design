@@ -8,7 +8,7 @@ const Layout: React.FC = () => {
                 <h2>Bubble</h2>
                 <div id="containerExample">
                 </div>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<article>'}<br/>
                     {'  <section>'}<br/>
                     {'      ...'}<br/>
@@ -16,12 +16,11 @@ const Layout: React.FC = () => {
                     {'</article>'}
                 </Highlight>
             </section>
-            <hr/>
             <section className="transparent">
                 <h2>Bubble fluid</h2>
                 <div id="containerFluidExample">
                 </div>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<article class="fluid">'}<br/>
                     {'  <section>'}<br/>
                     {'      ...'}<br/>
@@ -29,12 +28,11 @@ const Layout: React.FC = () => {
                     {'</article>'}
                 </Highlight>
             </section>
-            <hr/>
             <section className="transparent">
                 <h2>Bubble transparent</h2>
                 <div id="containerTransparentExample">
                 </div>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<article class="fluid">'}<br/>
                     {'  <section>'}<br/>
                     {'      ...'}<br/>
@@ -42,7 +40,6 @@ const Layout: React.FC = () => {
                     {'</article>'}
                 </Highlight>
             </section>
-            <hr/>
             <section className="transparent">
                 <h2>Grid system</h2>
                 <div className="gridExample">
@@ -50,7 +47,7 @@ const Layout: React.FC = () => {
                     <div></div>
                     <div></div>
                 </div>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<article class="grid">'}<br/>
                     {'  <section>...</section>'}<br/>
                     {'</article>'}

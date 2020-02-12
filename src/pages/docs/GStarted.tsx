@@ -19,7 +19,7 @@ const GStarted: React.FC = () => {
                     </pre>
                 </section>
                 <h4>Starter template</h4>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<!DOCTYPE html>'}<br />
                     {'<html lang="en">'}<br />
                     {'<head>'}<br />

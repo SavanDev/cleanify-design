@@ -11,9 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.codeSnippet {
-  background-color: var(--color-backText);
-  padding: 1.5rem !important;
-  border-radius: 1rem;
-}

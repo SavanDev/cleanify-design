@@ -14,3 +14,17 @@ img.roundered {
 article.center {
     text-align: center;
 }
+
+p.alert-primary {
+    background: linear-gradient(to right, $primary-color, darken($primary-color, 10));
+    border-radius: $border-size;
+    color: white;
+    padding: .5rem 1rem;
+}
+
+p.alert-secondary {
+    background: linear-gradient(to right, $secondary-color, darken($secondary-color, 10));
+    border-radius: $border-size;
+    color: white;
+    padding: .5rem 1rem;
+}

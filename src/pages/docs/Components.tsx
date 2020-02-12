@@ -7,6 +7,19 @@ const Components: React.FC = () => {
     return (
         <article>
             <section className="transparent">
+                <h2>Alerts</h2>
+                <p>Alerts like bootstrap!</p>
+                <section>
+                    <p className="alert-primary">Primary alert!</p>
+                    <p className="alert-secondary">Secondary alert!</p>
+                </section>
+                <Highlight>
+                    {'<p class="alert-primary/alert-secondary">'}<br />
+                    {'  ...'}<br />
+                    {'</p>'}
+                </Highlight>
+            </section>
+            <section className="transparent">
                 <h2>Forms</h2>
                 <section>
                     <form>
@@ -35,7 +48,7 @@ const Components: React.FC = () => {
                         </select>
                         <p>Textarea</p>
                         <textarea cols={30} rows={10}>Text Example</textarea>
-                        <Highlight className="codeSnippet html">
+                        <Highlight>
                             {'<p>...</p>'}<br />
                             {'<input type="..." placeholder="..." />'}<br />
                             {'<textarea cols="..." rows="..."></textarea>'}
@@ -55,7 +68,7 @@ const Components: React.FC = () => {
                                 <input type="date" />
                             </fieldset>
                         </div>
-                        <Highlight className="codeSnippet html">
+                        <Highlight>
                             {'<div class="group">'}<br />
                             {'  <fieldset>'}<br />
                             {'      ...'}<br />
@@ -85,9 +98,7 @@ const Components: React.FC = () => {
                                 <label htmlFor="radioTest3">Radio 3</label>
                             </fieldset>
                         </div>
-
-
-                        <Highlight className="codeSnippet html">
+                        <Highlight>
                             {'<input type="checkbox/radio" id="..." />'}<br />
                             {'<label for="...">...</label>'}
                         </Highlight>
@@ -100,14 +111,13 @@ const Components: React.FC = () => {
                         <input type="submit" value="Submit" />
                         <input type="reset" value="Reset" />
                         <button>Button tag</button>
-                        <Highlight className="codeSnippet html">
+                        <Highlight>
                             {'<input type="button/submit/reset" value="..." />'}<br />
                             {'<button>...</button>'}
                         </Highlight>
                     </form>
                 </section>
             </section>
-            <hr />
             <section className="transparent">
                 <h2>Footer</h2>
                 <section>
@@ -122,7 +132,7 @@ const Components: React.FC = () => {
                         </ol>
                     </footer>
                 </section>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<footer>'}<br />
                     {'  <p>...</p>'}<br />
                     {'</footer>'}<br />
@@ -135,16 +145,16 @@ const Components: React.FC = () => {
                     {'</footer>'}
                 </Highlight>
             </section>
-            <hr />
             <section className="transparent">
                 <h2>Header</h2>
-                <header>
-                    <img src={logo} alt="Logo" />
-                    <h1>Cleanify Design</h1>
-                    <h2>HTML, CSS & JS personal framework</h2>
-                </header>
-                <br />
-                <Highlight className="codeSnippet html">
+                <section>
+                    <header>
+                        <img src={logo} alt="Logo" />
+                        <h1>Example Title</h1>
+                        <h2>Example Subtitle</h2>
+                    </header>
+                </section>
+                <Highlight>
                     {'<header>'}<br />
                     {'  <img src="IMAGE URL">'}<br />
                     {'  <h1>...</h1>'}<br />
@@ -152,60 +162,49 @@ const Components: React.FC = () => {
                     {'</header>'}
                 </Highlight>
             </section>
-            <hr />
             <section className="transparent">
                 <h2>Header gradients</h2>
                 <header className="gradient-1" >
                     <h1>Example Title</h1>
                 </header>
-                <br />
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<header class="gradient-1">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <br />
                 <header className="gradient-2">
                     <h1>Example Title</h1>
                 </header>
-                <br />
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<header class="gradient-2">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <br />
                 <header className="gradient-3">
                     <h1>Example Title</h1>
                 </header>
-                <br />
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<header class="gradient-3">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <br />
                 <header className="gradient-4">
                     <h1>Example Title</h1>
                 </header>
-                <br />
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<header class="gradient-4">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <br />
                 <header className="gradient-5">
                     <h1>Example Title</h1>
                 </header>
-                <br />
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<header class="gradient-5">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
             </section>
-            <hr />
             <section className="transparent">
                 <h2>Inline list</h2>
                 <ol>
@@ -213,13 +212,12 @@ const Components: React.FC = () => {
                     <li><Link to="/docs/components">Link</Link></li>
                     <li>Text</li>
                 </ol>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<ol>'}<br />
                     {'  <li>...</li>'}<br />
                     {'</ol>'}
                 </Highlight>
             </section>
-            <hr />
             <section className="transparent">
                 <h2>List</h2>
                 <ul>
@@ -228,14 +226,12 @@ const Components: React.FC = () => {
                     <li>Test 3</li>
                     <li><Link to="/docs/components">Link example</Link></li>
                 </ul>
-                <br />
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<ul>'}<br />
                     {'  <li>...</li>'}<br />
                     {'</ul>'}
                 </Highlight>
             </section>
-            <hr />
             <section className="transparent">
                 <h2>Navbar</h2>
                 <section>
@@ -250,7 +246,7 @@ const Components: React.FC = () => {
                         </ul>
                     </nav>
                 </section>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<nav>'}<br />
                     {'  <a class="navbar-title" href="URL">...</a>'}<br />
                     {'  <ul class="navbar-menu">'}<br />
@@ -262,7 +258,6 @@ const Components: React.FC = () => {
                     {'</nav>'}
                 </Highlight>
             </section>
-            <hr />
             <section className="transparent">
                 <h2>Progress bar</h2>
                 <article className="grid">
@@ -275,6 +270,9 @@ const Components: React.FC = () => {
                         <progress max="100"></progress>
                     </section>
                 </article>
+                <Highlight>
+                    {'<progress max="..." value="..."></progress>'}
+                </Highlight>
             </section>
         </article>
     );

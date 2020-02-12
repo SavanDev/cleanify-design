@@ -21,7 +21,7 @@ const Home: React.FC = () => {
                     <p><b>Examples:</b> {'<nav>, <section>, <article>'}, etc.</p>
                 </section>
                 <section className="transparent">
-                    <Highlight className="codeSnippet html">
+                    <Highlight>
                         {'<nav>'}<br />
                         {'  <a class="navbar-title">Cleanify Design</a>'}<br />
                         {'  <ul class="navbar-menu">'}<br />
@@ -39,8 +39,9 @@ const Home: React.FC = () => {
                 <section className="transparent">
                     <h4>Dark Mode</h4>
                     <p>Depending on the theme established in the system (dark or light), Cleanify will adapt to it automatically!</p>
-                    <p>Now if Windows is dark, Cleanify too! If Windows is light, Cleanify will be too!</p>
-                    <p>Also, this was tested in GNOME 3 and works too!</p>
+                    <hr/>
+                    <p>Now if Windows is dark, Cleanify too. If Windows is light, Cleanify will be as well.</p>
+                    <p>Also, this was tested in GNOME 3 and also works!</p>
                 </section>
                 <section className="transparent">
                     <img src={DarkExample} alt="Example" className="roundered" width="100%"/>
@@ -50,6 +51,9 @@ const Home: React.FC = () => {
                 <section className="transparent">
                     <h4>Mobile ready</h4>
                     <p>The design has been adapted for better mobile viewing and anything screen with a responsive style like Bootstrap!</p>
+                    <hr/>
+                    <p>The new features were adapted so that, both mobile and desktop, they are visible and pleasing to the eye.</p>
+                    <p>Now with a own responsive system that work in desktop, tablet and mobile resolutions properly!</p>
                 </section>
                 <section className="transparent">
                     <img src={MobileExample} alt="Mobile" width="100%"/>

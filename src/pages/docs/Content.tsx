@@ -7,21 +7,19 @@ const Content: React.FC = () => {
             <section className="transparent">
                 <h2>Navigation Header</h2>
                 <h1 id="headerTitle">Example Text</h1>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<h1 id="headerTitle">...</h1>'}
                 </Highlight>
             </section>
-            <hr/>
             <section className="transparent">
                 <h1>Banners</h1>
                 <h1 className="blueBanner">Cleanify 2.0!</h1>
                 <h1 className="redBanner">In red too!</h1>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<h1 class="blueBanner/redBanner">...</h1>'}
                 </Highlight>
                 <p><b>NOTE:</b> Not work in normal "section".</p>
             </section>
-            <hr/>
             <section className="transparent">
                 <h2>Typography</h2>
                 <section>
@@ -32,7 +30,7 @@ const Content: React.FC = () => {
                     <h5>h5 header</h5>
                     <h6>h6 header</h6>
                 </section>
-                <Highlight className="codeSnippet html">
+                <Highlight>
                     {'<h1>...</h1>'}<br />
                     {'<h2>...</h2>'}<br />
                     {'<h3>...</h3>'}<br />
