@@ -6,12 +6,12 @@
     @include bannerStyle($primary-color);
 }
 
-img.roundered {
+img.rounded {
     border: 1px solid $lightgray-color;
     border-radius: $border-size;
 }
 
-article.center {
+article.center, section.center {
     text-align: center;
 }
 

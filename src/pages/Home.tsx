@@ -44,7 +44,7 @@ const Home: React.FC = () => {
                     <p>Also, this was tested in GNOME 3 and also works!</p>
                 </section>
                 <section className="transparent">
-                    <img src={DarkExample} alt="Example" className="roundered" width="100%"/>
+                    <img src={DarkExample} alt="Example" className="rounded" width="100%"/>
                 </section>
             </article>
             <article className="grid">

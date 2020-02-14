@@ -47,6 +47,7 @@ nav {
     text-transform: uppercase;
     position: sticky;
     top: 0;
+    z-index: 10;
 
     .navbar-title {
         display: inline-block;
@@ -81,12 +82,6 @@ nav {
         margin-right: .25rem;
     }
 
-    // Dark Toggle button style
-    #darkToggle:hover {
-        color: $lightgray-color;
-        cursor: pointer;
-    }
-
     @media screen and (max-width: 1000px) {
         position: initial;
         text-align: center;
@@ -113,10 +108,6 @@ nav {
             > li, a {
                 color: getColor(text);
             }
-        }
-
-        #darkToggle::after {
-            content: "Dark Mode";
         }
     }
 }

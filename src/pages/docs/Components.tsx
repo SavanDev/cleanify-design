@@ -47,7 +47,7 @@ const Components: React.FC = () => {
                             <option>Test 3</option>
                         </select>
                         <p>Textarea</p>
-                        <textarea cols={30} rows={10}>Text Example</textarea>
+                        <textarea cols={30} rows={10} defaultValue="Text Example"></textarea>
                         <Highlight>
                             {'<p>...</p>'}<br />
                             {'<input type="..." placeholder="..." />'}<br />
@@ -82,7 +82,7 @@ const Components: React.FC = () => {
                         <h4>Checkbox & Radio</h4>
                         <div className="group">
                             <fieldset>
-                                <input type="checkbox" id="checkTest" />
+                                <input type="checkbox" id="checkTest" defaultChecked />
                                 <label htmlFor="checkTest">Checkbox 1</label>
                                 <input type="checkbox" id="checkTest2" />
                                 <label htmlFor="checkTest2">Checkbox 2</label>
@@ -92,7 +92,7 @@ const Components: React.FC = () => {
                             <fieldset>
                                 <input type="radio" id="radioTest" name="test" />
                                 <label htmlFor="radioTest">Radio 1</label>
-                                <input type="radio" id="radioTest2" name="test" />
+                                <input type="radio" id="radioTest2" name="test" defaultChecked />
                                 <label htmlFor="radioTest2">Radio 2</label>
                                 <input type="radio" id="radioTest3" name="test" />
                                 <label htmlFor="radioTest3">Radio 3</label>

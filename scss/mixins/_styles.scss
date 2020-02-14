@@ -11,12 +11,16 @@
     &:before {
         content: "";
         position: absolute;
-        width: 200%;
+        width: 200vw;
         height: 12rem;
         left: -50%;
-        top: 2rem; // El doble del margen?.
+        top: 2rem; // TODO: Margin x2 ¿?.
         background-color: $color;
         transform: rotate(2deg);
         z-index: -1;
+    }
+
+    @media screen and (max-width: 1000px) {
+        @include font-size(3rem);
     }
 }

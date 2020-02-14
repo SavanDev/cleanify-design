@@ -33,12 +33,24 @@
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px' width='16px'><text y='15' font-size='20'>▾</text></svg>")
         no-repeat right getColor(background);
     padding: 0.5rem 1rem;
+
+    @media (prefers-color-scheme: dark) {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px' width='16px'><text y='15' font-size='20' fill='white'>▾</text></svg>");
+    }
 }
 
 @mixin form-selectMultiple {
     @include form-select();
     background-image: none;
-    border-radius: $border-size 0 0 $border-size;
+    border-radius: $border-size;
+
+    @media screen and (min-width: 750px) {
+        border-radius: $border-size 0 0 $border-size;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-image: none;
+    }
 }
 
 @mixin form-checkRadio {
@@ -71,6 +83,7 @@
 
     &:hover {
         background-color: $lightgray-color;
+        color: $dark-color;
     }
 }
 
@@ -81,5 +94,6 @@
 
     &:hover {
         background-color: $secondary-color;
+        color: $light-color;
     }
 }

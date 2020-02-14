@@ -11,50 +11,57 @@ $gradientColors: $primary-color, $secondary-color, $dark-color, $light-color, $g
 
 header {
     @include init-container();
-    background-color: getColor(background);
-    border-radius: $border-size;
-    text-align: center;
-    padding: 1.5rem;
+
+    > * {
+        display: block;
+        text-align: center;
+        margin: 1rem auto;
+    }
 
     img {
-        width: 50%;
+        width: 100%;
+        max-width: 256px;
+        max-height: 256px;
     }
 
     h1 {
-        margin: 1rem auto;
-        @include font-size(4rem);
+        @include font-size(4.5rem);
         text-transform: uppercase;
     }
 
     h2 {
-        display: table;
         background-color: getColor(backText);
         padding: 0.75rem;
         border-radius: $border-size;
         font-weight: normal;
-        margin: auto;
         @include font-size(2rem);
     }
 
     @media screen and (min-width: 1000px) {
-        padding: 4rem 3rem;
+        display: grid;
+        grid-template:
+            'logo text'
+            'logo subText';
+        padding: 3rem;
 
+        > * {
+            display: inline-block;
+            margin: auto;
+        }
+        
         img {
-            float: left;
-            max-width: 256px;
-            max-height: 256px;
-            margin-right: 1rem;
+            grid-area: logo;
         }
 
         h1 {
-            padding-top: 3rem;
+            grid-area: text;
+            display: flex;
+            align-items: center;
         }
-    }
 
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
+        h2 {
+            grid-area: subText;
+        }
     }
 
     @for $i from 1 through 5 {

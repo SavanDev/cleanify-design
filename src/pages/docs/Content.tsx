@@ -21,6 +21,33 @@ const Content: React.FC = () => {
                 <p><b>NOTE:</b> Not work in normal "section".</p>
             </section>
             <section className="transparent">
+                <h2>Content centered text</h2>
+                <section className="center">
+                    <h2>Header centered</h2>
+                    <p>And paragraphs too!</p>
+                </section>
+                <Highlight>
+                    {'<article class="center">'}<br />
+                    {'  <h1>...</h1>'}<br />
+                    {'  <p>...</p>'}<br />
+                    {'</article>'}<br />
+                    <br />
+                    {'<section class="center">'}<br />
+                    {'  <h1>...</h1>'}<br />
+                    {'  <p>...</p>'}<br />
+                    {'</section>'}<br />
+                </Highlight>
+            </section>
+            <section className="transparent">
+                <h2>Rounded Image</h2>
+                <section className="center transparent">
+                    <img className="rounded" src="https://via.placeholder.com/500x250.png" alt="Placeholder" />
+                </section>
+                <Highlight>
+                    {'<img class="rounded" src="...">'}
+                </Highlight>
+            </section>
+            <section className="transparent">
                 <h2>Typography</h2>
                 <section>
                     <h1>h1 header</h1>

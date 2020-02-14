@@ -15,7 +15,7 @@ const Download: React.FC = () => {
                     <h4>{version.name}</h4>
                     <pre style={{ margin: 10 }}>{version.body}</pre>
                     <ol>
-                        <li><a href={version.html_url}>Download</a></li>
+                        <li><a href={version.assets[0].browser_download_url}>Download</a></li>
                         <li><a href={version.zipball_url}>Source code (.zip)</a></li>
                     </ol>
                 </section>,
@@ -32,7 +32,7 @@ const Download: React.FC = () => {
     return(
         <article>
             <h1 id="headerTitle">Download Cleanify Design</h1>
-            <section>
+            <section className="transparent">
                 <h2>Latest version</h2>
                 <div id="latest">
                     <p>Loading latest version...</p>

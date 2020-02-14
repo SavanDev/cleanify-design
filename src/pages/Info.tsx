@@ -18,7 +18,7 @@ const Info: React.FC = () => {
                         <p>The first version was released and Cleanify Design was saw the light for first time.</p>
                     </section>
                     <section className="transparent">
-                        <img src={OldCleanify} alt="Example" className="roundered" width="100%" />
+                        <img src={OldCleanify} alt="Example" className="rounded" width="100%" />
                     </section>
                 </article>
             </section>
@@ -33,7 +33,7 @@ const Info: React.FC = () => {
                         <p>The second version is here and you can watch all the new features and changes that I was made from the first version. As the new banners!</p>
                     </section>
                     <section className="transparent">
-                        <img src={NewCleanify} alt="Example" className="roundered" width="100%" />
+                        <img src={NewCleanify} alt="Example" className="rounded" width="100%" />
                     </section>
                 </article>
             </section>
