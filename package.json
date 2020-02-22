@@ -1,6 +1,6 @@
 {
   "name": "cleanify-design",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "HTML, CSS & JS personal framework",
   "homepage": "https://savandev.github.io/cleanify-design/",
   "repository": "https://github.com/SavanDev/cleanify-design.git",
@@ -9,7 +9,7 @@
   "scripts": {
     "dist": "gulp",
     "docs:build": "react-scripts build",
-    "docs:deploy": "gh-pages -d build",
+    "docs:deploy": "react-scripts build && gh-pages -d build",
     "docs:watch": "react-scripts start",
     "start": "gulp watch"
   },
@@ -20,12 +20,6 @@
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
-    "gh-pages": "2.0.1",
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-sass": "^4.0.2",
-    "webpack-cli": "^3.3.7",
-    "webpack-stream": "^5.2.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.20",
     "@fortawesome/free-brands-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.10.0",
@@ -36,13 +30,19 @@
     "@types/react-dom": "16.8.5",
     "@types/react-highlight": "^0.12.1",
     "@types/react-router-dom": "^4.3.4",
+    "gh-pages": "2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^4.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-highlight": "^0.12.0",
     "react-markdown": "^4.2.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "typescript": "3.5.3"
+    "typescript": "3.5.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-stream": "^5.2.1"
   },
   "eslintConfig": {
     "extends": "react-app"
