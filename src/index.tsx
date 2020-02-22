@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDownload, faBook, faLayerGroup, faLaptop, faBox, faBoxes, faGavel } from '@fortawesome/free-solid-svg-icons';
 
-const hashHistory = require('history').createHashHistory({ basename: process.env.PUBLIC_URL });
+const hashHistory = require('history').createHashHistory({ basename: process.env.PUBLIC_URL + '/' });
 
 library.add(faDownload, faBook, faLayerGroup, faLaptop, faBox, faBoxes, faGavel);
 

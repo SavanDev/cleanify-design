@@ -7,7 +7,7 @@ const GStarted: React.FC = () => {
         <article>
             <section>
                 <h2>Let's start!</h2>
-                <p>Once the files have been <Link to="/download">downloaded</Link>, the directory should look like this.</p>
+                <p>Once the files have been <Link to ="/download">downloaded</Link>, the directory should look like this.</p>
                 <section>
                     <pre style={{ margin: 5 }}>
                         {'website'}<br/>
