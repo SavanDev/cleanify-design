@@ -1,6 +1,6 @@
 {
   "name": "cleanify-design",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "HTML, CSS & JS personal framework",
   "homepage": "https://savandev.github.io/cleanify-design/",
   "repository": "https://github.com/SavanDev/cleanify-design.git",
@@ -14,8 +14,7 @@
     "start": "gulp watch"
   },
   "dependencies": {
-    "rfs": "^8.0.4",
-    "sass": "^1.22.5"
+    "rfs": "^8.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
@@ -42,7 +41,8 @@
     "react-scripts": "3.0.1",
     "typescript": "3.5.3",
     "webpack-cli": "^3.3.7",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^5.2.1",
+    "sass": "^1.22.5"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,6 +61,7 @@
   },
   "files": [
     "dist/{css,js}/*.{css,js}",
-    "scss/**/*.scss"
+    "scss/**/*.scss",
+    "js/**/*.js"
   ]
 }

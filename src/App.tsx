@@ -14,8 +14,8 @@ const App: React.FC = () => {
     <div id="app">
       <Navbar/>
       <Switch>
-        <Route path="/download" component={Download} />
-        <Route path="/docs" component={Docs} />
+        <Route path={process.env.PUBLIC_URL + "/download"} component={Download} />
+        <Route path={process.env.PUBLIC_URL + "/docs"} component={Docs} />
         <Route component={Home} />
       </Switch>
       <footer>

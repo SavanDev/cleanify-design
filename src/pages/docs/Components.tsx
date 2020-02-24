@@ -197,7 +197,7 @@ const Components: React.FC = () => {
                 <p>* Not visible in mobiles</p>
                 <ol>
                     <li>Home</li>
-                    <li><Link to ="/docs/components">Download</Link></li>
+                    <li><Link to ={process.env.PUBLIC_URL + "/docs/components"}>Download</Link></li>
                     <li>Documentation</li>
                 </ol>
                 <Highlight className="codeSnippet html">
@@ -212,7 +212,7 @@ const Components: React.FC = () => {
                     <li>Hello World!</li>
                     <li>Example text</li>
                     <li>Test 3</li>
-                    <li><Link to ="/docs/components">Link example</Link></li>
+                    <li><Link to ={process.env.PUBLIC_URL + "/docs/components"}>Link example</Link></li>
                 </ul>
                 <br />
                 <Highlight className="codeSnippet html">
@@ -225,7 +225,7 @@ const Components: React.FC = () => {
                 <h2>Navbar</h2>
                 <section>
                     <nav>
-                        <Link to ="/docs/components" className="navbar-title">Cleanify Example</Link>
+                        <Link to ={process.env.PUBLIC_URL + "/docs/components"} className="navbar-title">Cleanify Example</Link>
                         <ul className="navbar-menu">
                             <li>Home</li>
                             <li>Test</li>

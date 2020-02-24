@@ -21,10 +21,10 @@ class Navbar extends React.Component<any, INavbar> {
     render() {
         return (
             <nav>
-                <Link to ="/" className="navbar-title">Cleanify Design</Link>
+                <Link to ={process.env.PUBLIC_URL + "/"} className="navbar-title">Cleanify Design</Link>
                 <ul className="navbar-menu">
-                    <li><Link to ="/download"><FontAwesomeIcon icon="download" /> Download</Link></li>
-                    <li><Link to ="/docs"><FontAwesomeIcon icon="book" /> Documentation</Link></li>
+                    <li><Link to ={process.env.PUBLIC_URL + "/download"}><FontAwesomeIcon icon="download" /> Download</Link></li>
+                    <li><Link to ={process.env.PUBLIC_URL + "/docs"}><FontAwesomeIcon icon="book" /> Documentation</Link></li>
                 </ul>
                 <ul className="navbar-right-menu">
                     <li id="version">v{ packageJson.version }</li>

@@ -1,6 +1,4 @@
-<div align=center>
-<img src="./src/img/logo.svg" width="256px" />
-</div>
+# Cleanify Design
 
 HTML, CSS & JS personal framework.
 
