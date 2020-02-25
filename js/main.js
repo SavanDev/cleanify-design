@@ -15,7 +15,7 @@ if(observerEnable)
     Observer(() => {
         styleCss.handleDarkButton();
         styleCss.handleHeaderTitle(100);
-        console.log("Changes detected in DOM");
+        console.log("Cleanify Design: Changes detected in DOM");
     });
 
 if(switchStyles) {

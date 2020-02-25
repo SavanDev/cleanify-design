@@ -14,7 +14,10 @@ export default class Style {
     }
 
     checkDarkMode() {
-        document.getElementById('cleanifyCss').setAttribute('href', getCookie("darkmode") == 1 ? this.getLightMode() : this.getDarkMode());
+        if(document.getElementById('cleanifyCss') != null)
+            document.getElementById('cleanifyCss').setAttribute('href', getCookie("darkmode") == 1 ? this.getLightMode() : this.getDarkMode());
+        else
+            console.log("Cleanify Design: Dark Mode not available.");
     }
 
     toggleDarkMode() {
