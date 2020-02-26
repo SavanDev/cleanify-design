@@ -37,15 +37,24 @@ section {
 }
 
 footer {
-    margin-top: 1.5rem;
     text-align: center;
-    padding: 2rem;
-    border-radius: $border-size $border-size 0 0;
-    background-color: $primary-color;
     color: white;
     font-weight: bold;
+    margin: auto 1rem;
 
     ol > li > a:hover {
-        background-color: $secondary-color;
+        background-color: $primary-color;
+    }
+
+    @media screen and (min-width: 1000px) {
+        @include init-container();
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        > * {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
     }
 }

@@ -1,5 +1,3 @@
-import { setCookie, getCookie } from './cookies';
-
 export default class Style {
     handleHeaderTitle(max) {
         let title = document.getElementById('headerTitle');

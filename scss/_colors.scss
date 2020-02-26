@@ -3,7 +3,7 @@ $colors: (
     text: $dark-color,
     backText: $lightgray-color,
     button: $lightgray-color,
-    backAlpha: rgba($light-color, 0.7),
+    backAlpha: rgba($light-color, 0.95),
     container: white,
     listP: darken(white, 5),
     listI: darken(white, 7)
@@ -14,7 +14,7 @@ $colors-dark: (
     text: $light-color,
     backText: $gray-color,
     button: $gray-color,
-    backAlpha: rgba($dark-color, 0.7),
+    backAlpha: rgba($dark-color, 0.95),
     container: $gray-color,
     listP: darken($gray-color, 5),
     listI: darken($gray-color, 7)

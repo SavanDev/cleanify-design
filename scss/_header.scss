@@ -1,4 +1,6 @@
 @mixin gradientBase {
+    border-radius: $border-size;
+
     h1 {
         display: table;
         background-color: getColor(backAlpha);
@@ -25,7 +27,7 @@ header {
     }
 
     h1 {
-        @include font-size(4.5rem);
+        @include font-size(4rem);
         text-transform: uppercase;
     }
 
