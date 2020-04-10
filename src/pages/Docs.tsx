@@ -12,11 +12,11 @@ const Docs: React.FC = () => {
         <article className="fluid grid">
             <section id="docsMenu" className="transparent">
                 <ul>
-                    <li><Link to="/docs"><FontAwesomeIcon icon="laptop" /> Getting Started</Link></li>
-                    <li><Link to="/docs/layout"><FontAwesomeIcon icon="layer-group" /> Layout</Link></li>
-                    <li><Link to="/docs/content"><FontAwesomeIcon icon="box" /> Content</Link></li>
-                    <li><Link to="/docs/components"><FontAwesomeIcon icon="boxes" /> Components</Link></li>
-                    <li><Link to="/docs/plugins"><FontAwesomeIcon icon="toolbox" /> Plugins</Link></li>
+                    <li><Link to="/docs" onClick={() => window.scrollTo(0, 0)}><FontAwesomeIcon icon="laptop" /> Getting Started</Link></li>
+                    <li><Link to="/docs/layout" onClick={() => window.scrollTo(0, 0)}><FontAwesomeIcon icon="layer-group" /> Layout</Link></li>
+                    <li><Link to="/docs/content" onClick={() => window.scrollTo(0, 0)}><FontAwesomeIcon icon="box" /> Content</Link></li>
+                    <li><Link to="/docs/components" onClick={() => window.scrollTo(0, 0)}><FontAwesomeIcon icon="boxes" /> Components</Link></li>
+                    <li><Link to="/docs/plugins" onClick={() => window.scrollTo(0, 0)}><FontAwesomeIcon icon="toolbox" /> Plugins</Link></li>
                 </ul>
             </section>
             <Switch>

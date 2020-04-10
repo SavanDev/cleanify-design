@@ -1,11 +1,3 @@
-.redBanner {
-    @include bannerStyle($secondary-color);
-}
-
-.blueBanner {
-    @include bannerStyle($primary-color);
-}
-
 img.rounded {
     border: 1px solid $lightgray-color;
     border-radius: $border-size;

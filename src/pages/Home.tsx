@@ -8,12 +8,11 @@ import MobileExample from '../img/Mobile.png';
 const Home: React.FC = () => {
     return (
         <div id="home">
-            <header>
+            <header className="withImage">
                 <img src={logo} alt="Logo" />
                 <h1>Cleanify Design</h1>
                 <h2>{version.description}</h2>
             </header>
-            <h1 className="blueBanner">A new renovate design!</h1>
             <article className="grid">
                 <section className="transparent">
                     <h4>HTML5 support</h4>

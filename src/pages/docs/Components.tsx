@@ -148,14 +148,14 @@ const Components: React.FC = () => {
             <section className="transparent">
                 <h2>Header</h2>
                 <section>
-                    <header>
+                    <header className="withImage">
                         <img src={logo} alt="Logo" />
                         <h1>Example Title</h1>
                         <h2>Example Subtitle</h2>
                     </header>
                 </section>
                 <Highlight>
-                    {'<header>'}<br />
+                    {'<header class="withImage">'}<br />
                     {'  <img src="IMAGE URL">'}<br />
                     {'  <h1>...</h1>'}<br />
                     {'  <h2>...</h2>'}<br />

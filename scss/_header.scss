@@ -14,16 +14,23 @@ $gradientColors: $primary-color, $secondary-color, $dark-color, $light-color, $g
 header {
     @include init-container();
 
+    &.withImage {
+        grid-template:
+            'logo text'
+            'logo subText';
+
+        img {
+            width: 100%;
+            max-width: 256px;
+            max-height: 256px;
+            grid-area: logo;
+        }
+    }
+
     > * {
         display: block;
         text-align: center;
         margin: 1rem auto;
-    }
-
-    img {
-        width: 100%;
-        max-width: 256px;
-        max-height: 256px;
     }
 
     h1 {
@@ -42,17 +49,13 @@ header {
     @media screen and (min-width: 1000px) {
         display: grid;
         grid-template:
-            'logo text'
-            'logo subText';
+            'text'
+            'subText';
         padding: 3rem;
 
         > * {
             display: inline-block;
             margin: auto;
-        }
-        
-        img {
-            grid-area: logo;
         }
 
         h1 {

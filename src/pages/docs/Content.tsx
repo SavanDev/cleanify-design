@@ -12,15 +12,6 @@ const Content: React.FC = () => {
                 </Highlight>
             </section>
             <section className="transparent">
-                <h1>Banners</h1>
-                <h1 className="blueBanner">Cleanify 2.0!</h1>
-                <h1 className="redBanner">In red too!</h1>
-                <Highlight>
-                    {'<h1 class="blueBanner/redBanner">...</h1>'}
-                </Highlight>
-                <p><b>NOTE:</b> Not work in normal "section".</p>
-            </section>
-            <section className="transparent">
                 <h2>Content centered text</h2>
                 <section className="center">
                     <h2>Header centered</h2>
