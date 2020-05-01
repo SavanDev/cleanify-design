@@ -14,6 +14,9 @@
     "start": "gulp watch"
   },
   "dependencies": {
+    "rfs": "^9.0.3"
+  },
+  "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
@@ -24,18 +27,12 @@
     "@types/react-dom": "16.9.7",
     "@types/react-highlight": "^0.12.2",
     "@types/react-router-dom": "^5.1.5",
-    "angled-edges": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-highlight": "^0.12.0",
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "rfs": "^9.0.3",
-    "sass": "^1.26.5",
-    "typescript": "3.8.3"
-  },
-  "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "gh-pages": "2.2.0",
@@ -44,7 +41,9 @@
     "gulp-sass": "^4.1.0",
     "normalize.css": "^8.0.1",
     "webpack-cli": "^3.3.11",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^5.2.1",
+    "sass": "^1.26.5",
+    "typescript": "3.8.3"
   },
   "eslintConfig": {
     "extends": "react-app"

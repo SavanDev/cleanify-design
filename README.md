@@ -1,9 +1,7 @@
-<div style="text-align:center">
-    <img src="./icons/cd-current.svg" width="256px" />
+<img src="https://raw.githubusercontent.com/SavanDev/cleanify-design/master/icons/cd-current.svg" width="256px" />
 
 ![https://savandev.github.io/cleanify-design](https://img.shields.io/github/v/release/savandev/cleanify-design?label=Cleanify%20Design&style=for-the-badge)
 ![](https://img.shields.io/github/package-json/v/savandev/cleanify-design?color=red&label=master&style=flat-square)
-</div>
 
 ## HTML, CSS & JS personal framework.
 
