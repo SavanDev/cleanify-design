@@ -5,6 +5,15 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArchive } from '@fortawesome/free-solid-svg-icons';
 import Highlight from 'react-highlight';
 
+let getVersions = (json : any, lts : boolean, limit : number) => json.slice(0, limit).map((element: any) => {
+        if (lts ? element.tag_name.includes("LTS") : !element.tag_name.includes("LTS"))
+            return (
+                <li><a href={element.html_url} title={element.body}>{element.name}</a></li>
+            );
+        else
+            return null;
+});
+
 const Download: React.FC = () => {
     let url = "https://api.github.com/repos/SavanDev/cleanify-design/releases";
 
@@ -36,12 +45,21 @@ const Download: React.FC = () => {
                                     </Highlight>
                                 </section>
                             </article>
-                            <h3>Older versions</h3>
-                            <ul id="older">
-                                {json.map((element: any) =>
-                                    <li><a href={element.html_url} title={element.body}>{element.name}</a></li>
-                                )}
-                            </ul>
+                            <article className="grid">
+                                <section className="transparent">
+                                    <h3>LTS version</h3>
+                                    <ul id="older">
+                                        {getVersions(json, true, 4)}
+                                    </ul>
+                                </section>
+                                <section className="transparent">
+                                    <h3>Older versions</h3>
+                                    <ul id="older">
+                                        {getVersions(json, false, 4)}
+                                        <li><a href="https://github.com/SavanDev/cleanify-design/releases">Show more versions...</a></li>
+                                    </ul>
+                                </section>
+                            </article>
                         </section>
                     </article>,
                     document.getElementById("releases"));

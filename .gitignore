@@ -7,5 +7,4 @@ node_modules
 yarn-error.log
 
 # Distribution files
-dist
 build
