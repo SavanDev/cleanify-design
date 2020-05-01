@@ -2,50 +2,48 @@
   "name": "cleanify-design",
   "version": "2.0.0",
   "description": "HTML, CSS & JS personal framework",
-  "homepage": "./",
+  "homepage": "https://savandev.github.io/cleanify-design",
   "repository": "https://github.com/SavanDev/cleanify-design.git",
   "author": "SavanDev <Dylan2018.2019@gmail.com>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dist": "gulp",
     "docs:build": "react-scripts build",
-    "docs:deploy": "gh-pages -d build",
+    "docs:deploy": "react-scripts build && gh-pages -d build",
     "docs:watch": "react-scripts start",
     "start": "gulp watch"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.20",
-    "@fortawesome/free-brands-svg-icons": "^5.10.1",
-    "@fortawesome/free-solid-svg-icons": "^5.10.0",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "@types/jest": "24.0.15",
-    "@types/node": "12.6.8",
-    "@types/react": "16.8.23",
-    "@types/react-dom": "16.8.5",
-    "@types/react-highlight": "^0.12.1",
-    "@types/react-router-dom": "^4.3.4",
-    "angled-edges": "^2.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-highlight": "^0.12.0",
-    "react-markdown": "^4.2.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
-    "rfs": "^8.0.4",
-    "sass": "^1.22.5",
-    "typescript": "3.5.3"
+    "rfs": "^9.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
-    "gh-pages": "2.0.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@types/jest": "25.2.1",
+    "@types/node": "13.13.4",
+    "@types/react": "16.9.34",
+    "@types/react-dom": "16.9.7",
+    "@types/react-highlight": "^0.12.2",
+    "@types/react-router-dom": "^5.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-highlight": "^0.12.0",
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "gh-pages": "2.2.0",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "normalize.css": "^8.0.1",
-    "webpack-cli": "^3.3.7",
-    "webpack-stream": "^5.2.1"
+    "webpack-cli": "^3.3.11",
+    "webpack-stream": "^5.2.1",
+    "sass": "^1.26.5",
+    "typescript": "3.8.3"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,5 +59,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "files": [
+    "dists/{css,js}/*.{css,js}",
+    "scss/**/*.scss",
+    "js/**/*.js"
+  ]
 }
