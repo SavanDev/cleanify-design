@@ -15,15 +15,10 @@ header {
     @include init-container();
 
     &.withImage {
-        grid-template:
-            'logo text'
-            'logo subText';
-
         img {
             width: 100%;
             max-width: 256px;
             max-height: 256px;
-            grid-area: logo;
         }
     }
 
@@ -43,7 +38,7 @@ header {
         padding: 0.75rem;
         border-radius: $border-size;
         font-weight: normal;
-        @include font-size(2rem);
+        @include font-size(1.5rem);
     }
 
     @media screen and (min-width: 1000px) {
@@ -58,13 +53,23 @@ header {
             margin: auto;
         }
 
+        &.withImage {
+            grid-template:
+            'logo text'
+            'logo subText';
+
+            img {
+                grid-area: logo;
+            }
+        }
+
         h1 {
+            @include font-size(4.5rem);
             grid-area: text;
-            display: flex;
-            align-items: center;
         }
 
         h2 {
+            @include font-size(2rem);
             grid-area: subText;
         }
     }

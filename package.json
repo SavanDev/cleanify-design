@@ -1,6 +1,6 @@
 {
   "name": "cleanify-design",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "HTML, CSS & JS personal framework",
   "homepage": "https://savandev.github.io/cleanify-design",
   "repository": "https://github.com/SavanDev/cleanify-design.git",
@@ -61,7 +61,7 @@
     ]
   },
   "files": [
-    "dists/{css,js}/*.{css,js}",
+    "dist/{css,js}/*.{css,js}",
     "scss/**/*.scss",
     "js/**/*.js"
   ]
