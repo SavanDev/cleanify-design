@@ -12,9 +12,13 @@ const Components: React.FC = () => {
                 <section>
                     <p className="alert-primary">Primary alert!</p>
                     <p className="alert-secondary">Secondary alert!</p>
+                    <p className="alert-success">Success alert!</p>
+                    <p className="alert-danger">Danger alert!</p>
+                    <p className="alert-warning">Warning alert!</p>
+                    <p className="alert-info">Info alert!</p>
                 </section>
                 <Highlight>
-                    {'<p class="alert-primary/alert-secondary">'}<br />
+                    {'<p class="alert-(primary/secondary/success/danger/warning/info)">'}<br />
                     {'  ...'}<br />
                     {'</p>'}
                 </Highlight>
@@ -164,43 +168,83 @@ const Components: React.FC = () => {
             </section>
             <section className="transparent">
                 <h2>Header gradients</h2>
-                <header className="gradient-1" >
+                <header className="gradient-primary" >
                     <h1>Example Title</h1>
                 </header>
                 <Highlight>
-                    {'<header class="gradient-1">'}<br />
+                    {'<header class="gradient-primary">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <header className="gradient-2">
+                <header className="gradient-secondary">
                     <h1>Example Title</h1>
                 </header>
                 <Highlight>
-                    {'<header class="gradient-2">'}<br />
+                    {'<header class="gradient-secondary">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <header className="gradient-3">
+                <header className="gradient-success">
                     <h1>Example Title</h1>
                 </header>
                 <Highlight>
-                    {'<header class="gradient-3">'}<br />
+                    {'<header class="gradient-success">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <header className="gradient-4">
+                <header className="gradient-danger">
                     <h1>Example Title</h1>
                 </header>
                 <Highlight>
-                    {'<header class="gradient-4">'}<br />
+                    {'<header class="gradient-danger">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>
-                <header className="gradient-5">
+                <header className="gradient-warning">
                     <h1>Example Title</h1>
                 </header>
                 <Highlight>
-                    {'<header class="gradient-5">'}<br />
+                    {'<header class="gradient-warning">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+                <header className="gradient-info">
+                    <h1>Example Title</h1>
+                </header>
+                <Highlight>
+                    {'<header class="gradient-info">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+                <header className="gradient-light">
+                    <h1>Example Title</h1>
+                </header>
+                <Highlight>
+                    {'<header class="gradient-light">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+                <header className="gradient-dark">
+                    <h1>Example Title</h1>
+                </header>
+                <Highlight>
+                    {'<header class="gradient-dark">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+                <header className="gradient-muted">
+                    <h1>Example Title</h1>
+                </header>
+                <Highlight>
+                    {'<header class="gradient-muted">'}<br />
+                    {'  ...'}<br />
+                    {'</header>'}
+                </Highlight>
+                <header className="gradient-lightgray">
+                    <h1>Example Title</h1>
+                </header>
+                <Highlight>
+                    {'<header class="gradient-lightgray">'}<br />
                     {'  ...'}<br />
                     {'</header>'}
                 </Highlight>

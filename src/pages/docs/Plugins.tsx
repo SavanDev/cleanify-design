@@ -20,19 +20,6 @@ const Plugins: React.FC = () => {
                     <b>NOTE</b>: Material Icons isn't included in Cleanify.
                 </p>
             </section>
-            <section className="transparent">
-                <h2>React Implementation</h2>
-                <p>Cleanify works in React pages, even this documentation was written in React.</p>
-            </section>
-            <section className="transparent">
-                <h2>React Highlight</h2>
-                <p>Now Cleanify have a custom style for code highlights with "react-highlight".</p>
-                <Highlight>
-                    {'<Highlight>'}<br />
-                    {'  ...'}<br />
-                    {'</Highlight>'}
-                </Highlight>
-            </section>
         </article>
     );
 };

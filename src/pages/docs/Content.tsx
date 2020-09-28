@@ -12,6 +12,19 @@ const Content: React.FC = () => {
                 </Highlight>
             </section>
             <section className="transparent">
+                <h2>Blockquotes</h2>
+                <p>This is a <q>Inline blockquote</q></p>
+                <blockquote>
+                    Blockquote Text
+                </blockquote>
+                <Highlight>
+                    {'<q>...</q>\n'}
+                    {'<blockquote>\n'}
+                    {'  ...\n'}
+                    {'</blockquote>'}
+                </Highlight>
+            </section>
+            <section className="transparent">
                 <h2>Content centered text</h2>
                 <section className="center">
                     <h2>Header centered</h2>

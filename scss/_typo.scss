@@ -1,16 +1,16 @@
 a {
-    color: getColor(text);
+    color: var(--text);
     text-decoration: none;
     outline: none;
 
     &:hover {
-        color: $primary-color;
+        color: var(--color-primary);
     }
 }
 
 hr {
     width: 95%;
-    color: $light-color;
+    color: var(--color-lightgray);
     margin: 1rem auto;
 }
 
@@ -50,10 +50,23 @@ h6 {
 
 p {
     @include font-size(1.2rem);
-    margin: 0.5rem;
+    margin: .5rem;
 }
 
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+q {
+    font-weight: lighter;
+}
+
+blockquote {
+    background-color: var(--color-lightgray);
+    margin: .5rem;
+    padding: .75rem;
+    font-weight: lighter;
+    @include font-size(1rem);
+    border-radius: $border-size;
 }

@@ -1,42 +1,42 @@
 progress {
     @include disableAppareance();
     border-radius: $border-size;
-    border: 1px solid $lightgray-color;
+    border: 1px solid var(--color-muted);
     width: 100%;
     overflow: hidden;
 
     // Firefox
-    background-color: getColor(background);
+    background-color: var(--color-light);
     &[value]::-moz-progress-bar {
-        background-image: linear-gradient(to right, $primary-color, $secondary-color);
+        background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
         border-radius: $border-size;
     }
     &:not([value])::-moz-progress-bar {
-        background-color: $secondary-color;
+        background-color: var(--color-secondary);
     }
 
     // Chromium
     &[value] {
         &::-webkit-progress-bar {
-            background-color: getColor(background);
+            background-color: var(--color-light);
         }
         &::-webkit-progress-value {
-            background-image: linear-gradient(to right, $primary-color, $secondary-color);
+            background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
             border-radius: $border-size;
         }
     }
     &:not([value]) {
         &::-webkit-progress-bar {
-            background-color: $secondary-color;
+            background-color: var(--color-secondary);
         }
     }
 
-    // Edge (not chromium)
+    // Edge Legacy
     &[value]::-ms-fill {
-        background-image: linear-gradient(to right, $primary-color, $secondary-color);
+        background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
         border-radius: $border-size;
     }
     &:not([value])::-ms-fill {
-        background-color: $secondary-color;
+        background-color: var(--color-secondary);
     }
 }

@@ -48,3 +48,62 @@
     position: sticky;
     top: 4rem;
 }
+
+#docsMenu a > svg {
+	width: 20px;
+	margin-right: .5rem;
+}
+
+/* Highlight React */
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1.5rem;
+    border: 1px solid #222;
+    border-radius: 1rem;
+    background: var(--color-dark);
+    margin: 1rem auto;
+}
+
+.hljs,
+.hljs-subst {
+  color: var(--color-light);
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-name,
+.hljs-type,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: var(--color-primary);
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+  color: var(--color-muted);
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-type,
+.hljs-name,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}

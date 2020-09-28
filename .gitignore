@@ -8,3 +8,6 @@ yarn-error.log
 
 # Distribution files
 build
+
+#NPM files
+package-lock.json

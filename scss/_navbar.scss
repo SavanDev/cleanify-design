@@ -2,7 +2,7 @@
     padding: 0;
 
     *:hover {
-        background-color: $gray-color;
+        background-color: var(--color-lightgray);
         color: white !important;
     }
 
@@ -13,7 +13,7 @@
         /* Bottom Borders */
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        border-bottom-color: $lightgray-color;
+        border-bottom-color: var(--color-muted);
 
         a {
             display: block;
@@ -42,7 +42,7 @@
 }
 
 nav {
-    background-color: getColor(backAlpha);
+    background-color: var(--backgroundTransparent);
     @include font-size(.9rem);
     text-transform: uppercase;
     position: sticky;
@@ -51,13 +51,13 @@ nav {
 
     .navbar-title {
         display: inline-block;
-        background-color: $primary-color;
-        color: $light-color !important;
+        background-color: var(--color-primary);
+        color: var(--color-light) !important;
         border-radius: 0 0 $border-size 0;
         padding: 1rem;
 
         &:hover {
-            background-color: $secondary-color;
+            background-color: var(--color-secondary);
         }
     }
 
@@ -66,13 +66,13 @@ nav {
         @include menuDesktop();
 
         > li {
-            color: getColor(text);
+            color: var(--text);
         }
     }
 
     .navbar-right-menu {
         float: right;
-        background-color: $secondary-color;
+        background-color: var(--color-primary);
         border-radius: 0 0 0 $border-size;
 
         @include menuDesktop(true);
@@ -103,10 +103,10 @@ nav {
         .navbar-right-menu {
             @include menuMobile();
             float: none;
-            background-color: getColor(backAlpha);
+            background-color: var(--background);
 
             > li, a {
-                color: getColor(text);
+                color: var(--text);
             }
         }
     }
