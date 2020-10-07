@@ -1,0 +1,17 @@
+baseurl: "/cleanify-design" # the subpath of your site, e.g. /blog
+title: "Cleanify Design!" # the name of your site, e.g. ACME Corp.
+
+destination: ../docs
+
+plugins:
+  - jekyll-feed
+  - jekyll-get-json
+
+collections:
+  docs        :
+    output    : true
+    permalink : /:collection/:path/
+
+jekyll_get_json:
+  - data: github
+    json: 'https://api.github.com/repos/SavanDev/cleanify-design/releases'

@@ -12,14 +12,13 @@ function compileJS() {
             }
         }))
         .pipe(dest('./dist/js'))
-        .pipe(dest('./public/js'));
+        .pipe(dest('./site/assets/js'));
 }
 
 function compileCSS() {
     return src('./scss/**/*.scss')
         .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(dest('./dist/css'))
-        .pipe(dest('./public/css'));
+        .pipe(dest('./dist/css'));
 }
 
 function cleanDist() {
@@ -28,7 +27,7 @@ function cleanDist() {
 }
 
 function cleanDocs() {
-    return src(['./public/css/*', './public/js/*'])
+    return src('./site/assets/js/*')
         .pipe(clean());
 }
 
@@ -42,7 +41,7 @@ function watchDist() {
 
 function updateLogo() {
     return src('./icons/cd-current.svg')
-        .pipe(dest('./src/img/'));
+        .pipe(dest('./site/assets/img/'));
 }
 
 exports.watch = watchDist;

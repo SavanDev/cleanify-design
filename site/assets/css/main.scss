@@ -1,0 +1,39 @@
+---
+---
+
+@import "../scss/cleanify.scss";
+
+svg {
+    display: inline-block;
+    max-width: 18px;
+    max-height: 18px;
+    margin: -4px .1rem 0 0;
+    vertical-align: middle;
+    fill: var(--color-text);
+}
+
+a:hover svg {
+    fill: #0062ff;
+}
+
+footer ol > li > a {
+    &:hover svg {
+        fill: white;
+    }
+
+    svg {
+        fill: #222020;
+    }
+}
+
+.highlight pre {
+    padding: .3rem;
+    border-radius: 1rem;
+
+    .lineno {
+        background-color: #222;
+        color: #666;
+        text-align: center;
+        margin-right: .1rem;
+    }
+}

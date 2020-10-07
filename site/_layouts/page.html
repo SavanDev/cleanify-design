@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+{%- include head.html -%}
+
+<body>
+    {%- include navbar.html -%}
+    <h1 id="headerTitle">
+        {%- if page.headerTitle -%}
+            {{ page.headerTitle}}
+        {%- else -%}
+            {{ page.title }}
+        {%- endif -%}
+    </h1>
+    <article>
+        {{ content }}
+    </article>
+    {%- include footer.html -%}
+</body>
+
+</html>

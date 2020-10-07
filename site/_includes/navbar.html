@@ -1,0 +1,11 @@
+<nav>
+    <a href="{{ site.baseurl }}/" class="navbar-title">Cleanify Design</a>
+    <ul class="navbar-menu">
+        <li>
+            <a href="{{ "/about" | relative_url }}">{% fa_svg fas.fa-address-card %} About</a>
+        </li>
+    </ul>
+    <ul class="navbar-right-menu">
+        <li>{{ site.data.github[0].tag_name }}</li>
+    </ul>
+</nav>
