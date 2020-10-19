@@ -1,13 +1,11 @@
 ---
 ---
 
-@import "../scss/cleanify.scss";
-
 svg {
     display: inline-block;
     max-width: 18px;
     max-height: 18px;
-    margin: -4px .1rem 0 0;
+    margin: -4px 0.1rem 0 0;
     vertical-align: middle;
     fill: var(--color-text);
 }
@@ -26,14 +24,28 @@ footer ol > li > a {
     }
 }
 
-.highlight pre {
-    padding: .3rem;
-    border-radius: 1rem;
+.highlight {
+    pre {
+        padding: .3rem;
+        border-radius: 1rem;
+    }
+
+    .language-console {
+        padding: 1rem;
+
+        .nb {
+            font-weight: bold;
+        }
+    }
 
     .lineno {
         background-color: #222;
         color: #666;
         text-align: center;
         margin-right: .1rem;
+    }
+
+    * {
+        font-family: 'Liberation Mono', Arial, Helvetica, sans-serif;
     }
 }

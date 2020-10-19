@@ -12,3 +12,6 @@ build
 
 # DONT COPY for now
 docs
+
+# Jekyll
+Gemfile.lock

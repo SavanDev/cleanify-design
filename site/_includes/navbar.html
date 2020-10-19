@@ -2,10 +2,13 @@
     <a href="{{ site.baseurl }}/" class="navbar-title">Cleanify Design</a>
     <ul class="navbar-menu">
         <li>
+            <a href="{{ "/download" | relative_url }}">{% fa_svg fas.fa-download %} Download</a>
+        </li>
+        <li>
             <a href="{{ "/about" | relative_url }}">{% fa_svg fas.fa-address-card %} About</a>
         </li>
     </ul>
     <ul class="navbar-right-menu">
-        <li>{{ site.data.github[0].tag_name }}</li>
+        <li>v{{ site.latest_version }}</li>
     </ul>
 </nav>

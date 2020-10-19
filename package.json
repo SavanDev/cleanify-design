@@ -8,9 +8,9 @@
   "license": "MIT",
   "scripts": {
     "dist": "gulp",
-    "docs:build": "react-scripts build",
-    "docs:deploy": "react-scripts build && gh-pages -d build",
-    "docs:watch": "react-scripts start",
+    "docs:init": "bundle install",
+    "docs:build": "bundle exec jekyll build",
+    "docs:watch": "bundle exec jekyll serve",
     "start": "gulp watch"
   },
   "dependencies": {

@@ -11,32 +11,27 @@ function compileJS() {
                 filename: 'cleanify.js'
             }
         }))
-        .pipe(dest('./dist/js'))
-        .pipe(dest('./site/assets/js'));
+        .pipe(dest('./site/dist/js'));
 }
 
 function compileCSS() {
     return src('./scss/**/*.scss')
         .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(dest('./dist/css'));
+        .pipe(dest('./site/dist/css'))
 }
 
 function cleanDist() {
-    return src('./dist/*')
-        .pipe(clean());
-}
-
-function cleanDocs() {
-    return src('./site/assets/js/*')
+    return src(['./site/dist/*'])
         .pipe(clean());
 }
 
 function watchDist() {
-    watch([
+    console.log("Watching files...");
+    return watch([
         './scss/**/*.scss',
         './js/**/*.js',
         './icons/**/*.svg'
-    ], series(cleanDist, cleanDocs, compileCSS, compileJS, updateLogo));
+    ], series(cleanDist, compileCSS, compileJS, updateLogo));
 }
 
 function updateLogo() {
@@ -45,4 +40,4 @@ function updateLogo() {
 }
 
 exports.watch = watchDist;
-exports.default = series(cleanDist, cleanDocs, compileCSS, compileJS);
+exports.default = series(cleanDist, compileCSS, compileJS);

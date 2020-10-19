@@ -1,0 +1,23 @@
+baseurl: "/cleanify-design" # the subpath of your site, e.g. /blog
+title: "Cleanify Design!" # the name of your site, e.g. ACME Corp.
+
+destination: docs
+source: "site"
+
+sass:
+  style: compressed
+
+collections-dir: docs
+
+collections:
+  v2          :
+    output    : true
+    permalink : /v2/docs/:path/
+  v1          :
+    output    : true
+    permalink : /v1/docs/:path/
+
+latest_version: 2.0.1
+npm_version: 2.0.1
+docs_version: 2.0
+lts_version: 1.1

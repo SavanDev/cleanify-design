@@ -2,7 +2,6 @@
 layout: default
 title: "Welcome!"
 ---
-
 {% article_grid %}
 {% section_transparent %}
 
