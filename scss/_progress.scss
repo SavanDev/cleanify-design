@@ -1,12 +1,11 @@
 progress {
     @include disableAppareance();
     border-radius: $border-size;
-    border: 1px solid var(--color-muted);
+    border: 1px solid var(--color-lightgray);
     width: 100%;
     overflow: hidden;
 
     // Firefox
-    background-color: var(--color-light);
     &[value]::-moz-progress-bar {
         background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
         border-radius: $border-size;
@@ -17,9 +16,6 @@ progress {
 
     // Chromium
     &[value] {
-        &::-webkit-progress-bar {
-            background-color: var(--color-light);
-        }
         &::-webkit-progress-value {
             background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
             border-radius: $border-size;

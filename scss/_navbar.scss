@@ -72,7 +72,7 @@ nav {
 
     .navbar-right-menu {
         float: right;
-        background-color: var(--color-primary);
+        background-color: var(--color-secondary);
         border-radius: 0 0 0 $border-size;
 
         @include menuDesktop(true);
