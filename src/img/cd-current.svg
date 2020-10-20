@@ -5,10 +5,8 @@
             <stop offset="100%" stop-color="#d50000" stop-opacity="1"/>
         </linearGradient>
     </defs>
-    <rect width="64" height="64" fill="#2962ff"/>
-    <rect width="64" height="64" x="64" y="64" fill="#d50000"/>
-    <circle cx="64" cy="64" r="64" fill="url(#gradient)" />
-    <circle cx="64" cy="64" r="60" fill="#1a1a1a" />
+    <path d="m 25 0 H 64 A 64 64 0 0 1 128 64 v 39 a 25 25 0 0 1 -25 25 H 64 A 64 64 0 0 1 0 64 V 25 a 25 25 0 0 1 25 -25 z " fill="url(#gradient)"/>
+    <circle cx="64" cy="64" r="60" fill="#212121" />
     <text x="64" y="72" fill="white" font-family="'Roboto', 'Open Sans', Helvetica, sans-serif" font-size="74" font-weight="bold" dominant-baseline="middle" text-anchor="middle">
         CD
     </text>

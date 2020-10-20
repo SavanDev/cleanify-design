@@ -1,5 +1,5 @@
 ol {
-    background-color: var(--color-lightgray);
+    background-color: var(--list);
     border-radius: $border-size;
     color: var(--text);
     list-style: none;
@@ -65,5 +65,5 @@ article {
 }
 
 section.transparent > ul {
-    border: 1px solid var(--color-lightgray);
+    border: 1px solid var(--list);
 }

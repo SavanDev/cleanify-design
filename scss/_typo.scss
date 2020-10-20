@@ -2,6 +2,7 @@ a {
     color: var(--text);
     text-decoration: none;
     outline: none;
+    transition: background .1s;
 
     &:hover {
         color: var(--color-primary);
@@ -51,6 +52,16 @@ h6 {
 p {
     @include font-size(1.2rem);
     margin: .5rem;
+
+    a {
+        &:link {
+            color: var(--color-info);
+        }
+
+        &:visited {
+            color: var(--color-secondary);
+        }
+    }
 }
 
 pre {
@@ -63,7 +74,7 @@ q {
 }
 
 blockquote {
-    background-color: var(--color-lightgray);
+    background-color: var(--list);
     margin: .5rem;
     padding: .75rem;
     font-weight: lighter;

@@ -33,7 +33,7 @@ header {
     }
 
     h2 {
-        background-color: var(--color-lightgray);
+        background-color: var(--list);
         padding: 1rem;
         border-radius: $border-size;
         font-weight: normal;
@@ -76,6 +76,10 @@ header {
     @each $name, $color in $colors {
         &.gradient-#{$name} {
             @include gradients($color);
+
+            @if $name == "light" {
+                color: var(--color-dark);
+            }
         }
     }
 }

@@ -1,3 +1,8 @@
+#darkToggle:hover {
+  color: var(--color-dark);
+  cursor: pointer;
+}
+
 #containerExample {
     background-color: dodgerblue;
     height: 120px;
@@ -59,7 +64,7 @@
     display: block;
     overflow-x: auto;
     padding: 1.5rem;
-    border: 1px solid #222;
+    border: 1px solid #ccc;
     border-radius: 1rem;
     background: var(--color-dark);
     margin: 1rem auto;

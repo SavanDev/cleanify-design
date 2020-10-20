@@ -7,32 +7,30 @@ progress {
 
     // Firefox
     &[value]::-moz-progress-bar {
-        background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-        border-radius: $border-size;
+        @include defaultBar();
     }
     &:not([value])::-moz-progress-bar {
-        background-color: var(--color-secondary);
+        @include indeterminedBar();
     }
 
     // Chromium
-    &[value] {
-        &::-webkit-progress-value {
-            background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-            border-radius: $border-size;
-        }
+    &[value]::-webkit-progress-value {
+        @include defaultBar();
     }
-    &:not([value]) {
-        &::-webkit-progress-bar {
-            background-color: var(--color-secondary);
-        }
+    &:not([value])::-webkit-progress-bar {
+        @include indeterminedBar();
     }
 
     // Edge Legacy
     &[value]::-ms-fill {
-        background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-        border-radius: $border-size;
+        @include defaultBar();
     }
     &:not([value])::-ms-fill {
-        background-color: var(--color-secondary);
+        @include indeterminedBar();
     }
+}
+
+@keyframes progressAnim {
+    from  { background-color: var(--color-primary); }
+    to  { background-color: var(--color-secondary); }
 }
