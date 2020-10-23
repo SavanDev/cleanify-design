@@ -1,5 +1,7 @@
+#darkToggle { color: var(--text) }
+
 #darkToggle:hover {
-  color: var(--color-dark);
+  color: var(--color-warning);
   cursor: pointer;
 }
 

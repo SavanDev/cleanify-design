@@ -52,6 +52,49 @@ const Content: React.FC = () => {
                 </Highlight>
             </section>
             <section className="transparent">
+                <h2>Theme system</h2>
+                <p>Now you can change the Cleanify Design colors by creating a new <b>.css</b> file following these rules:</p>
+                <Highlight>
+                    {'/* Color base */'}<br />
+                    {':root {'}<br />
+                    {'  --color-primary: #color;'}<br />
+                    {'  --color-secondary: #color;'}<br />
+                    {'  --color-success: #color;'}<br />
+                    {'  --color-danger: #color;'}<br />
+                    {'  --color-warning: #color;'}<br />
+                    {'  --color-info: #color;'}<br />
+                    {'  --color-light: #color;'}<br />
+                    {'  --color-dark: #color;'}<br />
+                    {'  --color-muted: #color;'}<br />
+                    {'  --color-lightgray: #color;'}<br />
+                    {'}'}<br />
+                    <br />
+                    {'/* Theme specific colors */'}<br />
+                    {'body {'}<br />
+                    {'  --bubble: #color;'}<br />
+                    {'  --background: #color;'}<br />
+                    {'  --backgroundTransparent: #color;'}<br />
+                    {'  --text: #color;'}<br />
+                    {'  --list1: #color;'}<br />
+                    {'  --list2: #color;'}<br />
+                    {'  --list: #color;'}<br />
+                    {'  --fields: #color;'}<br />
+                    {'}'}<br />
+                    <br />
+                    {'/* Dark mode variant */'}<br />
+                    {'body[dark="1"] {'}<br />
+                    {'  --bubble: #color;'}<br />
+                    {'  --background: #color;'}<br />
+                    {'  --backgroundTransparent: #color;'}<br />
+                    {'  --text: #color;'}<br />
+                    {'  --list1: #color;'}<br />
+                    {'  --list2: #color;'}<br />
+                    {'  --list: #color;'}<br />
+                    {'  --fields: #color;'}<br />
+                    {'}'}<br />
+                </Highlight>
+            </section>
+            <section className="transparent">
                 <h2>Typography</h2>
                 <section>
                     <h1>h1 header</h1>

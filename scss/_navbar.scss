@@ -92,6 +92,7 @@ nav {
 
         .navbar-right-menu {
             @include menuMobile();
+            border-radius: 0 0 $border-size $border-size;
             text-align: center;
             float: none;
         }

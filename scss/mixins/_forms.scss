@@ -30,7 +30,7 @@
     @include disableAppareance();
     @include form-baseStyle();
     outline: none;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px' width='20px'><text y='15' font-size='20'>▾</text></svg>")
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px' width='20px'><text y='15' fill='gray' font-size='20'>▾</text></svg>")
         no-repeat right var(--fields);
     padding: 0.5rem 1rem;
 }
@@ -77,7 +77,7 @@
 
     &:hover {
         background-color: var(--color-lightgray);
-        color: var(--color-light);
+        color: var(--color-dark);
     }
 }
 

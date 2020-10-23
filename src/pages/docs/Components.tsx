@@ -154,7 +154,7 @@ const Components: React.FC = () => {
                 <section>
                     <header className="withImage">
                         <img src={logo} alt="Logo" />
-                        <h1>Example Title</h1>
+                        <h1>Example</h1>
                         <h2>Example Subtitle</h2>
                     </header>
                 </section>

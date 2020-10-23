@@ -33,11 +33,9 @@ const Layout: React.FC = () => {
                 <div id="containerTransparentExample">
                 </div>
                 <Highlight>
-                    {'<article class="fluid">'}<br/>
-                    {'  <section>'}<br/>
-                    {'      ...'}<br/>
-                    {'  </section>'}<br/>
-                    {'</article>'}
+                    {'<section class="transparent">'}<br/>
+                    {'  ...'}<br/>
+                    {'</section>'}
                 </Highlight>
             </section>
             <section className="transparent">
@@ -49,6 +47,8 @@ const Layout: React.FC = () => {
                 </div>
                 <Highlight>
                     {'<article class="grid">'}<br/>
+                    {'  <section>...</section>'}<br/>
+                    {'  <section>...</section>'}<br/>
                     {'  <section>...</section>'}<br/>
                     {'</article>'}
                 </Highlight>

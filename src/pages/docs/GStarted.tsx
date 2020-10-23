@@ -9,13 +9,13 @@ const GStarted: React.FC = () => {
                 <h2>Let's start!</h2>
                 <p>Once the files have been <Link to="/download">downloaded</Link>, the directory should look like this.</p>
                 <section>
-                    <pre style={{ margin: 5 }}>
-                        {'website'}<br/>
-                        {'--> css'}<br/>
-                        {'-----> cleanify.css'}<br/>
-                        {'--> js'}<br/>
-                        {'-----> cleanify.js'}<br/>
-                        {'--> index.html'}
+                    <pre style={{ margin: 3 }}>
+                        {'> website'}<br/>
+                        {'-> css'}<br/>
+                        {'--> cleanify.css'}<br/>
+                        {'-> js'}<br/>
+                        {'--> cleanify.js'}<br/>
+                        {'-> index.html'}
                     </pre>
                 </section>
                 <h4>Starter template</h4>

@@ -6,7 +6,7 @@ import { faDownload, faBook, faAddressCard, faLightbulb } from '@fortawesome/fre
 let darkState = false;
 
 function darkMode() {
-    document.documentElement.setAttribute("dark", darkState ? "0" : "1");
+    document.body.setAttribute("dark", darkState ? "0" : "1");
     darkState = !darkState;
 }
 

@@ -37,10 +37,13 @@ const Home: React.FC = () => {
             <article className="grid">
                 <section className="transparent">
                     <h4>Dark Mode</h4>
-                    <p>Depending on the theme established in the system (dark or light), Cleanify will adapt to it automatically!</p>
-                    <hr/>
-                    <p>Now if Windows is dark, Cleanify too. If Windows is light, Cleanify will be as well.</p>
-                    <p>Also, this was tested in GNOME 3 and also works!</p>
+                    <p>The framework has a dark variant that can also be modified with the theme system.</p>
+                    <p>You <b>can activate</b> it using:</p>
+                    <Highlight>
+                        {'<body dark="1">'}<br />
+                        {'  ...'}<br />
+                        {'</body>'}
+                    </Highlight>
                 </section>
                 <section className="transparent">
                     <img src={DarkExample} alt="Example" className="rounded" width="100%"/>
