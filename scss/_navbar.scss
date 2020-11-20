@@ -1,26 +1,12 @@
 @mixin menuMobile {
-    padding: 0;
-
-    *:hover {
-        background-color: $gray-color;
-        color: white !important;
-    }
+    padding: 0 1rem;
 
     > li {
         display: block;
         padding: 1rem;
 
-        /* Bottom Borders */
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        border-bottom-color: $lightgray-color;
-
         a {
             display: block;
-            
-            /* TODO: Find another way for links in menu */
-            margin: -1rem;
-            padding: 1rem;
         }
     }
 }
@@ -42,7 +28,7 @@
 }
 
 nav {
-    background-color: getColor(backAlpha);
+    background-color: var(--backgroundTransparent);
     @include font-size(.9rem);
     text-transform: uppercase;
     position: sticky;
@@ -51,13 +37,14 @@ nav {
 
     .navbar-title {
         display: inline-block;
-        background-color: $primary-color;
-        color: $light-color !important;
+        background-color: var(--color-primary);
+        color: var(--color-light) !important;
         border-radius: 0 0 $border-size 0;
         padding: 1rem;
+        transition: background .1s;
 
         &:hover {
-            background-color: $secondary-color;
+            background-color: var(--color-secondary);
         }
     }
 
@@ -66,13 +53,13 @@ nav {
         @include menuDesktop();
 
         > li {
-            color: getColor(text);
+            color: var(--text);
         }
     }
 
     .navbar-right-menu {
         float: right;
-        background-color: $secondary-color;
+        background-color: var(--color-secondary);
         border-radius: 0 0 0 $border-size;
 
         @include menuDesktop(true);
@@ -82,32 +69,32 @@ nav {
         margin-right: .25rem;
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 700px) {
         position: initial;
-        text-align: center;
+        border-radius: 0 0 $border-size $border-size;
 
         .navbar-title, .navbar-menu {
             display: block;
-            border-radius: 0;
+            border-radius: 0 0 $border-size $border-size;
         }
 
         .navbar-title {
             position: sticky;
             top: 0;
+            text-align: center;
         }
 
         .navbar-menu {
             @include menuMobile();
+            border-radius: 0 0 $border-size $border-size;
+            box-shadow: 0 16px var(--color-secondary);
         }
 
         .navbar-right-menu {
             @include menuMobile();
+            border-radius: 0 0 $border-size $border-size;
+            text-align: center;
             float: none;
-            background-color: getColor(backAlpha);
-
-            > li, a {
-                color: getColor(text);
-            }
         }
     }
 }

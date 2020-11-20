@@ -24,3 +24,10 @@
         @include font-size(3rem);
     }
 }
+
+@mixin alerts($color) {
+    background: $color;
+    border-radius: $border-size;
+    color: white;
+    padding: .5rem 1rem;
+}

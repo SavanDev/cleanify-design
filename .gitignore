@@ -13,5 +13,5 @@ build
 # DONT COPY for now
 docs
 
-# Jekyll
+# Jekyll (Experiment)
 Gemfile.lock

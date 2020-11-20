@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
@@ -8,8 +8,8 @@
 
 body {
     font-family: "Roboto", "Open Sans", Helvetica, sans-serif !important;
-    background-color: getColor(background);
-    color: getColor(text);
+    background-color: var(--background);
+    color: var(--text);
 }
 
 article {
@@ -21,10 +21,10 @@ article {
 }
 
 section {
-    background-color: getColor(container);
+    background-color: var(--bubble);
     border-radius: $border-size;
-    box-shadow: 3px 3px $lightgray-color;
-    border: 1px solid #ddd;
+    box-shadow: 3px 3px var(--color-lightgray);
+    border: 1px solid var(--color-lightgray);
     margin-bottom: 1.5rem;
     padding: 1.5rem;
 
@@ -44,7 +44,7 @@ footer {
     margin: auto 1rem;
 
     ol > li > a:hover {
-        background-color: $primary-color;
+        background-color: var(--color-primary);
     }
 
     @media screen and (min-width: 1000px) {

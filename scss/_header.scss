@@ -1,26 +1,17 @@
-@mixin gradientBase {
+@mixin gradients($color) {
     border-radius: $border-size;
+    background-image: linear-gradient(to bottom right, $color, darken($color, 25));
 
     h1 {
         display: table;
-        background-color: getColor(backAlpha);
+        background-color: rgba($light-color, .5);
         padding: 0.75rem;
         border-radius: $border-size;
     }
 }
 
-$gradientColors: $primary-color, $secondary-color, $dark-color, $light-color, $gray-color;
-
 header {
     @include init-container();
-
-    &.withImage {
-        img {
-            width: 100%;
-            max-width: 256px;
-            max-height: 256px;
-        }
-    }
 
     > * {
         display: block;
@@ -34,18 +25,21 @@ header {
     }
 
     h2 {
-        background-color: getColor(backText);
-        padding: 0.75rem;
+        background-color: var(--list);
+        padding: 1rem;
         border-radius: $border-size;
         font-weight: normal;
         @include font-size(1.5rem);
     }
 
+    img {
+        width: 100%;
+        max-width: 256px;
+        max-height: 256px;
+    }
+
     @media screen and (min-width: 1000px) {
         display: grid;
-        grid-template:
-            'text'
-            'subText';
         padding: 3rem;
 
         > * {
@@ -53,31 +47,35 @@ header {
             margin: auto;
         }
 
-        &.withImage {
-            grid-template:
-            'logo text'
-            'logo subText';
-
-            img {
-                grid-area: logo;
-            }
-        }
-
         h1 {
             @include font-size(4.5rem);
-            grid-area: text;
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
         }
 
         h2 {
             @include font-size(2rem);
-            grid-area: subText;
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+
+        img {
+            grid-column: 1 / 2;
+            grid-row: 1 / span 2;
+        }
+
+        &:not(.withImage) {
+            grid-template-columns: 0 100%;
         }
     }
 
-    @for $i from 1 through 5 {
-        &.gradient-#{$i} {
-            background-image: linear-gradient(to bottom right, nth($gradientColors, $i), darken(nth($gradientColors, $i), 25));
-            @include gradientBase();
+    @each $name, $color in $colors {
+        &.gradient-#{$name} {
+            @include gradients($color);
+
+            @if $name == "light" {
+                color: var(--color-dark);
+            }
         }
     }
 }

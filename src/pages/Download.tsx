@@ -27,9 +27,9 @@ const Download: React.FC = () => {
                     <article>
                         <h1 id="headerTitle">Download Cleanify Design</h1>
                         <section>
-                            <h2>Latest version</h2>
                             <article className="grid">
                                 <section className="transparent">
+                                    <h2>Latest version</h2>
                                     <h4>{version.name}</h4>
                                     <pre style={{ margin: 10 }}>{version.body}</pre>
                                 </section>

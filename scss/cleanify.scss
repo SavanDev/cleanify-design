@@ -8,9 +8,9 @@
 @import "./mixins/container";
 @import "./mixins/forms";
 @import "./mixins/styles";
+@import "./mixins/progress";
 
 // Design
-@import "functions";
 @import "colors";
 @import "body";
 @import "typo";
@@ -20,5 +20,4 @@
 @import "lists";
 @import "newStyle";
 @import "progress";
-@import "plugins";
 @import "fixes";

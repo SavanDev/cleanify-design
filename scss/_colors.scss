@@ -1,37 +1,43 @@
 $colors: (
-    background: $light-color,
-    text: $dark-color,
-    backText: $lightgray-color,
-    button: $lightgray-color,
-    backAlpha: rgba($light-color, 0.95),
-    container: white,
-    listP: darken(white, 5),
-    listI: darken(white, 7)
-);
-
-$colors-dark: (
-    background: $dark-color,
-    text: $light-color,
-    backText: $gray-color,
-    button: $gray-color,
-    backAlpha: rgba($dark-color, 0.95),
-    container: $gray-color,
-    listP: darken($gray-color, 5),
-    listI: darken($gray-color, 7)
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "success": $success-color,
+    "danger": $danger-color,
+    "warning": $warning-color,
+    "info": $info-color,
+    "light": $light-color,
+    "dark": $dark-color,
+    "muted": $muted-color,
+    "lightgray": $lightgray-color,
 );
 
 // CSS Color Variables
 :root {
     @each $name, $color in $colors {
-        --color-#{$name}:#{$color};
+        --color-#{$name}: #{$color};
     }
 }
 
-// Dark Mode!
-@media (prefers-color-scheme: dark) {
-    :root {
-        @each $name, $color in $colors-dark {
-            --color-#{$name}:#{$color};
-        }
+body {
+    // Theme support
+    --bubble: var(--color-light);
+    --background: #eee;
+    --backgroundTransparent: #eeeeeedd;
+    --text: var(--color-dark);
+    --list1: #{darken($light-color, 5)};
+    --list2: #{darken($light-color, 7)};
+    --list: var(--color-lightgray);
+    --fields: var(--color-light);
+
+    &[dark="1"] {
+        // Dark mode!
+        --bubble: var(--color-muted);
+        --background: #111;
+        --backgroundTransparent: #111d;
+        --text: var(--color-light);
+        --list1: #{darken($dark-color, 5)};
+        --list2: #{darken($dark-color, 7)};
+        --list: var(--color-dark);
+        --fields: var(--color-dark);
     }
 }

@@ -1,5 +1,5 @@
 img.rounded {
-    border: 1px solid $lightgray-color;
+    border: 1px solid var(--color-lightgray);
     border-radius: $border-size;
 }
 
@@ -8,15 +8,25 @@ article.center, section.center {
 }
 
 p.alert-primary {
-    background: linear-gradient(to right, $primary-color, darken($primary-color, 10));
-    border-radius: $border-size;
-    color: white;
-    padding: .5rem 1rem;
+    @include alerts(var(--color-primary));
 }
 
 p.alert-secondary {
-    background: linear-gradient(to right, $secondary-color, darken($secondary-color, 10));
-    border-radius: $border-size;
-    color: white;
-    padding: .5rem 1rem;
+    @include alerts(var(--color-secondary));
+}
+
+p.alert-success {
+    @include alerts(var(--color-success));
+}
+
+p.alert-danger {
+    @include alerts(var(--color-danger));
+}
+
+p.alert-warning {
+    @include alerts(var(--color-warning));
+}
+
+p.alert-info {
+    @include alerts(var(--color-info));
 }
