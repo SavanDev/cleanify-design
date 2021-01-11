@@ -3,7 +3,29 @@
   {%- include head.html -%}
   <body>
     {%- include navbar.html -%}
-    {{ content }}
+    <article class="grid fluid">
+      <section id="docsMenu" class="transparent">
+        <h6>General</h6>
+        <ul>
+          <li><a href="{{ "/docs.html" | relative_url }}">{% fa_svg fas.fa-laptop %} Getting Started</a></li>
+        </ul>
+        <h6>v2 (Latest)</h6>
+        <ul>
+          {% for page in site.latest %}
+            <li><a href="{{ page.url | relative_url }}">{% fa_svg page.icon %} {{ page.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <h6>v1 (LTS)</h6>
+        <ul>
+          {% for page in site.lts %}
+            <li><a href="{{ page.url | relative_url }}">{% fa_svg page.icon %} {{ page.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section class="transparent">
+        {{ content }}
+      </section>
+    </article>
     {%- include footer.html -%}
   </body>
 </html>

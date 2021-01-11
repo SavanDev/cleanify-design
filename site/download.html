@@ -1,0 +1,40 @@
+---
+layout: "page"
+title: "Download Cleanify Design"
+permalink: "/download"
+---
+{% assign latest = site.data.versions.latest %}
+{% assign lts = site.data.versions.lts %}
+<article class="grid fluid">
+    <section class="transparent">
+        <h3>Latest version: {{ latest.version }}</h3>
+        <blockquote>
+            {% for changelog in latest.changelog %}
+                {{ changelog }}<br/>
+            {% endfor %}
+        </blockquote>
+        <h4>LTS version: {{ lts.version }}</h4>
+        <blockquote>
+            {% for changelog in lts.changelog %}
+                {{ changelog }}<br/>
+            {% endfor %}
+        </blockquote>
+    </section>
+    <section class="transparent">
+        <p>Download from GitHub</p>
+        <ul>
+            <li><a href="{{ latest.url }}">{% fa_svg fas.fa-download %} Download CSS & JS</a></li>
+            <li><a href="{{ latest.source }}">{% fa_svg fas.fa-archive %} Source code (.zip)</a></li>
+            <li><a href="{{ lts.url }}">{% fa_svg fas.fa-download %} Download (LTS version)</a></li>
+        </ul>
+        <p>Download from NPM</p>
+        {% highlight console %}$ npm install cleanify-design{% endhighlight %}
+    </section>
+</article>
+<article>
+    <section class="transparent">
+        <ul>
+            <li><a href="https://github.com/SavanDev/cleanify-design/releases">{% fa_svg fab.fa-github %} Older releases...</a></li>
+        </ul>
+    </section>
+</article>

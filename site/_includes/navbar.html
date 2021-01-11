@@ -1,15 +1,12 @@
 <nav>
     <a href="{{ site.baseurl }}/" class="navbar-title">Cleanify Design</a>
     <ul class="navbar-menu">
-        <li>
-            <a href="{{ "/download.html" | relative_url }}">{% fa_svg fas.fa-download %} Download</a>
-        </li>
-        <li>
-            <a href="{{ "/about.html" | relative_url }}">{% fa_svg fas.fa-address-card %} About</a>
-        </li>
+        <li><a href="{{ "/download.html" | relative_url }}">{% fa_svg fas.fa-download %} Download</a></li>
+        <li><a href="{{ "/docs.html" | relative_url }}">{% fa_svg fas.fa-book %} Documentation</a></li>
+        <li><a href="{{ "/about.html" | relative_url }}">{% fa_svg fas.fa-address-card %} About</a></li>
     </ul>
     <ul class="navbar-right-menu">
-        <li>v{{ site.latest_version }}</li>
+        <li>v{{ site.data.versions.latest.version }}</li>
         <li id="darkToggle">{% fa_svg fas.fa-lightbulb %}</li>
     </ul>
 </nav>

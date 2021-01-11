@@ -3,7 +3,11 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="{{ "favicon.ico" | relative_url }}" type="image/x-icon">
     <title>{{ page.title }} - {{ site.title }}</title>
+    {% if page.lts %}
+    <link rel="stylesheet" href="{{ "/assets/css/cleanify-lts.css" | relative_url }}">
+    {% else %}
     <link rel="stylesheet" href="{{ "/assets/css/cleanify.css" | relative_url }}">
+    {% endif %}
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/monokai.css" | relative_url }}">
 </head>

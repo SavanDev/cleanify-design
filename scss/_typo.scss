@@ -2,10 +2,18 @@ a {
     color: var(--text);
     text-decoration: none;
     outline: none;
-    transition: background .1s;
+    transition: all .1s;
+
+    svg {
+        fill: var(--text);
+    }
 
     &:hover {
         color: var(--color-primary);
+
+        svg {
+            fill: var(--color-primary);
+        }
     }
 }
 
@@ -60,6 +68,10 @@ p {
 
         &:visited {
             color: var(--color-secondary);
+        }
+
+        &:hover {
+            color: var(--color-primary);
         }
     }
 }

@@ -1,10 +1,8 @@
 ol {
+    @include listsBase();
     background-color: var(--list);
-    border-radius: $border-size;
-    color: var(--text);
     list-style: none;
     margin: 1rem auto;
-    overflow: hidden;
 
     > li {
         width: 100%;
@@ -12,15 +10,9 @@ ol {
         padding: 1rem;
 
         > a {
-            display: block;
             color: var(--text);
             padding: 1rem;
             margin: -1rem;
-
-            &:hover {
-                background-color: var(--color-primary);
-                color: var(--color-light);
-            }
         }
     }
 
@@ -39,9 +31,8 @@ ol {
 section,
 article {
     > ul {
+        @include listsBase();
         background-color: var(--list1);
-        border-radius: $border-size;
-        overflow: hidden;
 
         > li {
             padding: 1.5rem;
@@ -51,14 +42,8 @@ article {
             }
 
             > a {
-                display: block;
                 padding: 1.5rem;
                 margin: -1.5rem;
-
-                &:hover {
-                    background-color: var(--color-primary);
-                    color: var(--color-light);
-                }
             }
         }
     }

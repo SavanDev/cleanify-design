@@ -4,7 +4,6 @@ title: "About"
 headerTitle: "About Cleanify Design"
 permalink: "/about"
 ---
-
 {% section_transparent %}
 
 ### The Beginning of Cleanify
@@ -15,10 +14,9 @@ As I don't find anything similar to this... I decide to make my own framework.
 
 The first time, Cleanify was going to be a fork of bootstrap adapted for look as OneUI, but that idea was going to last shortly.
 {% endsection_transparent %}
-
 {% article_grid %}
 {% section_transparent %}
-Then, the idea came out... Why not make my own framework from scratch?
+Then, the idea came out in a meeting with friends... Why not make my own framework from scratch?
 
 And, here we go... An HTML, CSS & JS framework made from scratch based on both styles that I needed.
 
@@ -28,7 +26,6 @@ The first version was released and Cleanify Design was saw the light for first t
 <img src="{{ "/assets/img/cleanify-old.png" | relative_url }}" alt="Cleanify v1" class="rounded" width="100%" />
 {% endsection_transparent %}
 {% endarticle_grid %}
-
 {% section_transparent %}
 
 ### The Present of Cleanify

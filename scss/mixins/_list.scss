@@ -1,0 +1,18 @@
+@mixin listsBase {
+    border-radius: $border-size;
+    overflow: hidden;
+
+    > li {
+        > a {
+            display: block;
+            &:hover {
+                background-color: var(--color-primary);
+                color: var(--color-light);
+                
+                svg {
+                    fill: var(--color-light);
+                }
+            }
+        }
+    }
+}
