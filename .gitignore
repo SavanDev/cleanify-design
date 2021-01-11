@@ -8,7 +8,7 @@ yarn-error.log
 package-lock.json
 
 # Distribution files
-build
+dist
 
 # DONT COPY for now
 docs

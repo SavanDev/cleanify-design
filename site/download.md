@@ -1,7 +1,6 @@
 ---
 layout: "page"
-title: "download"
-headerTitle: "Download Cleanify Design"
+title: "Download Cleanify Design"
 permalink: "/download"
 ---
 <article class="grid fluid">

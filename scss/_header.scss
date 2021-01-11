@@ -27,6 +27,7 @@ header {
     h2 {
         background-color: var(--list);
         padding: 1rem;
+        width: fit-content;
         border-radius: $border-size;
         font-weight: normal;
         @include font-size(1.5rem);

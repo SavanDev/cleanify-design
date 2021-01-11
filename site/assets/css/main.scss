@@ -28,6 +28,7 @@ footer ol > li > a {
     pre {
         padding: .3rem;
         border-radius: 1rem;
+        color: white;
     }
 
     .language-console {
@@ -47,5 +48,14 @@ footer ol > li > a {
 
     * {
         font-family: 'Liberation Mono', Arial, Helvetica, sans-serif;
+    }
+}
+
+#darkToggle {
+    fill: var(--text);
+
+    &:hover {
+        fill: var(--color-warning);
+        cursor: pointer;
     }
 }

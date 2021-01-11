@@ -1,6 +1,6 @@
 {
   "name": "cleanify-design",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "HTML, CSS & JS personal framework",
   "homepage": "https://savandev.github.io/cleanify-design",
   "repository": "https://github.com/SavanDev/cleanify-design.git",
@@ -14,58 +14,28 @@
   ],
   "license": "MIT",
   "scripts": {
-    "dist": "gulp",
-    "docs:init": "bundle install",
-    "docs:build": "bundle exec jekyll build",
-    "docs:watch": "bundle exec jekyll serve",
-    "start": "gulp watch"
+    "start": "gulp",
+    "dist": "gulp build"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "rfs": "^9.0.3"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-brands-svg-icons": "^5.13.0",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/react-fontawesome": "^0.1.9",
-    "@types/jest": "25.2.1",
-    "@types/node": "13.13.4",
-    "@types/react": "16.9.34",
-    "@types/react-dom": "16.9.7",
-    "@types/react-highlight": "^0.12.2",
-    "@types/react-router-dom": "^5.1.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-highlight": "^0.12.0",
-    "react-markdown": "^4.3.1",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "gh-pages": "2.2.0",
+    "@types/browser-sync": "^2.26.1",
+    "@types/gulp": "^4.0.8",
+    "@types/gulp-sass": "^4.0.0",
+    "@types/gulp-zip": "^4.0.1",
+    "@types/webpack-stream": "^3.2.11",
+    "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-sass": "^4.1.0",
-    "normalize.css": "^8.0.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-stream": "^5.2.1",
+    "gulp-zip": "^5.0.2",
     "sass": "^1.26.5",
-    "typescript": "3.8.3"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "ts-node": "^9.1.1",
+    "typescript": "3.8.3",
+    "webpack-stream": "^5.2.1"
   },
   "files": [
     "dist/{css,js}/*.{css,js}",
