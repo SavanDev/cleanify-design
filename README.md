@@ -1,7 +1,8 @@
-<img src="./icons/cd-current.svg" width="256px" />
+<img src="./site/assets/img/cd-current.svg" width="256px" />
 
-![https://savandev.github.io/cleanify-design](https://img.shields.io/github/v/release/savandev/cleanify-design?label=Cleanify%20Design&style=for-the-badge)
+![https://savandev.github.io/cleanify-design](https://img.shields.io/badge/Cleanify%20Design-v2.1-blue?style=for-the-badge)
 ![](https://img.shields.io/github/package-json/v/savandev/cleanify-design?color=red&label=next&style=flat-square)
+![](https://img.shields.io/badge/LTS-v1.1-orange?&style=flat-square)
 
 ## HTML, CSS & JS personal framework
 
@@ -20,10 +21,13 @@ A personal web framework inspired on Bootstrap.
 
 # Development
 
-Watch changes: ```yarn start```
+Compile and watch changes (CSS, JS and Docs):
+```
+npm install
+npm start
+```
 
-Compile CSS & JS: ```yarn run dist```
-
-Watch docs: ```yarn run docs:watch```
-
-Compile docs: ```yarn run docs:build```
+Prepare distribution ZIP:
+```
+npm run dist
+```
