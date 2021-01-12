@@ -1,0 +1,114 @@
+---
+layout: docs
+title: Content
+icon: fas.fa-box
+---
+<section>
+    <h2>Navigation Header</h2>
+    <h1 id="headerTitle">Example Text</h1>
+{% highlight html linenos %}
+<h1 id="headerTitle">...</h1>
+{% endhighlight %}
+</section>
+<section>
+    <h2>Blockquotes</h2>
+    <p>This is a <q>Inline blockquote</q></p>
+    <blockquote>
+        Blockquote Text
+    </blockquote>
+{% highlight html linenos %}
+<q>...</q>
+<blockquote>
+    ...
+</blockquote>
+{% endhighlight %}
+</section>
+<section>
+    <h2>Content centered text</h2>
+    <section class="center">
+        <h2>Header centered</h2>
+        <p>And paragraphs too!</p>
+    </section>
+{% highlight html linenos %}
+<article class="center">
+    <h1>...</h1>
+    <p>...</p>
+</article>
+<section class="center">
+    <h1>...</h1>
+    <p>...</p>
+</section>
+{% endhighlight %}
+</section>
+<section>
+    <h2>Rounded image</h2>
+    <section class="center transparent">
+        <img class="rounded" src="https://via.placeholder.com/500x250.png" alt="Placeholder">
+    </section>
+{% highlight html linenos %}
+<img class="rounded" src="..." alt="...">
+{% endhighlight %}
+</section>
+<section>
+    <h2>Theme system</h2>
+    <p>Now you can change the Cleanify Design colors by creating a new <b>.css</b> file following these rules:</p>
+{% highlight css linenos %}
+/* CSS file example */
+/* Base color */
+:root {
+    --color-primary: #2962ff;
+    --color-secondary: #d50000;
+    --color-success: #2e7d32;
+    --color-danger: #b71c1c;
+    --color-warning: #f57f17;
+    --color-info: #039b35;
+    --color-light: #f5f5f5;
+    --color-dark: #212121;
+    --color-muted: #424242;
+    --color-lightgray: #bdbdbd;
+}
+
+/* Theme specific colors */
+body {
+    --bubble: var(--color-light);
+    --background: #eee;
+    --backgroundTransparent: #eeeeeedd;
+    --text: var(--color-dark);
+    --list1: #e8e8e8;
+    --list2:  #e3e3e3;
+    --list: var(--color-lightgray);
+    --fields: var(--color-light);
+}
+
+/* Dark mode variant */
+body[dark="1"] {
+    --bubble: var(--color-muted);
+    --background: #111;
+    --backgroundTransparent: #111d;
+    --text: var(--color-light);
+    --list1: #141414;
+    --list2: #0f0f0f;
+    --list: var(--color-dark);
+    --fields: var(--color-dark);
+}
+{% endhighlight %}
+</section>
+<section>
+    <h2>Typography</h2>
+    <section>
+        <h1>h1 header</h1>
+        <h2>h2 header</h2>
+        <h3>h3 header</h3>
+        <h4>h4 header</h4>
+        <h5>h5 header</h5>
+        <h6>h6 header</h6>
+    </section>
+{% highlight html linenos %}
+<h1>...</h1>
+<h2>...</h2>
+<h3>...</h3>
+<h4>...</h4>
+<h5>...</h5>
+<h6>...</h6>
+{% endhighlight %}
+</section>

@@ -1,6 +1,7 @@
 {
-  "files": ["gulpfile.ts"],
+  "include": ["gulpfile.ts", "ts/**/*"],
   "compilerOptions": {
+    "strict": false,
     "noImplicitAny": true,
     "resolveJsonModule": true,
     "esModuleInterop": true

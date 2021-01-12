@@ -2,9 +2,10 @@ import { dest, series, src, watch, task } from 'gulp';
 import child from 'child_process';
 import sass from 'gulp-sass';
 import browserSync from 'browser-sync';
-import webpack from 'webpack-stream';
 import zip from 'gulp-zip';
 import cleanifyPackage from './package.json';
+import browserify from 'browserify';
+import source from 'vinyl-source-stream';
 
 const siteRoot = 'docs';
 
@@ -16,13 +17,13 @@ function CompileCSS() {
 }
 
 function CompileJS() {
-    return src('js/main.js')
-        .pipe(webpack({
-            mode: 'production',
-            output: {
-                filename: 'cleanify.js'
-            }
-        }))
+    return browserify({
+            baseDir: 'ts',
+            entries: ['ts/main.ts']
+        })
+        .plugin('tsify')
+        .bundle()
+        .pipe(source('cleanify.js'))
         .pipe(dest('site/assets/js', {overwrite: true}))
         .pipe(dest('dist/js', {overwrite: true}));
 }
@@ -48,7 +49,7 @@ function ServeDocs() {
         }
     });
 
-    watch(['scss/**/*.scss', 'js/**/*.js', 'site/**', '!site/**/cleanify*', '_config.yml'], series(CompileCSS, CompileJS, Jekyll));
+    watch(['scss/**/*.scss', 'ts/**/*.ts', 'site/**', '!site/**/cleanify*', '_config.yml'], series(CompileCSS, CompileJS, Jekyll));
 }
 
 function MakeDistZIP() {

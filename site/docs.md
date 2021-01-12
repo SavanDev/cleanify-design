@@ -2,6 +2,7 @@
 layout: docs
 title: Documentation
 ---
+{% section %}
 ## Let's start!
 Once the files have been [downloaded]({{ "/download.html" | relative_url }}), the directory should look like this.
 {% highlight text linenos %}
@@ -28,3 +29,4 @@ Once the files have been [downloaded]({{ "/download.html" | relative_url }}), th
 </body>
 </html>
 {% endhighlight %}
+{% endsection %}

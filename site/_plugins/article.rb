@@ -1,22 +1,17 @@
 module Jekyll
-  class RenderStandardArticle < Liquid::Block
+  class RenderArticle < Liquid::Block
     require "kramdown"
 
-    def render(context)
-      text = Kramdown::Document.new(super).to_html
-      "<article>#{text}</article>"
+    def initialize(tag_name, input, tokens)
+      super
+      @input = input;
     end
-  end
-
-  class RenderGridArticle < Liquid::Block
-    require "kramdown"
 
     def render(context)
       text = Kramdown::Document.new(super).to_html
-      "<article class=\"grid\">#{text}</article>"
+      "<article class=\"#{@input}\">#{text}</article>"
     end
   end
 end
 
-Liquid::Template.register_tag("article", Jekyll::RenderStandardArticle)
-Liquid::Template.register_tag("article_grid", Jekyll::RenderGridArticle)
+Liquid::Template.register_tag("article", Jekyll::RenderArticle)

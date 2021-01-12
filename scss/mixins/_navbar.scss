@@ -1,0 +1,28 @@
+@mixin menuMobile {
+    padding: 0 1rem;
+
+    > li {
+        display: block;
+        padding: 1rem;
+
+        a {
+            display: block;
+        }
+    }
+}
+
+@mixin menuDesktop($right: false) {
+    padding: .75rem;
+
+    > li {
+        display: inline-block;
+
+        @if $right {
+            color: white;
+        }
+
+        &:not(:last-child) {
+            padding-right: 1rem;
+        }
+    }
+}

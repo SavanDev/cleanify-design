@@ -1,22 +1,17 @@
 module Jekyll
-  class RenderStandardSection < Liquid::Block
+  class RenderSection < Liquid::Block
     require "kramdown"
 
-    def render(context)
-      text = Kramdown::Document.new(super).to_html
-      "<section>#{text}</section>"
+    def initialize(tag_name, input, tokens)
+      super
+      @input = input;
     end
-  end
-
-  class RenderTransparentSection < Liquid::Block
-    require "kramdown"
 
     def render(context)
       text = Kramdown::Document.new(super).to_html
-      "<section class=\"transparent\">#{text}</section>"
+      "<section class=\"#{@input}\">#{text}</section>"
     end
   end
 end
 
-Liquid::Template.register_tag("section", Jekyll::RenderStandardSection)
-Liquid::Template.register_tag("section_transparent", Jekyll::RenderTransparentSection)
+Liquid::Template.register_tag("section", Jekyll::RenderSection)

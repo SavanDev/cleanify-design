@@ -7,6 +7,8 @@
     </ul>
     <ul class="navbar-right-menu">
         <li>v{{ site.data.versions.latest.version }}</li>
-        <li id="darkToggle">{% fa_svg fas.fa-lightbulb %}</li>
+        {% if page.lts == nil %}
+            <li id="darkToggle">{% fa_svg fas.fa-lightbulb %}</li>
+        {% endif %}
     </ul>
 </nav>
