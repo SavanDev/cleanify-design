@@ -47,6 +47,10 @@ svg {
 }
 
 .highlight {
+    > pre {
+        border: 1px solid var(--color-muted);
+    }
+
     pre {
         padding: .3rem;
         border-radius: 1rem;

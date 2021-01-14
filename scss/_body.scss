@@ -22,6 +22,30 @@ article {
     &.grid {
         @include init-grid();
     }
+
+    @each $name, $color in $colors {
+        &.color-#{$name} {
+            &:not(.fluid) {
+                border-radius: $border-size;
+            }
+
+            margin: 1.5rem auto;
+            background-color: #{$color};
+            color: $light-color;
+
+            blockquote {
+                background-color: $dark-color;
+            }
+
+            @if $name == "light" {
+                color: $dark-color;
+
+                blockquote {
+                    background-color: $lightgray-color;
+                }
+            }
+        }
+    }
 }
 
 section {
@@ -32,16 +56,15 @@ section {
     padding: 1.5rem;
 
     @media screen and (max-width: 1000px) {
-        margin-bottom: 0;
+        margin: 1.5rem auto;
     }
 
     &.transparent {
         background-color: transparent;
         box-shadow: none;
         border-radius: 0;
-        border: 0;
         padding: 0;
-        margin: 2rem auto;
+        margin: 0;
     }
 }
 

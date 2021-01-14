@@ -1,6 +1,6 @@
 ol {
     @include listsBase();
-    background-color: var(--list);
+    background-color: var(--listBack);
     list-style: none;
     margin: 1rem auto;
 
@@ -32,13 +32,13 @@ section,
 article {
     > ul {
         @include listsBase();
-        background-color: var(--list1);
+        background-color: var(--listCouple);
 
         > li {
             padding: 1.5rem;
 
             &:nth-child(odd) {
-                background-color: var(--list2);
+                background-color: var(--listOdd);
             }
 
             > a {
@@ -50,5 +50,5 @@ article {
 }
 
 section.transparent > ul {
-    border: 1px solid var(--list);
+    border: 1px solid var(--listBack);
 }

@@ -2,7 +2,7 @@
 layout: default
 title: "Welcome"
 ---
-{% article grid %}
+{% article grid color-secondary %}
 {% section transparent %}
 
 #### HTML5 support
@@ -27,7 +27,7 @@ Cleanify use tags implemented in HTML5 for better organization and code reading.
 {% endhighlight %}
 {% endsection %}
 {% endarticle %}
-{% article grid %}
+{% article grid color-dark %}
 {% section transparent %}
 
 #### Dark Mode
@@ -45,7 +45,7 @@ You **can activate** it using:
 <img src="{{ "/assets/img/CDExample.png" | relative_url }}" alt="Example" class="rounded" width="100%" />
 {% endsection %}
 {% endarticle %}
-{% article grid %}
+{% article grid color-primary %}
 {% section transparent %}
 
 #### Mobile ready
