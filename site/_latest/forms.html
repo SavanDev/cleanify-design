@@ -1,0 +1,98 @@
+---
+layout: docs
+title: Forms
+icon: fas.fa-window-maximize
+---
+<section>
+    <h2>Common inputs</h2>
+    <form action="GET">
+        <p>Text</p>
+        <input type="text" placeholder="Text">
+        <p>Number</p>
+        <input type="number" placeholder="Number">
+        <p>Password</p>
+        <input type="password" placeholder="Password">
+        <p>Date</p>
+        <input type="date">
+        <p>Email</p>
+        <input type="email" placeholder="email@test.com">
+        <p>Select</p>
+        <select>
+            <option>Test 1</option>
+            <option>Test 2</option>
+            <option>Test 3</option>
+        </select>
+        <p>Select multiple</p>
+        <select multiple>
+            <option>Test 1</option>
+            <option>Test 2</option>
+            <option>Test 3</option>
+        </select>
+        <p>Textarea</p>
+        <textarea cols="30" rows="10">Text example</textarea>
+    </form>
+{% highlight html linenos %}
+<input type="..." name="..." placeholder="...">
+<textarea name="..." cols="..." rows="...">...</textarea>
+{% endhighlight %}
+</section>
+<section>
+    <h2>Groups</h2>
+    <form action="GET">
+        <div class="group">
+            <fieldset>
+                <p>Group text</p>
+                <input type="text">
+            </fieldset>
+            <fieldset>
+                <p>Group date</p>
+                <input type="date">
+            </fieldset>
+        </div>
+    </form>
+{% highlight html linenos %}
+<div class="group">
+    <fieldset>...</fieldset>
+</div>
+{% endhighlight %}
+</section>
+<section>
+    <h2>Checkbox & Radio</h2>
+    <form action="GET">
+        <div class="group">
+            <fieldset>
+                <input type="checkbox" id="checkTest" checked />
+                <label htmlFor="checkTest">Checkbox 1</label>
+                <input type="checkbox" id="checkTest2" />
+                <label htmlFor="checkTest2">Checkbox 2</label>
+                <input type="checkbox" id="checkTest3" />
+                <label htmlFor="checkTest3">Checkbox 3</label>
+            </fieldset>
+            <fieldset>
+                <input type="radio" id="radioTest" name="test" />
+                <label htmlFor="radioTest">Radio 1</label>
+                <input type="radio" id="radioTest2" name="test" checked />
+                <label htmlFor="radioTest2">Radio 2</label>
+                <input type="radio" id="radioTest3" name="test" />
+                <label htmlFor="radioTest3">Radio 3</label>
+            </fieldset>
+        </div>
+    </form>
+{% highlight html linenos %}
+<input type="checkbox/radio" name="...">
+<label for="...">...</label>
+{% endhighlight %}
+</section>
+<section>
+    <h2>Buttons</h2>
+    <form action="GET">
+        <input type="button" value="Button">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <button>Button tag</button>
+    </form>
+{% highlight html linenos %}
+<input type="button/submit/reset" value="...">
+<button>...</button>
+{% endhighlight %}
+</section>

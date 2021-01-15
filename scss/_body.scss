@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-svg {
-    fill: var(--text);
-}
-
 body {
     font-family: "Roboto", "Open Sans", Helvetica, sans-serif !important;
     background-color: var(--background);
@@ -33,11 +29,15 @@ article {
             background-color: #{$color};
             color: $light-color;
 
+            > :not(.transparent) {
+                color: var(--text);
+            }
+
             blockquote {
                 background-color: $dark-color;
             }
 
-            @if $name == "light" {
+            @if $name == "light" or $name == "lightgray" {
                 color: $dark-color;
 
                 blockquote {
@@ -66,12 +66,24 @@ section {
         padding: 0;
         margin: 0;
     }
+
+    &.dashed {
+        background-color: transparent;
+        box-shadow: none;
+        border: 1px dashed var(--color-primary);
+        padding: .5rem;
+    }
+
+    &:last-child {
+        margin-bottom: auto;
+    }
 }
 
 footer {
     text-align: center;
     font-weight: bold;
-    margin: auto 1rem;
+    margin: auto .5rem;
+    padding: 0 !important;
 
     ol > li > a:hover {
         background-color: var(--color-primary);

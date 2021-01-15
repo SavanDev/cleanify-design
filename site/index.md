@@ -45,7 +45,7 @@ You **can activate** it using:
 <img src="{{ "/assets/img/CDExample.png" | relative_url }}" alt="Example" class="rounded" width="100%" />
 {% endsection %}
 {% endarticle %}
-{% article grid color-primary %}
+{% article grid %}
 {% section transparent %}
 
 #### Mobile ready

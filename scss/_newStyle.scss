@@ -7,26 +7,12 @@ article.center, section.center {
     text-align: center;
 }
 
-p.alert-primary {
-    @include alerts(var(--color-primary));
-}
+@each $name, $color in $colors {
+    p.alert-#{$name} {
+        @include alerts($color);
 
-p.alert-secondary {
-    @include alerts(var(--color-secondary));
-}
-
-p.alert-success {
-    @include alerts(var(--color-success));
-}
-
-p.alert-danger {
-    @include alerts(var(--color-danger));
-}
-
-p.alert-warning {
-    @include alerts(var(--color-warning));
-}
-
-p.alert-info {
-    @include alerts(var(--color-info));
+        @if $name == "light" or $name == "lightgray" {
+            color: var(--color-dark);
+        }
+    }
 }

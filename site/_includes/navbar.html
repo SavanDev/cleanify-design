@@ -1,9 +1,9 @@
 <nav>
     <a href="{{ site.baseurl }}/" class="navbar-title">Cleanify Design</a>
     <ul class="navbar-menu">
-        <li><a href="{{ "/download.html" | relative_url }}">{% fa_svg fas.fa-download %} Download</a></li>
-        <li><a href="{{ "/docs.html" | relative_url }}">{% fa_svg fas.fa-book %} Documentation</a></li>
-        <li><a href="{{ "/about.html" | relative_url }}">{% fa_svg fas.fa-address-card %} About</a></li>
+        {% for tPage in site.data.pages %}
+            <li><a href="{{ tPage.url | relative_url }}">{% fa_svg tPage.icon %} {{ tPage.name }}</a></li>
+        {% endfor %}
     </ul>
     <ul class="navbar-right-menu">
         <li>v{{ site.data.versions.latest.version }}</li>

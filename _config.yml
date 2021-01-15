@@ -14,3 +14,15 @@ collections:
   lts          :
     output    : true
     permalink : /v1/docs/:path/
+
+colors:
+  - primary
+  - secondary
+  - success
+  - danger
+  - warning
+  - info
+  - light
+  - dark
+  - muted
+  - lightgray

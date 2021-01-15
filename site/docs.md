@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Documentation
+permalink: /docs/
 ---
 {% section %}
 ## Let's start!

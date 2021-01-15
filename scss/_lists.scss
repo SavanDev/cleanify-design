@@ -2,7 +2,6 @@ ol {
     @include listsBase();
     background-color: var(--listBack);
     list-style: none;
-    margin: 1rem auto;
 
     > li {
         width: 100%;

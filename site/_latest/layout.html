@@ -4,6 +4,22 @@ title: Layout
 icon: fas.fa-layer-group
 ---
 <section>
+    <h2>Article colored</h2>
+    {% for color in site.colors %}
+    <article class="color-{{ color }}">
+        <section>
+            <p>{{ color | capitalize}} article</p>
+        </section>
+    </article>
+    {% endfor %}
+{% highlight html linenos %}
+{% for color in site.colors %}
+<article class="color-{{ color }}">
+    ...
+</article>{% endfor %}
+{% endhighlight %}
+</section>
+<section>
     <h2>Bubble</h2>
     <div id="containerExample"></div>
 {% highlight html linenos %}
@@ -14,31 +30,40 @@ icon: fas.fa-layer-group
 </article>
 {% endhighlight %}
 </section>
-
 <section>
     <h2>Bubble fluid</h2>
     <div id="containerFluidExample"></div>
 {% highlight html linenos %}
-<article>
+<article class="fluid">
     <section>
         ...
     </section>
 </article>
 {% endhighlight %}
 </section>
-
 <section>
     <h2>Bubble transparent</h2>
     <div id="containerTransparentExample"></div>
 {% highlight html linenos %}
-<article>
-    <section>
-        ...
-    </section>
-</article>
+<section class="transparent">
+    ...
+</section>
 {% endhighlight %}
 </section>
-
+<section>
+    <h2>Bubble dashed</h2>
+    <section id="bubbleDash" class="dashed">
+    </section>
+    <blockquote>Also works with blockquote!</blockquote>
+{% highlight html linenos %}
+<section class="dashed">
+    ...
+</section>
+<blockquote class="dashed">
+    ...
+</blockquote>
+{% endhighlight %}
+</section>
 <section>
     <h2>Grid system</h2>
     <div class="gridExample">

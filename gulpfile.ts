@@ -40,7 +40,6 @@ function ServeDocs() {
     browserSync.init({
         files: [siteRoot + '/**'],
         port: 4000,
-        open: false,
         server: {
             baseDir: siteRoot,
             routes: {

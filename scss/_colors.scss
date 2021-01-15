@@ -26,7 +26,7 @@ body {
     --text: #{$dark-color};
     --listOdd: #{darken($light-color, 5)};
     --listCouple: #{darken($light-color, 7)};
-    --listBack: #{$lightgray-color};
+    --listBack: #{darken($light-color, 10)};
     --fields: #{$light-color};
 
     &[dark="1"] {

@@ -1,0 +1,152 @@
+---
+layout: docs
+title: Components
+icon: fas.fa-boxes
+---
+<section>
+    <h2>Alerts</h2>
+    {% for color in site.colors %}
+    <p class="alert-{{ color }}">{{ color | capitalize }} alert!</p>
+    {% endfor %}
+{% highlight html linenos %}
+{% for color in site.colors %}
+<p class="alert-{{ color }}">...</p>{% endfor %}
+{% endhighlight %}
+</section>
+<section>
+    <h2>Footer</h2>
+    <blockquote class="dashed">
+        <footer>
+            <p>Footer without list/links</p>
+        </footer>
+    </blockquote>
+    <blockquote class="dashed">
+        <footer>
+            <p>Footer with list/links</p>
+            <ol>
+                <li>Text 1</li>
+                <li>Text 2</li>
+            </ol>
+        </footer>
+    </blockquote>
+{% highlight html linenos %}
+<footer>
+    <p>...</p>
+</footer>
+
+<footer>
+    <p>...</p>
+    <ol>
+        <li>...</li>
+    </ol>
+</footer>
+{% endhighlight %}
+</section>
+<section>
+    <h2>Header with image</h2>
+    <section class="dashed">
+        <header class="withImage">
+            <img src="{{ "/assets/img/cd-current.svg" | relative_url }}" alt="Logo">
+            <h1>Example</h1>
+            <h2>Example subtitle</h2>
+        </header>
+    </section>
+{% highlight html linenos %}
+<header class="withImage">
+    <img src="IMAGE URL" alt="ALT TEXT">
+    <h1>...</h1>
+    <h2>...</h2>
+</header>
+{% endhighlight %}
+    <h2>Header without image</h2>
+    <section class="dashed">
+        <header>
+            <h1>Example</h1>
+            <h2>Example subtitle</h2>
+        </header>
+    </section>
+{% highlight html linenos %}
+<header>
+    <h1>...</h1>
+    <h2>...</h2>
+</header>
+{% endhighlight %}
+    <h2>Header gradients</h2>
+{% for color in site.colors %}
+    <header class="gradient-{{ color }}">
+        <h1>{{ color | capitalize }} header</h1>
+    </header>
+{% highlight html linenos %}
+<header class="gradient-{{ color }}">
+    ...
+</header>
+{% endhighlight %}
+{% endfor %}
+</section>
+<section>
+    <h2>Inline list</h2>
+    <ol>
+        <li>Text</li>
+        <li><a href="#">Link</a></li>
+        <li>Text</li>
+    </ol>
+{% highlight html linenos %}
+<ol>
+    <li>...</li>
+</ol>
+{% endhighlight %}
+</section>
+<section>
+    <h2>List</h2>
+    <ul>
+        <li>Hello world!</li>
+        <li>Example text</li>
+        <li><a href="#">Link example</a></li>
+    </ul>
+{% highlight html linenos %}
+<ul>
+    <li>...</li>
+</ul>
+{% endhighlight %}
+</section>
+<section>
+    <h2>Navbar</h2>
+    <nav id="navExample">
+        <a href="#" class="navbar-title">Cleanify</a>
+        <ul class="navbar-menu">
+            <li>Home</li>
+            <li>Test</li>
+        </ul>
+        <ul class="navbar-right-menu">
+            <li>Right text</li>
+        </ul>
+    </nav>
+    <br>
+{% highlight html linenos %}
+<nav>
+    <a href="URL" class="navbar-title">...</a>
+    <ul class="navbar-menu">
+        <li>...</li>
+    </ul>
+    <ul class="navbar-right-menu">
+        <li>...</li>
+    </ul>
+</nav>
+{% endhighlight %}
+</section>
+<section>
+    <h2>Progress bar</h2>
+    <article class="grid fluid">
+        <section class="dashed">
+            <p>35%</p>
+            <progress max="100" value="35"></progress>
+        </section>
+        <section class="dashed">
+            <p>Indetermined</p>
+            <progress max="100"></progress>
+        </section>
+    </article>
+{% highlight html linenos %}
+<progress max="..." value="..."></progress>
+{% endhighlight %}
+</section>

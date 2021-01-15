@@ -2,7 +2,7 @@
 layout: "page"
 title: "About"
 headerTitle: "About Cleanify Design"
-permalink: "/about"
+permalink: "/about/"
 ---
 {% section %}
 

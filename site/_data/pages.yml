@@ -1,0 +1,11 @@
+- url: /download
+  name: Download
+  icon: fas.fa-download
+
+- url: /docs
+  name: Documentation
+  icon: fas.fa-book
+
+- url: /about
+  name: About
+  icon: fas.fa-address-card

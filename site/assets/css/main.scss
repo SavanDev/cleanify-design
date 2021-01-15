@@ -5,21 +5,26 @@
     background-color: dodgerblue;
     height: 120px;
     margin: 1.5rem 5rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 #containerFluidExample {
     background-color: dodgerblue;
     height: 120px;
     margin: 1.5rem auto;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 #containerTransparentExample {
     height: 120px;
     margin: 1.5rem auto;
-    border-radius: 2rem;
-    border: 1px dashed dodgerblue;
+    background-color: dodgerblue;
+    opacity: .15;
+    border-radius: 1rem;
+}
+
+#bubbleDash {
+    height: 120px;
 }
 
 .gridExample {
@@ -33,7 +38,7 @@
     flex-basis: 0;
     flex-grow: 1;
     background-color: dodgerblue;
-    border-radius: 2rem;
+    border-radius: 1rem;
     margin: .5rem;
 }
 
@@ -84,9 +89,18 @@ svg {
 }
 
 #docsMenu {
-    max-width: 25rem;
+    max-width: initial;
 
-    @media screen and (max-width: 1000px) {
-        max-width: initial;
+    @media screen and (min-width: 1000px) {
+        position: sticky;
+        top: 4rem;
+        align-self: flex-start;
+        max-width: 25rem;
     }
+}
+
+#navExample {
+    position: relative;
+    border-radius: 1rem;
+    z-index: 0;
 }

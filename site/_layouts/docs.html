@@ -3,11 +3,15 @@
   {%- include head.html -%}
   <body>
     {%- include navbar.html -%}
+    {% if page.lts == nil %}
     <article class="grid fluid">
+    {% else %}
+    <article class="grid">
+    {% endif %}
       <section id="docsMenu" class="transparent">
         <h6>General</h6>
         <ul>
-          <li><a href="{{ "/docs.html" | relative_url }}">{% fa_svg fas.fa-laptop %} Getting Started</a></li>
+          <li><a href="{{ "/docs" | relative_url }}">{% fa_svg fas.fa-laptop %} Getting Started</a></li>
         </ul>
         <h6>v2 (Latest)</h6>
         <ul>

@@ -1,27 +1,14 @@
-@mixin bannerStyle($color) {
-    position: relative;
-    color: white;
-    text-align: center;
-    margin: 1rem 0;
-    padding: 6rem 0;
-    width: 100%;
-    overflow: hidden;
-    z-index: -1;
+@mixin gradients($color) {
+    border-radius: $border-size;
+    background-image: linear-gradient(to bottom right, $color, darken($color, 25));
+    margin: .5rem auto;
+    color: var(--color-dark);
 
-    &:before {
-        content: "";
-        position: absolute;
-        width: 200vw;
-        height: 12rem;
-        left: -50%;
-        top: 2rem; // TODO: Margin x2 ¿?.
-        background-color: $color;
-        transform: rotate(2deg);
-        z-index: -1;
-    }
-
-    @media screen and (max-width: 1000px) {
-        @include font-size(3rem);
+    h1 {
+        display: table;
+        background-color: rgba($light-color, .5);
+        padding: 0.75rem;
+        border-radius: $border-size;
     }
 }
 
@@ -30,4 +17,5 @@
     border-radius: $border-size;
     color: white;
     padding: .5rem 1rem;
+    margin: .5rem 0;
 }
