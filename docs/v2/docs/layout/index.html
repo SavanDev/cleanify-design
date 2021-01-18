@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/cleanify-design/favicon.ico" type="image/x-icon">
+    <title>Layout - Cleanify Design</title>
+    
+    <link rel="stylesheet" href="/cleanify-design/assets/css/cleanify.css">
+    
+    <link rel="stylesheet" href="/cleanify-design/assets/css/main.css">
+    <link rel="stylesheet" href="/cleanify-design/assets/css/monokai.css">
+</head><body><nav>
+    <a href="/cleanify-design/" class="navbar-title">Cleanify Design</a>
+    <ul class="navbar-menu">
+        
+            <li><a href="/cleanify-design/download"><svg class="icon"><use xlink:href='#fas.fa-download'></use></svg> Download</a></li>
+        
+            <li><a href="/cleanify-design/docs"><svg class="icon"><use xlink:href='#fas.fa-book'></use></svg> Documentation</a></li>
+        
+            <li><a href="/cleanify-design/about"><svg class="icon"><use xlink:href='#fas.fa-address-card'></use></svg> About</a></li>
+        
+    </ul>
+    <ul class="navbar-right-menu">
+        <li>v2.1</li>
+        
+            <li id="darkToggle"><svg class="icon"><use xlink:href='#fas.fa-lightbulb'></use></svg></li>
+        
+    </ul>
+</nav>
+    <article class="grid fluid">
+    
+      <section id="docsMenu" class="transparent">
+        <h6>General</h6>
+        <ul>
+          <li><a href="/cleanify-design/docs"><svg class="icon"><use xlink:href='#fas.fa-laptop'></use></svg> Getting Started</a></li>
+        </ul>
+        <h6>v2 (Latest)</h6>
+        <ul>
+          
+            <li><a href="/cleanify-design/v2/docs/components/"><svg class="icon"><use xlink:href='#fas.fa-boxes'></use></svg> Components</a></li>
+          
+            <li><a href="/cleanify-design/v2/docs/content/"><svg class="icon"><use xlink:href='#fas.fa-box'></use></svg> Content</a></li>
+          
+            <li><a href="/cleanify-design/v2/docs/forms/"><svg class="icon"><use xlink:href='#fas.fa-window-maximize'></use></svg> Forms</a></li>
+          
+            <li><a href="/cleanify-design/v2/docs/layout/"><svg class="icon"><use xlink:href='#fas.fa-layer-group'></use></svg> Layout</a></li>
+          
+        </ul>
+        <h6>v1 (LTS)</h6>
+        <ul>
+          
+            <li><a href="/cleanify-design/v1/docs/changes/"><svg class="icon"><use xlink:href='#fas.fa-unlink'></use></svg> Breaking changes</a></li>
+          
+        </ul>
+      </section>
+      <section class="transparent">
+        <section>
+    <h2>Article colored</h2>
+    
+    <article class="color-primary">
+        <section>
+            <p>Primary article</p>
+        </section>
+    </article>
+    
+    <article class="color-secondary">
+        <section>
+            <p>Secondary article</p>
+        </section>
+    </article>
+    
+    <article class="color-success">
+        <section>
+            <p>Success article</p>
+        </section>
+    </article>
+    
+    <article class="color-danger">
+        <section>
+            <p>Danger article</p>
+        </section>
+    </article>
+    
+    <article class="color-warning">
+        <section>
+            <p>Warning article</p>
+        </section>
+    </article>
+    
+    <article class="color-info">
+        <section>
+            <p>Info article</p>
+        </section>
+    </article>
+    
+    <article class="color-light">
+        <section>
+            <p>Light article</p>
+        </section>
+    </article>
+    
+    <article class="color-dark">
+        <section>
+            <p>Dark article</p>
+        </section>
+    </article>
+    
+    <article class="color-muted">
+        <section>
+            <p>Muted article</p>
+        </section>
+    </article>
+    
+    <article class="color-lightgray">
+        <section>
+            <p>Lightgray article</p>
+        </section>
+    </article>
+    
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-primary"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-secondary"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-success"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-danger"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-warning"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-info"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-light"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-dark"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-muted"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"color-lightgray"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</section>
+<section>
+    <h2>Bubble</h2>
+    <div id="containerExample"></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="nt">&lt;article&gt;</span>
+    <span class="nt">&lt;section&gt;</span>
+        ...
+    <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</section>
+<section>
+    <h2>Bubble fluid</h2>
+    <div id="containerFluidExample"></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;section&gt;</span>
+        ...
+    <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</section>
+<section>
+    <h2>Bubble transparent</h2>
+    <div id="containerTransparentExample"></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"transparent"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</section>
+<section>
+    <h2>Bubble dashed</h2>
+    <section id="bubbleDash" class="dashed">
+    </section>
+    <blockquote>Also works with blockquote!</blockquote>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"dashed"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"dashed"</span><span class="nt">&gt;</span>
+    ...
+<span class="nt">&lt;/blockquote&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</section>
+<section>
+    <h2>Grid system</h2>
+    <div class="gridExample">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;section&gt;</span>...<span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;section&gt;</span>...<span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;section&gt;</span>...<span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</section>
+      </section>
+    </article><footer>
+    <p>SavanDev - 2019 / 2021</p>
+    <ol>
+        <li><a href="https://github.com/SavanDev/cleanify-design/blob/master/LICENSE">
+                <svg class="icon"><use xlink:href='#fas.fa-gavel'></use></svg> MIT License</a></li>
+        <li><a href="https://github.com/SavanDev/cleanify-design">
+                <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg> GitHub</a></li>
+        <li><a href="https://twitter.com/dylnavas36">
+                <svg class="icon"><use xlink:href='#fab.fa-twitter'></use></svg> Twitter</a></li>
+    </ol>
+</footer>
+<script src="/cleanify-design/assets/js/cleanify.js"></script>
+<script src="/cleanify-design/assets/js/main.js"></script>
+<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                  <!--
+                  Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
+                  License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+                  -->
+              <symbol id='fas.fa-download' viewBox='0 0 512 512'>
+            <title>download</title>
+            <path class='path1' d='M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z'></path>
+        </symbol>
+        <symbol id='fas.fa-book' viewBox='0 0 448 512'>
+            <title>book</title>
+            <path class='path1' d='M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z'></path>
+        </symbol>
+        <symbol id='fas.fa-address-card' viewBox='0 0 576 512'>
+            <title>address-card</title>
+            <path class='path1' d='M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-352 96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2zM512 312c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z'></path>
+        </symbol>
+        <symbol id='fas.fa-lightbulb' viewBox='0 0 352 512'>
+            <title>lightbulb</title>
+            <path class='path1' d='M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z'></path>
+        </symbol>
+        <symbol id='fas.fa-laptop' viewBox='0 0 640 512'>
+            <title>laptop</title>
+            <path class='path1' d='M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z'></path>
+        </symbol>
+        <symbol id='fas.fa-boxes' viewBox='0 0 576 512'>
+            <title>boxes</title>
+            <path class='path1' d='M560 288h-80v96l-32-21.3-32 21.3v-96h-80c-8.8 0-16 7.2-16 16v192c0 8.8 7.2 16 16 16h224c8.8 0 16-7.2 16-16V304c0-8.8-7.2-16-16-16zm-384-64h224c8.8 0 16-7.2 16-16V16c0-8.8-7.2-16-16-16h-80v96l-32-21.3L256 96V0h-80c-8.8 0-16 7.2-16 16v192c0 8.8 7.2 16 16 16zm64 64h-80v96l-32-21.3L96 384v-96H16c-8.8 0-16 7.2-16 16v192c0 8.8 7.2 16 16 16h224c8.8 0 16-7.2 16-16V304c0-8.8-7.2-16-16-16z'></path>
+        </symbol>
+        <symbol id='fas.fa-box' viewBox='0 0 512 512'>
+            <title>box</title>
+            <path class='path1' d='M509.5 184.6L458.9 32.8C452.4 13.2 434.1 0 413.4 0H272v192h238.7c-.4-2.5-.4-5-1.2-7.4zM240 0H98.6c-20.7 0-39 13.2-45.5 32.8L2.5 184.6c-.8 2.4-.8 4.9-1.2 7.4H240V0zM0 224v240c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V224H0z'></path>
+        </symbol>
+        <symbol id='fas.fa-window-maximize' viewBox='0 0 512 512'>
+            <title>window-maximize</title>
+            <path class='path1' d='M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-16 160H64v-84c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12v84z'></path>
+        </symbol>
+        <symbol id='fas.fa-layer-group' viewBox='0 0 512 512'>
+            <title>layer-group</title>
+            <path class='path1' d='M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z'></path>
+        </symbol>
+        <symbol id='fas.fa-unlink' viewBox='0 0 512 512'>
+            <title>unlink</title>
+            <path class='path1' d='M304.083 405.907c4.686 4.686 4.686 12.284 0 16.971l-44.674 44.674c-59.263 59.262-155.693 59.266-214.961 0-59.264-59.265-59.264-155.696 0-214.96l44.675-44.675c4.686-4.686 12.284-4.686 16.971 0l39.598 39.598c4.686 4.686 4.686 12.284 0 16.971l-44.675 44.674c-28.072 28.073-28.072 73.75 0 101.823 28.072 28.072 73.75 28.073 101.824 0l44.674-44.674c4.686-4.686 12.284-4.686 16.971 0l39.597 39.598zm-56.568-260.216c4.686 4.686 12.284 4.686 16.971 0l44.674-44.674c28.072-28.075 73.75-28.073 101.824 0 28.072 28.073 28.072 73.75 0 101.823l-44.675 44.674c-4.686 4.686-4.686 12.284 0 16.971l39.598 39.598c4.686 4.686 12.284 4.686 16.971 0l44.675-44.675c59.265-59.265 59.265-155.695 0-214.96-59.266-59.264-155.695-59.264-214.961 0l-44.674 44.674c-4.686 4.686-4.686 12.284 0 16.971l39.597 39.598zm234.828 359.28l22.627-22.627c9.373-9.373 9.373-24.569 0-33.941L63.598 7.029c-9.373-9.373-24.569-9.373-33.941 0L7.029 29.657c-9.373 9.373-9.373 24.569 0 33.941l441.373 441.373c9.373 9.372 24.569 9.372 33.941 0z'></path>
+        </symbol>
+        <symbol id='fas.fa-gavel' viewBox='0 0 512 512'>
+            <title>gavel</title>
+            <path class='path1' d='M504.971 199.362l-22.627-22.627c-9.373-9.373-24.569-9.373-33.941 0l-5.657 5.657L329.608 69.255l5.657-5.657c9.373-9.373 9.373-24.569 0-33.941L312.638 7.029c-9.373-9.373-24.569-9.373-33.941 0L154.246 131.48c-9.373 9.373-9.373 24.569 0 33.941l22.627 22.627c9.373 9.373 24.569 9.373 33.941 0l5.657-5.657 39.598 39.598-81.04 81.04-5.657-5.657c-12.497-12.497-32.758-12.497-45.255 0L9.373 412.118c-12.497 12.497-12.497 32.758 0 45.255l45.255 45.255c12.497 12.497 32.758 12.497 45.255 0l114.745-114.745c12.497-12.497 12.497-32.758 0-45.255l-5.657-5.657 81.04-81.04 39.598 39.598-5.657 5.657c-9.373 9.373-9.373 24.569 0 33.941l22.627 22.627c9.373 9.373 24.569 9.373 33.941 0l124.451-124.451c9.372-9.372 9.372-24.568 0-33.941z'></path>
+        </symbol>
+        <symbol id='fab.fa-github' viewBox='0 0 496 512'>
+            <title>github</title>
+            <path class='path1' d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z'></path>
+        </symbol>
+        <symbol id='fab.fa-twitter' viewBox='0 0 512 512'>
+            <title>twitter</title>
+            <path class='path1' d='M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z'></path>
+        </symbol>
+        </defs>
+              </svg></body>
+</html>

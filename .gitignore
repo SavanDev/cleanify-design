@@ -10,8 +10,5 @@ package-lock.json
 # Distribution files
 dist
 
-# DONT COPY for now
-docs
-
-# Jekyll (Experiment)
+# Jekyll
 Gemfile.lock
