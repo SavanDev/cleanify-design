@@ -31,7 +31,7 @@ body {
 
     &[dark="1"] {
         // Dark mode!
-        --bubble: #{$muted-color};
+        --bubble: #{darken($muted-color, 4)};
         --background: #111;
         --navbar: #111d;
         --text: #{$light-color};

@@ -92,6 +92,7 @@ blockquote {
     font-weight: lighter;
     @include font-size(1rem);
     border-radius: $border-size;
+    border-left: var(--color-primary) solid .25rem;
 
     &.dashed {
         background-color: transparent;
