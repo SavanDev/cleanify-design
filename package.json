@@ -42,7 +42,7 @@
   "files": [
     "dist/{css,js}/*.{css,js}",
     "scss/**/*.scss",
-    "js/**/*.js"
+    "ts/**/*.ts"
   ],
   "jsdelivr": "dist/css/cleanify.css",
   "funding": "https://ko-fi.com/savandev"
