@@ -1,6 +1,6 @@
 img.rounded {
     border: 1px solid var(--color-lightgray);
-    border-radius: $border-size;
+    border-radius: var(--border-size);
 }
 
 article.center, section.center {

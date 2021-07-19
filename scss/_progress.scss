@@ -1,6 +1,6 @@
 progress {
     @include disableAppareance();
-    border-radius: $border-size;
+    border-radius: var(--border-size);
     border: 2px solid var(--color-lightgray);
     width: 100%;
     overflow: hidden;

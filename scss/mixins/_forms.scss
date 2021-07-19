@@ -7,7 +7,7 @@
 @mixin form-baseStyle {
     box-sizing: border-box;
     width: 100%;
-    border-radius: $border-size;
+    border-radius: var(--border-size);
     border: 1px solid var(--color-lightgray);
     background-color: var(--fields);
     color: var(--text);
@@ -38,10 +38,10 @@
 @mixin form-selectMultiple {
     @include form-select();
     background-image: none;
-    border-radius: $border-size;
+    border-radius: var(--border-size);
 
     @media screen and (min-width: 750px) {
-        border-radius: $border-size 0 0 $border-size;
+        border-radius: var(--border-size) 0 0 var(--border-size);
     }
 }
 
@@ -50,7 +50,7 @@
 
     + label {
         display: inline-block;
-        border-radius: $border-size;
+        border-radius: var(--border-size);
         background-color: var(--color-lightgray);
         padding: 1rem;
         margin: 0.5rem;

@@ -1,5 +1,5 @@
 @mixin gradients($color) {
-    border-radius: $border-size;
+    border-radius: var(--border-size);
     background-image: linear-gradient(to bottom right, $color, darken($color, 25));
     margin: .5rem auto;
     color: var(--color-dark);
@@ -8,13 +8,13 @@
         display: table;
         background-color: rgba($light-color, .5);
         padding: 0.75rem;
-        border-radius: $border-size;
+        border-radius: var(--border-size);
     }
 }
 
 @mixin alerts($color) {
     background: $color;
-    border-radius: $border-size;
+    border-radius: var(--border-size);
     color: white;
     padding: .5rem 1rem;
     margin: .5rem 0;

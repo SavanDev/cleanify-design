@@ -91,7 +91,7 @@ blockquote {
     padding: .75rem;
     font-weight: lighter;
     @include font-size(1rem);
-    border-radius: $border-size;
+    border-radius: var(--border-size);
     border-left: var(--color-primary) solid .25rem;
 
     &.dashed {

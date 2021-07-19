@@ -1,11 +1,11 @@
 import { dest, series, src, watch, task } from 'gulp';
 import child from 'child_process';
-import sass from 'gulp-sass';
 import browserSync from 'browser-sync';
 import zip from 'gulp-zip';
 import cleanifyPackage from './package.json';
 import browserify from 'browserify';
 import source from 'vinyl-source-stream';
+var sass = require('gulp-sass')(require('sass'));
 
 const siteRoot = 'docs';
 

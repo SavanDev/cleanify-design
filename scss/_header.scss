@@ -9,14 +9,13 @@ header {
 
     h1 {
         @include font-size(4rem);
-        text-transform: uppercase;
     }
 
     h2 {
         background-color: var(--listBack);
         padding: 1rem;
         width: fit-content;
-        border-radius: $border-size;
+        border-radius: var(--border-size);
         font-weight: normal;
         @include font-size(1.5rem);
     }

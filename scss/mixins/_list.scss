@@ -1,5 +1,5 @@
 @mixin listsBase {
-    border-radius: $border-size;
+    border-radius: var(--border-size);
     overflow: hidden;
     margin: 1rem auto;
 

@@ -1,18 +1,36 @@
 ---
 ---
 
+@font-face {
+    font-family: TechnaSans;
+    src: url({{ "assets/fonts/TechnaSans-Regular.otf" | relative_url }});
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+b, strong {
+    font-family: TechnaSans, "Roboto", "Open Sans", sans-serif;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: TechnaSans, "Roboto", "Open Sans", sans-serif;
+    font-weight: normal;
+}
+
+
 #containerExample {
     background-color: dodgerblue;
     height: 120px;
     margin: 1.5rem 5rem;
-    border-radius: 1rem;
+    border-radius: var(--border-size);
 }
 
 #containerFluidExample {
     background-color: dodgerblue;
     height: 120px;
     margin: 1.5rem auto;
-    border-radius: 1rem;
+    border-radius: var(--border-size);
 }
 
 #containerTransparentExample {
@@ -20,7 +38,7 @@
     margin: 1.5rem auto;
     background-color: dodgerblue;
     opacity: .15;
-    border-radius: 1rem;
+    border-radius: var(--border-size);
 }
 
 #bubbleDash {
@@ -38,7 +56,7 @@
     flex-basis: 0;
     flex-grow: 1;
     background-color: dodgerblue;
-    border-radius: 1rem;
+    border-radius: var(--border-size);
     margin: .5rem;
 }
 
@@ -58,7 +76,7 @@ svg {
 
     pre {
         padding: .3rem;
-        border-radius: 1rem;
+        border-radius: var(--border-size);
         color: white;
     }
 
@@ -101,6 +119,6 @@ svg {
 
 #navExample {
     position: relative;
-    border-radius: 1rem;
+    border-radius: var(--border-size);
     z-index: 0;
 }

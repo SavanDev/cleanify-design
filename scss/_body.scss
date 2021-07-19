@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +5,7 @@
 }
 
 body {
-    font-family: "Roboto", "Open Sans", Helvetica, sans-serif !important;
+    font-family: 'Roboto', 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--background);
     color: var(--text);
 }
@@ -22,10 +20,11 @@ article {
     @each $name, $color in $colors {
         &.color-#{$name} {
             &:not(.fluid) {
-                border-radius: $border-size;
+                border-radius: var(--border-size);
             }
 
-            margin: 1.5rem auto;
+            padding: .75rem;
+            margin: 1rem auto;
             background-color: #{$color};
             color: $light-color;
 
@@ -50,13 +49,13 @@ article {
 
 section {
     background-color: var(--bubble);
-    border-radius: $border-size;
+    border-radius: var(--border-size);
     box-shadow: 0 0 6px 2px rgba($muted-color, .15);
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
 
     @media screen and (max-width: 1000px) {
-        margin: 1.5rem auto;
+        margin: 1rem auto;
     }
 
     &.transparent {
@@ -76,6 +75,12 @@ section {
 
     &:last-child {
         margin-bottom: auto;
+    }
+
+    // Fix article inside sections
+    > article {
+        margin: 1rem !important;
+        max-width: none;
     }
 }
 
