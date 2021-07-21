@@ -15,7 +15,8 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp",
-    "dist": "gulp build"
+    "dist": "gulp build",
+    "docs": "gulp docs"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",

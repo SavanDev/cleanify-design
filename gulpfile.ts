@@ -7,7 +7,7 @@ import browserify from 'browserify';
 import source from 'vinyl-source-stream';
 var sass = require('gulp-sass')(require('sass'));
 
-const siteRoot = 'docs';
+const siteRoot = '_site';
 
 function CompileCSS() {
     return src('scss/**/*.scss')
@@ -36,6 +36,10 @@ function Jekyll() {
     return child.spawn('jekyll', ['build']);
 }
 
+function JekyllProduction() {
+    return child.spawn('jekyll', ['build', '-d', 'docs']);
+}
+
 function ServeDocs() {
     browserSync.init({
         files: [siteRoot + '/**'],
@@ -59,3 +63,4 @@ function MakeDistZIP() {
 
 task('build', series(CompileCSS, CompileJS, MakeDistZIP));
 task('default', series(CompileCSS, CompileJS, GemJekyll, Jekyll, ServeDocs));
+task('docs', series(CompileCSS, CompileJS, GemJekyll, JekyllProduction));

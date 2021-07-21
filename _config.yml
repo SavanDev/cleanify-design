@@ -1,7 +1,6 @@
 baseurl: "/cleanify-design" # the subpath of your site, e.g. /blog
 title: "Cleanify Design" # the name of your site, e.g. ACME Corp.
 
-destination: docs
 source: "site"
 
 sass:
