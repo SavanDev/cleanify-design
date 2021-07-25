@@ -33,7 +33,6 @@ nav {
         float: right;
         background-color: var(--color-secondary);
         border-radius: var(--border-size);
-
         @include menuDesktop(true);
     }
 

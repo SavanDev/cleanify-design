@@ -9,7 +9,7 @@ module Jekyll
 
     def render(context)
       text = Kramdown::Document.new(super).to_html
-      "<article class=\"#{@input}\">#{text}</article>"
+      "<article class=\"#{@input.chop}\">#{text}</article>"
     end
   end
 end

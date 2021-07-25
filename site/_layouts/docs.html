@@ -26,9 +26,15 @@
           {% endfor %}
         </ul>
       </section>
-      <section class="transparent">
+      {% if page.lts == nil %}
+      <article>
+        {{ content }}
+      </article>
+      {% else %}
+      <section>
         {{ content }}
       </section>
+      {% endif %}
     </article>
     {%- include footer.html -%}
   </body>

@@ -31,3 +31,5 @@ Prepare distribution ZIP:
 ```
 npm run dist
 ```
+
+> [Techna Sans](https://github.com/carlenlund/techna-sans) made by Carl Enlund under OFL v1.1

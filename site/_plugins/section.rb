@@ -9,7 +9,7 @@ module Jekyll
 
     def render(context)
       text = Kramdown::Document.new(super).to_html
-      "<section class=\"#{@input}\">#{text}</section>"
+      "<section class=\"#{@input.chop}\">#{text}</section>"
     end
   end
 end

@@ -19,6 +19,16 @@
 
         @if $right {
             color: white;
+
+            > a {
+                &:hover {
+                    color: var(--background);
+
+                    svg {
+                        fill: var(--background);
+                    }
+                }
+            }
         }
 
         &:not(:last-child) {

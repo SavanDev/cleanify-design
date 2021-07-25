@@ -28,10 +28,6 @@
         article {
             flex-basis: 0;
             flex-grow: 1;
-
-            &:not(:last-child) {
-                margin-right: 1rem;
-            }
         }
     }
 }

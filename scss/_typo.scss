@@ -98,4 +98,8 @@ blockquote {
         background-color: transparent;
         border: 1px dashed var(--color-primary);
     }
+
+    &.secondary {
+        border-left: var(--color-secondary) solid .25rem;
+    }
 }
