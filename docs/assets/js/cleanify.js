@@ -3,12 +3,13 @@
 exports.__esModule = true;
 var style_1 = require("./modules/style");
 window.onscroll = function () {
-    style_1.HandleHeaderTitle();
+    (0, style_1.HandleHeaderTitle)();
 };
 
 },{"./modules/style":2}],2:[function(require,module,exports){
 "use strict";
 exports.__esModule = true;
+exports.LightMode = exports.DarkMode = exports.HandleHeaderTitle = void 0;
 function HandleHeaderTitle() {
     var title = document.getElementById('headerTitle');
     var navbar = document.getElementsByTagName('nav');
