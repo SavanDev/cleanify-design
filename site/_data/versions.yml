@@ -2,7 +2,8 @@ latest:
   version: 2.3
   changelog: ['Blockquote secondary color.',
               'Margin/padding changes.',
-              'Less rounded corners.']
+              'LTS integration.',
+              'Last version on NPM.']
   url: "https://github.com/SavanDev/cleanify-design/releases/download/v2.3/dist-v2.3.zip"
   source: "https://api.github.com/repos/SavanDev/cleanify-design/zipball/v2.3"
 lts:

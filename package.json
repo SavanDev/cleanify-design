@@ -31,13 +31,13 @@
     "@types/vinyl-source-stream": "^0.x",
     "browser-sync": "^2.x",
     "browserify": "^17.x",
-    "gulp": "^4.x",
+    "gulp": "^5.0.0",
     "gulp-sass": "^5.x",
     "gulp-zip": "^5.x",
     "sass": "^1.x",
-    "ts-node": "^9.x",
+    "ts-node": "^10.x",
     "tsify": "^5.x",
-    "typescript": "^3.x",
+    "typescript": "^4.x",
     "vinyl-source-stream": "^2.x"
   },
   "files": [

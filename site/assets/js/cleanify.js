@@ -3,7 +3,7 @@
 exports.__esModule = true;
 var style_1 = require("./modules/style");
 window.onscroll = function () {
-    style_1.HandleHeaderTitle();
+    (0, style_1.HandleHeaderTitle)();
 };
 
 },{"./modules/style":2}],2:[function(require,module,exports){
