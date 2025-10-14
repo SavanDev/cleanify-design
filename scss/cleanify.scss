@@ -1,4 +1,4 @@
-@import "variables";
+@import "core/variables";
 
 // Modules
 @import "../node_modules/normalize.css/normalize";
@@ -12,14 +12,20 @@
 @import "./mixins/list";
 @import "./mixins/navbar";
 
-// Design
-@import "colors";
-@import "body";
-@import "typo";
-@import "navbar";
-@import "header";
-@import "forms";
-@import "lists";
-@import "newStyle";
-@import "progress";
-@import "fixes";
+// Core
+@import "core/colors";
+
+// Layout
+@import "layout/body";
+@import "layout/typo";
+
+// Components
+@import "components/navbar";
+@import "components/header";
+@import "components/forms";
+@import "components/lists";
+@import "components/newStyle";
+@import "components/progress";
+
+// Utilities
+@import "utilities/fixes";
